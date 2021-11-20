@@ -1,0 +1,9 @@
+:root {
+  /* Text Color */
+  --tc-black: #000000;
+  --tc-white: #ffffff;
+  --tc-dark: #191919;
+  --tc-gray-1: #7f7f7f;
+  --tc-gray-2: #808080;
+  --tc-gray-3: #999999;
+}

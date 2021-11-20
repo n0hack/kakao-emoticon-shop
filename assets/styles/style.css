@@ -1,0 +1,16 @@
+/* Common */
+@import "./reset.css";
+@import "./variables.css";
+
+/* Components */
+@import "./components/top-bnr.css";
+@import "./components/button.css";
+@import "./components/icon.css";
+
+/* Screens */
+@import "./screens/main.css";
+
+#kakaoWrap {
+  width: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,11 @@
+.ico-comm {
+  display: inline-block;
+  background: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/ico_comm_201125.png) no-repeat;
+  background-size: 830px 230px;
+}
+
+.ico-closew {
+  width: 12px;
+  height: 12px;
+  background-position: -700px -40px;
+}
