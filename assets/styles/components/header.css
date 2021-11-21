@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   top: 50px;
+  color: #191919;
   background-color: #fff;
   z-index: var(--z-header);
 }
@@ -15,7 +16,6 @@
 }
 
 .sidemenu {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -23,6 +23,7 @@
   height: calc(100vh - 50px);
   min-width: 280px;
   padding-bottom: 54px;
+  display: none;
   background: #fff;
   z-index: var(--z-sidemenu);
 }
@@ -54,13 +55,12 @@
 .sidemenu__user-name {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--tc-gray-0);
 }
 
 .sidemenu__user-email {
   font-size: 1.3rem;
   font-weight: 300;
-  color: var(--tc-gray-2);
+  color: #7f7f7f;
 }
 
 .sidemenu__mymenu {
@@ -84,7 +84,6 @@
 
 .sidemenu__text {
   font-size: 1.3rem;
-  color: var(--tc-gray-0);
 }
 
 .sidemenu__count {
@@ -109,16 +108,15 @@
 
 .sidemenu__link-nav,
 .sidemenu__link-aside {
-  display: block;
   height: 100%;
   padding: 1.4rem 2rem 0;
+  display: block;
   font-size: 1.6rem;
-  color: var(--tc-gray-0);
 }
 
 .sidemenu__link-aside {
   font-size: 1.4rem;
-  color: var(--tc-gray-2);
+  color: #7f7f7f;
 }
 
 .sidemenu__link-nav:hover,
@@ -153,7 +151,7 @@
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: var(--z-sidemenu-overlay);
 }
 
@@ -181,6 +179,7 @@
 }
 
 .header__btn-user {
+  display: none;
   flex-basis: 48px;
 }
 
@@ -210,18 +209,18 @@
   display: inline-block;
   width: 100%;
   height: 50px;
-  line-height: 50px;
-  text-align: center;
+  color: #7f7f7f;
   font-size: 1.6rem;
-  color: var(--tc-gray-2);
+  text-align: center;
+  line-height: 50px;
 }
 
-:is(.gnb__item.on, .gnb__item:hover) .gnb__link {
-  color: var(--tc-gray-0);
+.gnb__item.on .gnb__link {
+  color: #191919;
   font-weight: 600;
 }
 
-:is(.gnb__item.on, .gnb__item:hover) .gnb__link::after {
+.gnb__item.on .gnb__link::after {
   position: absolute;
   content: "";
   left: 0;
@@ -229,4 +228,25 @@
   width: 100%;
   height: 2px;
   background-color: #000;
+}
+
+@media screen and (min-width: 767px) {
+  .gnb__item:hover .gnb__link {
+    color: var(--tc-gray-0);
+    font-weight: 600;
+  }
+
+  .gnb__item:hover .gnb__link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .header__btn-user {
+    display: block;
+  }
 }
