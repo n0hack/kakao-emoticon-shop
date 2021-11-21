@@ -5,22 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카카오 이모티콘샵</title>
+    <link rel="shortcut icon" href="./e_16x16.ico" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
     <div id="kakaoWrap">
       <!-- Top Banner -->
-      <aside class="top-bnr">
-        <div class="top-bnr__inner">
-          <a href="#" class="top-bnr__link">
-            <span class="top-bnr__text">월3,900원 이모티콘 무제한 사용</span>
-            <img src="https://mud-kage.kakaocdn.net/dn/c0PntX/btrk18SIAhf/2PksSIKJaxzMgguUNaLLhK/img.png" alt="탑 배너이미지" class="top-bnr__icon" />
+      <aside class="top-banner">
+        <div class="top-banner__inner">
+          <a href="#" class="top-banner__link">
+            <span class="top-banner__text">월3,900원 이모티콘 무제한 사용</span>
+            <img class="top-banner__img" src="./assets/images/top_banner_icon.png" alt="탑 배너 이미지" />
           </a>
         </div>
-        <button class="btn-close" aria-label="탑 배너 닫기">
-          <span class="ico-comm ico-closew"></span>
+        <button class="top-banner__btn-close" aria-label="탑 배너 닫기">
+          <span class="ico-common ico-close-banner"></span>
         </button>
       </aside>
+      <!-- Header -->
+      <header class="header">
+        <div class="header__inner">
+          <div class="sidemenu">
+            <div class="sidemenu__inner">
+              <div class="sidemenu__user">
+                <img class="sidemenu__user-thumb" src="/assets/images/profile.png" alt="사용자" />
+                <div class="sidemenu__user-info">
+                  <span class="sidemenu__user-name">전지지</span>
+                  <span class="sidemenu__user-email">nohack@kakao.com</span>
+                </div>
+              </div>
+              <ul class="sidemenu__mymenu">
+                <li>
+                  <a class="sidemenu__link-mymenu" href="#">
+                    <span class="ico-common ico-buy"></span>
+                    <span class="sidemenu__text">구매내역</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="sidemenu__link-mymenu" href="#">
+                    <span class="ico-common ico-gift"></span>
+                    <span class="sidemenu__text">선물함</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="sidemenu__link-mymenu" href="#">
+                    <span class="ico-common ico-new">신규</span>
+                    <span class="ico-common ico-coupon"></span>
+                    <span class="sidemenu__text">
+                      쿠폰함
+                      <span class="sidemenu__count">
+                        3
+                        <span class="screen-out">개</span>
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="sidemenu__link-mymenu" href="#">
+                    <span class="ico-common ico-good"></span>
+                    <span class="sidemenu__text">좋아요</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sidemenu__nav">
+                <li><a class="sidemenu__link-nav" href="#">홈</a></li>
+                <li><a class="sidemenu__link-nav" href="#">신규</a></li>
+                <li><a class="sidemenu__link-nav" href="#">인기</a></li>
+                <li><a class="sidemenu__link-nav" href="#">스타일</a></li>
+              </ul>
+              <ul class="sidemenu__aside">
+                <li><a class="sidemenu__link-aside" href="#">새소식</a></li>
+                <li><a class="sidemenu__link-aside" href="#">자주묻는 질문</a></li>
+                <li><a class="sidemenu__link-aside" href="#">이모티콘 일련번호 입력하기</a></li>
+                <li><a class="sidemenu__link-aside" href="#">로그아웃</a></li>
+              </ul>
+            </div>
+            <div class="sidemenu__copyright">
+              <a href="#" class="sidemenu__link-shop">
+                <span class="ico-common ico-menu-logo">카카오 이모티콘샵</span>
+              </a>
+              <a href="#" class="sidemenu__link-corp">@ kakao Corp</a>
+            </div>
+          </div>
+          <div class="sidemenu-overlay"></div>
+          <button class="header__btn-menu" aria-label="사이드메뉴 열기">
+            <span class="ico-common ico-menu"></span>
+          </button>
+          <h1 class="header__title">
+            <a class="header__link-home" href="#">
+              <span class="ico-common ico-logo">카카오 이모티콘샵</span>
+            </a>
+          </h1>
+          <button class="header__btn-search" aria-label="검색하기">
+            <span class="ico-common ico-search"></span>
+          </button>
+          <button class="header__btn-user" aria-label="사용자정보 열기">
+            <img class="header__user-thumb" src="/assets/images/profile.png" alt="사용자" />
+          </button>
+          <div class="user-modal">
+            <img class="user-modal__user-thumb" src="/assets/images/profile.png" alt="사용자" />
+            <div class="user-modal__user-info">
+              <span class="user-modal__user-name">전지지</span>
+              <span class="user-modal__user-email">nohack@kakao.com</span>
+            </div>
+            <button class="user-modal__btn-logout">로그아웃</button>
+          </div>
+        </div>
+        <!-- Main Menu -->
+        <nav class="gnb">
+          <h2 class="screen-out">카카오 이모티콘샵 메인메뉴</h2>
+          <ul class="gnb__list">
+            <li class="gnb__item on"><a href="#" class="gnb__link">홈</a></li>
+            <li class="gnb__item"><a href="#" class="gnb__link">신규</a></li>
+            <li class="gnb__item"><a href="#" class="gnb__link">인기</a></li>
+            <li class="gnb__item"><a href="#" class="gnb__link">스타일</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Search Box -->
+      <div class="search-box">
+        <div class="search-box__inner">
+          <h3 class="screen-out">이모티콘 검색어 입력</h3>
+          <div class="search-box__form">
+            <input class="search-box__input" type="text" placeholder="이모티콘을 검색해보세요!" autocomplete="off" />
+            <button class="search-box__btn-search">
+              <span class="ico-common ico-search">검색하기</span>
+            </button>
+          </div>
+        </div>
+        <button class="search-box__btn-cancel">취소</button>
+      </div>
+      <div class="search-box-overlay"></div>
+      <!-- Main -->
+      <main id="kakaoContent"></main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <h2 class="screen-out">서비스 이용정보</h2>
+          <div class="footer__service">
+            <a class="footer__link-service" href="#">이용약관</a>
+            <a class="footer__link-service" href="#">유료이용약관</a>
+            <a class="footer__link-service" href="#">개인정보처리방침</a>
+            <a class="footer__link-service" href="#">기업고객</a>
+            <a class="footer__link-service" href="#">문의하기</a>
+            <p class="footer__desc-service">카카오 이모티콘샵에서 판매되는 콘텐츠의 저작권은 콘텐츠 제공자에게 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 처벌될 수 있습니다.</p>
+          </div>
+          <div class="footer__copyright">
+            <a href="#" class="footer__link-corp">
+              <span class="ico-common ico-copy">&copy;</span>
+              kakao Corp
+            </a>
+          </div>
+          <div class="footer__movetop">
+            <button class="footer__btn-movetop">
+              <span class="ico-common ico-movetop">위로 이동</span>
+            </button>
+          </div>
+        </div>
+      </footer>
+      <!-- Script -->
+      <script src="bundle.js"></script>
     </div>
   </body>
 </html>

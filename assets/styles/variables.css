@@ -2,8 +2,19 @@
   /* Text Color */
   --tc-black: #000000;
   --tc-white: #ffffff;
-  --tc-dark: #191919;
+  --tc-gray-0: #191919;
   --tc-gray-1: #7f7f7f;
   --tc-gray-2: #808080;
   --tc-gray-3: #999999;
+
+  /* Overlay Color */
+  --c-overlay: rgba(0, 0, 0, 0.4);
+
+  /* z-index */
+  --z-top-banner: 900;
+  --z-header: 110;
+  --z-sidemenu: 510;
+  --z-sidemenu-overlay: 500;
+  --z-search-box: 810;
+  --z-search-box-overlay: 800;
 }

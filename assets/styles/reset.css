@@ -17,6 +17,10 @@ button {
 }
 
 a {
-  color: #000;
   text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
 }

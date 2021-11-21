@@ -1,0 +1,37 @@
+.top-banner {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ae87bd;
+  z-index: var(--z-top-banner);
+}
+
+.top-banner__inner {
+  width: 100%;
+  max-width: 96rem;
+}
+
+.top-banner__link {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-banner__text {
+  color: var(--tc-white);
+  font-size: 1.4rem;
+}
+
+.top-banner__img {
+  width: 5rem;
+  margin-left: 1rem;
+}
+
+.top-banner__btn-close {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  padding: 1.9rem 2.2rem;
+}

@@ -1,0 +1,145 @@
+.search-box {
+  display: none;
+  position: fixed;
+  top: 160px;
+  left: 0;
+  z-index: var(--z-search-box);
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #fafafa;
+}
+
+.search-box__inner {
+  position: relative;
+  width: 944px;
+  margin: 0 auto;
+  padding: 0 164px;
+}
+
+.search-box__inner::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 0;
+  width: 130px;
+  height: 117px;
+  background: url("../../images/bg_search_left.png") no-repeat;
+  background-size: 130px 117px;
+  z-index: -1;
+}
+
+.search-box__inner::after {
+  position: absolute;
+  content: "";
+  top: -30px;
+  right: 0;
+  width: 130px;
+  height: 117px;
+  background: url("../../images/bg_search_right.png") no-repeat;
+  background-size: 130px 117px;
+  z-index: -1;
+}
+
+.search-box__form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 616px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.search-box__input {
+  padding: 13px 24px;
+  flex: 1;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.search-box__input::placeholder {
+  color: var(--tc-gray-3);
+}
+
+.search-box__btn-search {
+  width: 50px;
+  height: 100%;
+}
+
+.search-box__btn-cancel {
+  display: none;
+  width: 56px;
+  font-size: 1.4rem;
+}
+
+.search-box-overlay {
+  display: none;
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  height: calc(100vh - 160px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: var(--z-search-box-overlay);
+}
+
+@media screen and (max-width: 980px) {
+  .search-box__inner {
+    width: 100%;
+    padding: 0 110px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-box {
+    top: 50px;
+    height: 54px;
+    padding: 1rem 1.8rem;
+    background-color: #fff;
+  }
+
+  .search-box__inner {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  .search-box__inner::before,
+  .search-box__inner::after {
+    background: none;
+  }
+
+  .search-box__form {
+    width: 100%;
+    height: 36px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  .search-box__input {
+    padding: 0.9rem 1.2rem;
+    flex: 1;
+    font-size: 1.3rem;
+  }
+
+  .search-box__input::placeholder {
+    color: var(--tc-gray-3);
+  }
+
+  .search-box__btn-search {
+    width: 50px;
+    height: 100%;
+  }
+
+  .search-box__btn-cancel {
+    display: block;
+  }
+
+  .search-box-overlay {
+    top: 104px;
+    height: calc(100vh - 104px);
+  }
+}
