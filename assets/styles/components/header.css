@@ -154,7 +154,7 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: z-index: var(--z-sidemenu-overlay);;
+  z-index: var(--z-sidemenu-overlay);
 }
 
 .user-modal {
