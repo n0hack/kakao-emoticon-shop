@@ -14,36 +14,8 @@ const btnDeleteInputSearch = document.querySelector(".js-btn-search-delete");
 const userModal = document.querySelector(".user-modal");
 const btnOpenUserModal = document.querySelector(".js-btn-user");
 
-// 사이드 메뉴
-btnOpenSidemenu.addEventListener("click", () => {
-  kakaoWrap.classList.add("overlay");
-  sidemenu.classList.add("show-block");
-  sidemenuOverlay.classList.add("show-block");
-  userModal.classList.remove("show-block");
-});
-
-sidemenuOverlay.addEventListener("click", () => {
-  kakaoWrap.classList.remove("overlay");
-  sidemenu.classList.remove("show-block");
-  sidemenuOverlay.classList.remove("show-block");
-});
-
-// 검색
-function clearInputSearch() {
-  inputSearch.value = "";
-  btnDeleteInputSearch.classList.remove("show-block");
-}
-
-function closeSearchBox() {
-  kakaoWrap.classList.remove("overlay");
-  headerTitle.classList.remove("search-on");
-  searchBox.classList.remove("show-flex");
-  searchBoxOverlay.classList.remove("show-block");
-  btnOpenSearchBox.classList.remove("hide");
-  clearInputSearch();
-}
-
-function searchThrottle(callback, delay) {
+// 스로틀
+function eventThrottle(callback, delay) {
   let timerId;
 
   return (event) => {
@@ -55,36 +27,75 @@ function searchThrottle(callback, delay) {
   };
 }
 
-btnOpenSearchBox.addEventListener("click", () => {
+// 사이드 메뉴
+function handleOpenSideMenu() {
+  kakaoWrap.classList.add("overlay");
+  sidemenu.classList.add("show-block");
+  sidemenuOverlay.classList.add("show-block");
+  userModal.classList.remove("show-block");
+}
+
+function handleCloseSideMenu() {
+  akaoWrap.classList.remove("overlay");
+  sidemenu.classList.remove("show-block");
+  sidemenuOverlay.classList.remove("show-block");
+}
+
+btnOpenSidemenu.addEventListener("click", handleOpenSideMenu);
+sidemenuOverlay.addEventListener("click", handleCloseSideMenu);
+
+// 검색
+function handleClearInputSearch() {
+  inputSearch.value = "";
+  btnDeleteInputSearch.classList.remove("show-block");
+}
+
+function handleOpenSearchBox() {
   kakaoWrap.classList.add("overlay");
   headerTitle.classList.add("search-on");
   searchBox.classList.add("show-flex");
   searchBoxOverlay.classList.add("show-block");
   btnOpenSearchBox.classList.add("hide");
   userModal.classList.remove("show-block");
-});
+}
 
-btnCloseSearchBox.addEventListener("click", closeSearchBox);
-searchBoxOverlay.addEventListener("click", closeSearchBox);
+function handleCloseSearchBox() {
+  kakaoWrap.classList.remove("overlay");
+  headerTitle.classList.remove("search-on");
+  searchBox.classList.remove("show-flex");
+  searchBoxOverlay.classList.remove("show-block");
+  btnOpenSearchBox.classList.remove("hide");
+  handleClearInputSearch();
+}
 
-inputSearch.addEventListener(
-  "input",
-  searchThrottle((e) => {
-    console.log(e.target.value);
-    if (e.target.value === "") btnDeleteInputSearch.classList.remove("show-block");
-    else btnDeleteInputSearch.classList.add("show-block");
-  }, 300)
-);
+function handleInputSearch(e) {
+  if (e.target.value === "") btnDeleteInputSearch.classList.remove("show-block");
+  else btnDeleteInputSearch.classList.add("show-block");
+}
 
-btnDeleteInputSearch.addEventListener("click", clearInputSearch);
+btnOpenSearchBox.addEventListener("click", handleOpenSearchBox);
+btnCloseSearchBox.addEventListener("click", handleCloseSearchBox);
+searchBoxOverlay.addEventListener("click", handleCloseSearchBox);
+inputSearch.addEventListener("input", eventThrottle(handleInputSearch, 300));
+btnDeleteInputSearch.addEventListener("click", handleClearInputSearch);
 
 // 유저 모달
-btnOpenUserModal.addEventListener("click", (e) => {
+function handleOpenUserModal(e) {
   userModal.classList.toggle("show-block");
   e.stopPropagation();
-});
+}
 
-document.addEventListener("click", (e) => {
+function handleCloseUserModal(e) {
   let findUserModal = e.target.closest(".user-modal");
   if (!findUserModal) userModal.classList.remove("show-block");
-});
+}
+
+function handleResizeUserModal(e) {
+  if (document.body.getBoundingClientRect().width < 767) {
+    userModal.classList.remove("show-block");
+  }
+}
+
+btnOpenUserModal.addEventListener("click", handleOpenUserModal);
+document.addEventListener("click", handleCloseUserModal);
+window.addEventListener("resize", eventThrottle(handleResizeUserModal, 300));
