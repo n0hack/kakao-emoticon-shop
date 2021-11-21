@@ -13,7 +13,7 @@
       <!-- Top Banner -->
       <aside class="top-banner">
         <div class="top-banner__inner">
-          <a href="#" class="top-banner__link">
+          <a class="top-banner__link" href="https://my.kakao.com/product/EMOTICON001?t_src=emoticon&t_ch=webstore&t_obj=web_gnb_banner" target="_blank" rel="noreferrer">
             <span class="top-banner__text">월3,900원 이모티콘 무제한 사용</span>
             <img class="top-banner__img" src="./assets/images/top_banner_icon.png" alt="탑 배너 이미지" />
           </a>
@@ -69,7 +69,7 @@
                 </li>
               </ul>
               <ul class="sidemenu__nav">
-                <li><a class="sidemenu__link-nav" href="#">홈</a></li>
+                <li><a class="sidemenu__link-nav" href="index.html">홈</a></li>
                 <li><a class="sidemenu__link-nav" href="#">신규</a></li>
                 <li><a class="sidemenu__link-nav" href="#">인기</a></li>
                 <li><a class="sidemenu__link-nav" href="#">스타일</a></li>
@@ -89,18 +89,18 @@
             </div>
           </div>
           <div class="sidemenu-overlay"></div>
-          <button class="header__btn-menu" aria-label="사이드메뉴 열기">
+          <button class="header__btn-menu js-btn-menu" aria-label="사이드메뉴 열기">
             <span class="ico-common ico-menu"></span>
           </button>
           <h1 class="header__title">
-            <a class="header__link-home" href="#">
+            <a class="header__link-home" href="index.html">
               <span class="ico-common ico-logo">카카오 이모티콘샵</span>
             </a>
           </h1>
-          <button class="header__btn-search" aria-label="검색하기">
+          <button class="header__btn-search js-btn-search" aria-label="검색하기">
             <span class="ico-common ico-search"></span>
           </button>
-          <button class="header__btn-user" aria-label="사용자정보 열기">
+          <button class="header__btn-user js-btn-user" aria-label="사용자정보 열기">
             <img class="header__user-thumb" src="/assets/images/profile.png" alt="사용자" />
           </button>
           <div class="user-modal">
@@ -115,28 +115,30 @@
         <nav class="gnb">
           <h2 class="screen-out">카카오 이모티콘샵 메인메뉴</h2>
           <ul class="gnb__list">
-            <li class="gnb__item on"><a href="#" class="gnb__link">홈</a></li>
+            <li class="gnb__item on"><a href="index.html" class="gnb__link">홈</a></li>
             <li class="gnb__item"><a href="#" class="gnb__link">신규</a></li>
             <li class="gnb__item"><a href="#" class="gnb__link">인기</a></li>
             <li class="gnb__item"><a href="#" class="gnb__link">스타일</a></li>
           </ul>
         </nav>
-      </header>
-
-      <!-- Search Box -->
-      <div class="search-box">
-        <div class="search-box__inner">
-          <h3 class="screen-out">이모티콘 검색어 입력</h3>
-          <div class="search-box__form">
-            <input class="search-box__input" type="text" placeholder="이모티콘을 검색해보세요!" autocomplete="off" />
-            <button class="search-box__btn-search">
-              <span class="ico-common ico-search">검색하기</span>
-            </button>
+        <!-- Search Box -->
+        <div class="search-box">
+          <div class="search-box__inner">
+            <h3 class="screen-out">이모티콘 검색어 입력</h3>
+            <div class="search-box__form">
+              <input class="search-box__input js-input-search" type="search" placeholder="이모티콘을 검색해보세요!" autocomplete="off" />
+              <button class="search-box__btn-search-delete js-btn-search-delete">
+                <span class="ico-common ico-search-delete">지우기</span>
+              </button>
+              <button class="search-box__btn-search">
+                <span class="ico-common ico-search">검색하기</span>
+              </button>
+            </div>
           </div>
+          <button class="search-box__btn-cancel">취소</button>
         </div>
-        <button class="search-box__btn-cancel">취소</button>
-      </div>
-      <div class="search-box-overlay"></div>
+        <div class="search-box-overlay"></div>
+      </header>
 
       <!-- Main -->
       <main class="main">
@@ -204,6 +206,7 @@
         </div>
       </footer>
       <!-- Script -->
+      <script src="./assets/scripts/header.js"></script>
       <script src="./assets/scripts/footer.js"></script>
     </div>
   </body>

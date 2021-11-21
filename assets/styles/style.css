@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+#kakaoWrap.overlay {
+  max-height: 100vh;
+}
+
 .screen-out {
   position: absolute;
   width: 0;
@@ -27,4 +31,20 @@
   line-height: 0;
   text-indent: -9999px;
   overflow: hidden;
+}
+
+.show-block {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
