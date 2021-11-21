@@ -12,6 +12,7 @@
 /* Screens */
 @import "./screens/home.css";
 @import "./screens/policy.css";
+@import "./screens/number.css";
 
 #kakaoWrap {
   height: 100%;

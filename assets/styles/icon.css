@@ -27,6 +27,10 @@
   background-position: -210px 0;
 }
 
+.number-main .ico-logo {
+  top: 2rem;
+}
+
 .ico-search-delete {
   width: 14px;
   height: 14px;
@@ -106,4 +110,16 @@
   width: 44px;
   height: 44px;
   background-position: -350px -30px;
+}
+
+.ico-card {
+  width: 75px;
+  height: 75px;
+  background-position: 0px 0px;
+}
+
+.number-main .ico-card {
+  position: absolute;
+  left: calc(50% - 37px);
+  top: 50%;
 }
