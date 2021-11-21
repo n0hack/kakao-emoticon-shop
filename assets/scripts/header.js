@@ -2,6 +2,7 @@ const kakaoWrap = document.querySelector("#kakaoWrap");
 const sidemenu = document.querySelector(".sidemenu");
 const sidemenuOverlay = document.querySelector(".sidemenu-overlay");
 const btnOpenSidemenu = document.querySelector(".js-btn-menu");
+const btnOpenNumber = document.querySelector(".js-btn-number");
 
 const headerTitle = document.querySelector(".header__title");
 const searchBox = document.querySelector(".search-box");
@@ -36,13 +37,18 @@ function handleOpenSideMenu() {
 }
 
 function handleCloseSideMenu() {
-  akaoWrap.classList.remove("overlay");
+  kakaoWrap.classList.remove("overlay");
   sidemenu.classList.remove("show-block");
   sidemenuOverlay.classList.remove("show-block");
 }
 
+function handleOpenNumber() {
+  window.open("./pages/number.html", "카카오 이모티콘샵", "width=430, height=730");
+}
+
 btnOpenSidemenu.addEventListener("click", handleOpenSideMenu);
 sidemenuOverlay.addEventListener("click", handleCloseSideMenu);
+btnOpenNumber.addEventListener("click", handleOpenNumber);
 
 // 검색
 function handleClearInputSearch() {

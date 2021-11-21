@@ -109,19 +109,32 @@
 
 .sidemenu__link-nav,
 .sidemenu__link-aside {
+  width: 100%;
   height: 100%;
   padding: 1.4rem 2rem 0;
   display: block;
   font-size: 1.6rem;
 }
 
-.sidemenu__link-aside {
+.sidemenu__btn-number,
+.sidemenu__btn-logout {
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.sidemenu__link-aside,
+.sidemenu__btn-number,
+.sidemenu__btn-logout {
   font-size: 1.4rem;
   color: #7f7f7f;
 }
 
 .sidemenu__link-nav:hover,
-.sidemenu__link-aside:hover {
+.sidemenu__link-aside:hover,
+.sidemenu__btn-number:hover,
+.sidemenu__btn-logout:hover {
   background: rgba(0, 0, 0, 0.04);
 }
 
