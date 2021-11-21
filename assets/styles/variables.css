@@ -1,15 +1,4 @@
 :root {
-  /* Text Color */
-  --tc-black: #000000;
-  --tc-white: #ffffff;
-  --tc-gray-0: #191919;
-  --tc-gray-1: #7f7f7f;
-  --tc-gray-2: #808080;
-  --tc-gray-3: #999999;
-
-  /* Overlay Color */
-  --c-overlay: rgba(0, 0, 0, 0.4);
-
   /* z-index */
   --z-top-banner: 900;
   --z-header: 110;

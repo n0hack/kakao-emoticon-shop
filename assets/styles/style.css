@@ -7,13 +7,14 @@
 @import "./components/header.css";
 @import "./components/search-box.css";
 @import "./components/footer.css";
-@import "./components/icon.css";
+@import "./icon.css";
 
 /* Screens */
 @import "./screens/home.css";
 
 #kakaoWrap {
   height: 100%;
+  /* 오버레이 열릴 시 max-height으로 임시 변경 */
   min-height: 100vh;
   overflow: hidden;
 }
