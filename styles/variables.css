@@ -33,9 +33,11 @@
 
   /* z-index */
   --z-topbnr: 999;
-  --z-header: 1;
-  --z-sidemenu: 2;
-  --z-search-bar: 3;
-  --z-nav: 4;
-  --z-profile: 5;
+  --z-header: 100;
+  --z-sidemenu: 590;
+  --z-sidemenu-overlay: 580;
+  --z-nav: -1;
+  --z-search: 490;
+  --z-search-overlay: 480;
+  --z-profile: 390;
 }

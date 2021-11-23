@@ -1,0 +1,74 @@
+.btn-close-topbnr {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 40px;
+  height: 100%;
+}
+
+.btn-open-sidemenu,
+.btn-open-search {
+  position: relative;
+  width: 40px;
+}
+
+.btn-open-profile {
+  width: 48px;
+  display: none;
+}
+
+.btn-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  padding: 1rem 0.7rem;
+}
+
+.btn-remove--show {
+  display: block;
+}
+
+.btn-cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  line-height: 5.4rem;
+}
+
+.btn-search {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-close-topbnr,
+  .btn-open-sidemenu,
+  .btn-open-search {
+    width: 44px;
+  }
+
+  .btn-open-profile {
+    display: block;
+  }
+
+  .btn-remove {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    padding: 1.6rem 0.7rem;
+  }
+
+  .btn-cancel {
+    display: none;
+  }
+
+  .btn-search {
+    position: absolute;
+    top: 0;
+    right: 13px;
+    display: block;
+    width: 44px;
+    height: 100%;
+  }
+}

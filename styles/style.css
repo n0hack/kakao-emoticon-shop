@@ -1,0 +1,43 @@
+/* Base */
+@import './reset.css';
+@import './variables.css';
+
+/* Component */
+@import './components/icon.css';
+@import './components/button.css';
+@import './components/topbnr.css';
+@import './components/header.css';
+@import './components/sidemenu.css';
+@import './components/nav.css';
+@import './components/search.css';
+
+/* Screen */
+
+.kakao-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.kakao-wrap--sidemenu-overlay {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.kakao-wrap--search-overlay {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.screen-out {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.main {
+  height: 200vh;
+  background-color: bisque;
+}

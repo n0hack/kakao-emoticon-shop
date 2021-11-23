@@ -5,209 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카카오 이모티콘샵</title>
-    <link rel="shortcut icon" href="./icon.ico" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/16x16.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon/16x16.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon/16x16.ico" sizes="16x16" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon/32x32.ico" sizes="32x32" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon/64x64.ico" sizes="64x64" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon/android_96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon/android_144x144.png" sizes="144x144" />
+    <link rel="apple-touch-icon" type="image/png" href="/images/favicon/ios_120x120.png" sizes="120x120" />
+    <link rel="apple-touch-icon" type="image/png" href="/images/favicon/ios_152x152.png" sizes="152x152" />
   </head>
   <body>
-    <div id="kakaoWrap">
-      <!-- Top Banner -->
-      <aside class="top-banner">
-        <div class="top-banner__inner">
-          <a class="top-banner__link" href="https://my.kakao.com/product/EMOTICON001?t_src=emoticon&t_ch=webstore&t_obj=web_gnb_banner" target="_blank" rel="noreferrer">
-            <span class="top-banner__text">월3,900원 이모티콘 무제한 사용</span>
-            <img class="top-banner__img" src="./assets/images/top_banner_icon.png" alt="탑 배너 이미지" />
+    <div id="js-kakao-wrap" class="kakao-wrap">
+      <div id="js-topbnr" class="topbnr">
+        <div class="topbnr__inner">
+          <a class="topbnr__link" href="https://my.kakao.com/product/EMOTICON001?t_src=emoticon&t_ch=webstore&t_obj=web_gnb_banner" target="_blank" rel="noopener noreferrer">
+            <span class="topbnr__text">월3,900원 이모티콘 무제한 사용</span>
+            <img class="topbnr__icon" src="/images/topbnr_icon.png" alt="탑배너 아이콘" />
           </a>
         </div>
-        <button class="top-banner__btn-close" aria-label="탑 배너 닫기">
-          <span class="ico-common ico-close-banner"></span>
+        <button id="js-close-topbnr" class="btn-close-topbnr" aria-label="탑배너 닫기">
+          <span class="ico-common ico-closew"></span>
         </button>
-      </aside>
-
-      <!-- Header -->
+      </div>
+      <!-- KAKAO HEADER -->
       <header class="header">
-        <div class="header__inner">
-          <div class="sidemenu">
-            <div class="sidemenu__inner">
-              <div class="sidemenu__user">
-                <img class="sidemenu__user-thumb" src="/assets/images/profile.png" alt="사용자" />
-                <div class="sidemenu__user-info">
-                  <span class="sidemenu__user-name">전지지</span>
-                  <span class="sidemenu__user-email">nohack@kakao.com</span>
-                </div>
+        <!-- SIDEMENU -->
+        <div id="js-sidemenu" class="sidemenu sidemenu--hide">
+          <div class="sidemenu__inner">
+            <strong class="screen-out">나의 이용정보</strong>
+            <div class="sidemenu__profile">
+              <img class="sidemenu__user-thumb" src="./images/profile.png" alt="사용자 프로필" />
+              <div class="sidemenu__user-info">
+                <span class="sidemenu__user-name">전지지</span>
+                <span class="sidemenu__user-email">nohack@kakao.com</span>
               </div>
-              <ul class="sidemenu__mymenu">
-                <li>
-                  <a class="sidemenu__link-mymenu" href="#">
-                    <span class="ico-common ico-buy"></span>
-                    <span class="sidemenu__text">구매내역</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="sidemenu__link-mymenu" href="#">
-                    <span class="ico-common ico-gift"></span>
-                    <span class="sidemenu__text">선물함</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="sidemenu__link-mymenu" href="#">
-                    <span class="ico-common ico-new">신규</span>
-                    <span class="ico-common ico-coupon"></span>
-                    <span class="sidemenu__text">
-                      쿠폰함
-                      <span class="sidemenu__count">
-                        3
-                        <span class="screen-out">개</span>
-                      </span>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a class="sidemenu__link-mymenu" href="#">
-                    <span class="ico-common ico-good"></span>
-                    <span class="sidemenu__text">좋아요</span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="sidemenu__nav">
-                <li><a class="sidemenu__link-nav" href="index.html">홈</a></li>
-                <li><a class="sidemenu__link-nav" href="#">신규</a></li>
-                <li><a class="sidemenu__link-nav" href="#">인기</a></li>
-                <li><a class="sidemenu__link-nav" href="#">스타일</a></li>
-              </ul>
-              <ul class="sidemenu__aside">
-                <li><a class="sidemenu__link-aside" href="#">새소식</a></li>
-                <li><a class="sidemenu__link-aside" href="#">자주묻는 질문</a></li>
-                <li><button class="sidemenu__btn-number js-btn-number">이모티콘 일련번호 입력하기</button></li>
-                <li><button class="sidemenu__btn-logout">로그아웃</but></li>
-              </ul>
             </div>
-            <div class="sidemenu__copyright">
-              <a href="#" class="sidemenu__link-shop">
-                <span class="ico-common ico-menu-logo">카카오 이모티콘샵</span>
-              </a>
-              <a href="#" class="sidemenu__link-corp">@ kakao Corp</a>
-            </div>
+            <ul class="sidemenu__list-mypage">
+              <li class="sidemenu__item-mypage">
+                <a class="sidemenu__link-mypage" href="#">
+                  <span class="ico-common ico-buy"></span>
+                  <span class="sidemenu__txt-mypage">구매내역</span>
+                </a>
+              </li>
+              <li class="sidemenu__item-mypage">
+                <a class="sidemenu__link-mypage" href="#">
+                  <span class="ico-common ico-gift"></span>
+                  <span class="sidemenu__txt-mypage">선물함</span>
+                </a>
+              </li>
+              <li class="sidemenu__item-mypage">
+                <a class="sidemenu__link-mypage" href="#">
+                  <span class="ico-common ico-mymenu-new"></span>
+                  <span class="ico-common ico-coupon"></span>
+                  <span class="sidemenu__txt-mypage"
+                    >쿠폰함<span class="sidemenu__txt-count">1<span class="screen-out">개</span></span></span
+                  >
+                </a>
+              </li>
+              <li class="sidemenu__item-mypage">
+                <a class="sidemenu__link-mypage" href="#">
+                  <span class="ico-common ico-good"></span>
+                  <span class="sidemenu__txt-mypage">좋아요</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="sidemenu__list-nav">
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">홈</a></li>
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">신규</a></li>
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">인기</a></li>
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">스타일</a></li>
+            </ul>
+            <ul class="sidemenu__list-aside">
+              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">새소식</a></li>
+              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">자주묻는 질문</a></li>
+              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">이모티콘 일련번호 입력하기</a></li>
+              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">로그아웃</a></li>
+            </ul>
           </div>
-          <div class="sidemenu-overlay"></div>
-          <button class="header__btn-menu js-btn-menu" aria-label="사이드메뉴 열기">
+          <div class="sidemenu__corp">
+            <a class="sidemenu__link-shop" href="#" aria-label="카카오 이모티콘샵">
+              <span class="ico-common ico-sidelogo"></span>
+            </a>
+            <a class="sidemenu__link-corp" href="#">@ kakao Corp</a>
+          </div>
+        </div>
+        <div id="js-sidemenu-overlay" class="sidemenu-overlay sidemenu-overlay--hide"></div>
+        <!-- INNER HEADER -->
+        <div class="header__inner">
+          <button id="js-open-sidemenu" class="btn-open-sidemenu" aria-label="사이드메뉴 열기">
             <span class="ico-common ico-menu"></span>
+            <span class="ico-common ico-new"></span>
           </button>
           <h1 class="header__title">
-            <a class="header__link-home" href="index.html">
-              <span class="ico-common ico-logo">카카오 이모티콘샵</span>
+            <a class="header__link-home" href="index.html" aria-label="카카오 이모티콘샵">
+              <span class="ico-common ico-logo"></span>
             </a>
           </h1>
-          <button class="header__btn-search js-btn-search" aria-label="검색하기">
+          <button id="js-open-search" class="btn-open-search" aria-label="검색바 열기">
             <span class="ico-common ico-search"></span>
           </button>
-          <button class="header__btn-user js-btn-user" aria-label="사용자정보 열기">
-            <img class="header__user-thumb" src="/assets/images/profile.png" alt="사용자" />
+          <button id="js-open-profile" class="btn-open-profile" aria-label="사용자 프로필 열기">
+            <img class="header__user-thumb" src="images/profile.png" alt="사용자 프로필" />
           </button>
-          <div class="user-modal">
-            <img class="user-modal__user-thumb" src="/assets/images/profile.png" alt="사용자" />
-            <div class="user-modal__user-info">
-              <span class="user-modal__user-name">전지지</span>
-              <span class="user-modal__user-email">nohack@kakao.com</span>
-            </div>
-            <button class="user-modal__btn-logout">로그아웃</button>
-          </div>
         </div>
-        <nav class="gnb">
+        <!-- GNB -->
+        <nav id="js-nav" class="nav">
           <h2 class="screen-out">카카오 이모티콘샵 메인메뉴</h2>
-          <ul class="gnb__list">
-            <li class="gnb__item on"><a href="index.html" class="gnb__link">홈</a></li>
-            <li class="gnb__item"><a href="#" class="gnb__link">신규</a></li>
-            <li class="gnb__item"><a href="#" class="gnb__link">인기</a></li>
-            <li class="gnb__item"><a href="#" class="gnb__link">스타일</a></li>
+          <ul class="nav__list">
+            <li class="nav__item nav__item--on"><a href="#" class="nav__link">홈</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">신규</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">인기</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">스타일</a></li>
           </ul>
         </nav>
-        <!-- Search Box -->
-        <div class="search-box">
-          <div class="search-box__inner">
-            <h3 class="screen-out">이모티콘 검색어 입력</h3>
-            <div class="search-box__form">
-              <input class="search-box__input js-input-search" type="search" placeholder="이모티콘을 검색해보세요!" autocomplete="off" />
-              <button class="search-box__btn-search-delete js-btn-search-delete">
-                <span class="ico-common ico-search-delete">지우기</span>
+        <!-- SEARCH -->
+        <div id="js-search" class="search search--hide">
+          <h3 class="screen-out">이모티콘 검색어 입력</h3>
+          <div class="search__inner">
+            <div class="search__form">
+              <input id="js-input-search" class="search__input" type="search" placeholder="이모티콘을 검색해 보세요!" autocomplete="off" />
+              <button id="js-remove-input" class="btn-remove" aria-label="검색어 지우기">
+                <span class="ico-common ico-remove"></span>
               </button>
-              <button class="search-box__btn-search">
-                <span class="ico-common ico-search">검색하기</span>
+              <button class="btn-search" aria-label="검색하기">
+                <span class="ico-common ico-search"></span>
               </button>
             </div>
+            <button id="js-cancel-search" class="btn-cancel">취소</button>
           </div>
-          <button class="search-box__btn-cancel">취소</button>
-        </div>
-        <div class="search-box-overlay"></div>
+        </divj>
+        <div id="js-search-overlay" class="search-overlay search-overlay--hide"></div>
       </header>
+      <!-- KAKAO MAIN -->
+      <main id="js-main" class="main">
 
-      <!-- Main -->
-      <main class="main">
-        <section class="banner">
-          <div class="banner__slide">
-            <a class="banner__link" href="#">
-              <img class="banner__img" src="./assets/images/main_banner_1.gif" alt="배너" />
-            </a>
-            <a class="banner__link" href="#">
-              <img class="banner__img" src="./assets/images/main_banner_2.gif" alt="배너" />
-            </a>
-          </div>
-          <ol class="banner__order">
-            <li class="slide-active">
-              <button data-slide="1" class="banner__button">첫 번째 배너</button>
-            </li>
-            <li>
-              <button data-slide="2" class="banner__button">두 번째 배너</button>
-            </li>
-          </ol>
-        </section>
-        <section class="content"></section>
       </main>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="footer__inner">
-          <h2 class="screen-out">서비스 이용정보</h2>
-          <div class="footer__service">
-            <a class="footer__link-service" href="./pages/policy.html" target="_blank" rel="noreferrer">이용약관</a>
-            <a class="footer__link-service" href="https://billing-web.kakao.com/kbill/terms/service" target="_blank" rel="noreferrer">유료이용약관</a>
-            <a class="footer__link-service" href="https://www.kakao.com/policy/privacy" target="_blank" rel="noreferrer"><strong>개인정보처리방침</strong></a>
-            <a class="footer__link-service" href="https://bizemoticon.kakao.com/" target="_blank" rel="noreferrer">기업고객</a>
-            <a class="footer__link-service" href="https://cs.kakao.com/requests?category=278&locale=ko&node=30555&service=94" target="_blank" rel="noreferrer">문의하기</a>
-            <p class="footer__desc-service">카카오 이모티콘샵에서 판매되는 콘텐츠의 저작권은 콘텐츠 제공자에게 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 처벌될 수 있습니다.</p>
-          </div>
-          <div class="footer__copyright">
-            <label class="footer__corp" for="footer__checkbox">
-              <input id="footer__checkbox" type="checkbox" hidden />
-              <span class="ico-common ico-copy">&copy;</span>
-              kakao Corp.
-              <span class="ico-common ico-arrow"></span>
-              <ul class="footer__info-list">
-                <li>
-                  <span class="footer__info-title">주식회사 카카오</span>
-                  대표자 여민수, 조수용<br />
-                  사업자등록번호 120-81-47521 [사업자정보 확인]<br />
-                  통신판매업 신고번호 제2015-제주아라-0032호<br />
-                  제주특별자치도 제주시 첨단로 242(영평동)<br />
-                  호스팅제공자 (주)카카오
-                </li>
-                <li>
-                  <span class="footer__info-title">고객센터</span>
-                  1577-3754 (평일10시~19시)<br />
-                  help.notice@kakaocorp.com
-                </li>
-              </ul>
-            </label>
-          </div>
-          <div class="footer__movetop">
-            <button class="footer__btn-movetop js-btn-movetop">
-              <span class="ico-common ico-movetop">위로 이동</span>
-            </button>
-          </div>
-        </div>
-      </footer>
-      <!-- Script -->
-      <script src="./assets/scripts/header.js"></script>
-      <script src="./assets/scripts/footer.js"></script>
+      <!-- KAKAO FOOTER -->
+      <footer class="footer"></footer>
     </div>
+    <script src="./dist/app.bundle.js"></script>
   </body>
 </html>

@@ -1,0 +1,133 @@
+.search {
+  position: fixed;
+  top: var(--h-topbnr);
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background-color: var(--c-white);
+  z-index: var(--z-search);
+}
+
+.search--hide {
+  display: none;
+}
+
+.search__inner {
+  position: relative;
+  padding: 1rem 5.8rem 1rem 1.8rem;
+}
+
+.search__form {
+  position: relative;
+  height: 34px;
+  padding: 1rem 3.4rem 1rem 1.2rem;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+.search__input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.search__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-overlay {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - var(--h-topbnr) - 54px);
+  background-color: var(--bgc-overlay);
+  opacity: 0.3;
+  z-index: var(--z-search-overlay);
+}
+
+.search-overlay--hide {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .search {
+    position: absolute;
+    top: calc(var(--h-topbnr) + 60px);
+    left: 0;
+    height: 116px;
+    background-color: var(--bgc-section);
+  }
+
+  .search__inner {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 10rem;
+  }
+
+  .search__inner::before {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    content: '';
+    width: 130px;
+    height: 117px;
+    background: url(../../images/bg_search_left.png) no-repeat;
+    background-size: 130px 117px;
+    z-index: -1;
+  }
+
+  .search__inner::after {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    content: '';
+    width: 130px;
+    height: 117px;
+    background: url(../../images/bg_search_right.png) no-repeat;
+    background-size: 130px 117px;
+    z-index: -1;
+  }
+
+  .search__form {
+    position: relative;
+    width: 568px;
+    height: 54px;
+    margin: 0 auto;
+    padding: 0 9rem 0 1.4rem;
+    background-color: var(--c-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+  }
+
+  .search__input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  .search__input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .search-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgc-overlay);
+    opacity: 0.3;
+    z-index: var(--z-search-overlay);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .search__inner {
+    width: 944px;
+    margin: 0 auto;
+    padding: 3rem 16.4rem;
+  }
+}
