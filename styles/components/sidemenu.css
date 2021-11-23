@@ -1,0 +1,156 @@
+.sidemenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: calc(100vh - var(--h-topbnr));
+  background-color: var(--c-white);
+  z-index: var(--z-sidemenu);
+}
+
+.sidemenu__inner {
+  height: calc(100% - 54px);
+  padding: 1.8rem 0 1.2rem;
+}
+
+.sidemenu--hide {
+  display: none;
+}
+
+.sidemenu__profile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 2rem;
+}
+
+.sidemenu__user-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 24px;
+}
+
+.sidemenu__user-info {
+  flex: 1;
+  line-height: 2.4rem;
+}
+
+.sidemenu__user-name {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.sidemenu__user-email {
+  color: var(--fc-text);
+  line-height: 1.6rem;
+}
+
+.sidemenu__list-mypage {
+  display: flex;
+  padding: 0 1.1rem;
+}
+
+.sidemenu__item-mypage {
+  width: 25%;
+  padding: 1.2rem 0;
+}
+
+.sidemenu__link-mypage {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.sidemenu__txt-mypage {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+.sidemenu__txt-count {
+  display: inline-block;
+  margin-top: 0.2rem;
+  padding-left: 0.2rem;
+  vertical-align: top;
+  color: var(--fc-new);
+}
+
+.sidemenu__list-nav {
+  margin-top: 0.9rem;
+  padding: 1.3rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.sidemenu__item-nav {
+  height: 50px;
+}
+
+.sidemenu__link-nav {
+  display: block;
+  width: 100%;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  line-height: 5rem;
+}
+
+.sidemenu__list-aside {
+  padding-top: 1.3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.sidemenu__item-aside {
+  height: 40px;
+}
+
+.sidemenu__link-aside {
+  display: block;
+  width: 100%;
+  padding-left: 2rem;
+  color: var(--fc-text);
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+
+.sidemenu__corp {
+  position: relative;
+  height: 54px;
+  margin-top: auto;
+  padding: 1.2rem 1rem;
+  background-color: var(--c-white);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sidemenu__link-shop {
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem;
+}
+
+.sidemenu__link-corp {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  display: inline-block;
+  padding: 0.6rem 1rem 0.5rem;
+  color: var(--fc-text);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.sidemenu-overlay {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - var(--h-topbnr));
+  background-color: var(--bgc-overlay);
+  opacity: 0.3;
+  z-index: var(--z-sidemenu-overlay);
+}
+
+.sidemenu-overlay--hide {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  :is(.sidemenu__item-nav, .sidemenu__item-aside):hover {
+    background-color: var(--bgc-side-hover);
+  }
+}
