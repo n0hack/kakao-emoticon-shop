@@ -95,12 +95,33 @@
   background-position: -260px -30px;
 }
 
-/* Search */
 .ico-remove {
   width: 15px;
   height: 15px;
   background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);
   background-position: -350px -90px;
+}
+
+.ico-copy {
+  width: 9px;
+  height: 9px;
+  background-position: -310px -30px;
+}
+
+.ico-arr {
+  width: 7px;
+  height: 6px;
+  background-position: -300px -30px;
+}
+
+.footer__check:checked + .footer__link-copy .ico-arr {
+  transform: rotateX(180deg);
+}
+
+.ico-movetop {
+  width: 44px;
+  height: 44px;
+  background-position: -350px -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -126,7 +147,6 @@
     background-position: -260px -30px;
   }
 
-  /* Search */
   .ico-remove {
     width: 20px;
     height: 20px;

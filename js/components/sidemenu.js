@@ -23,3 +23,12 @@ const handleCloseSidemenu = () => {
 };
 
 btnOpenSidemenu.addEventListener('click', handleOpenSidemenu);
+
+// 사이드메뉴 버튼
+const btnOpenNumberPopup = document.querySelector('#js-open-popup');
+
+const handleOpenPopup = () => {
+  window.open('https://www.naver.com/', '카카오 이모티콘샵', 'width=600, height=300');
+};
+
+btnOpenNumberPopup.addEventListener('click', handleOpenPopup);

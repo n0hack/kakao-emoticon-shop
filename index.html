@@ -43,19 +43,19 @@
             </div>
             <ul class="sidemenu__list-mypage">
               <li class="sidemenu__item-mypage">
-                <a class="sidemenu__link-mypage" href="#">
+                <a class="sidemenu__link-mypage" href="buy.html">
                   <span class="ico-common ico-buy"></span>
                   <span class="sidemenu__txt-mypage">구매내역</span>
                 </a>
               </li>
               <li class="sidemenu__item-mypage">
-                <a class="sidemenu__link-mypage" href="#">
+                <a class="sidemenu__link-mypage" href="gift.html">
                   <span class="ico-common ico-gift"></span>
                   <span class="sidemenu__txt-mypage">선물함</span>
                 </a>
               </li>
               <li class="sidemenu__item-mypage">
-                <a class="sidemenu__link-mypage" href="#">
+                <a class="sidemenu__link-mypage" href="coupon.html">
                   <span class="ico-common ico-mymenu-new"></span>
                   <span class="ico-common ico-coupon"></span>
                   <span class="sidemenu__txt-mypage"
@@ -64,30 +64,30 @@
                 </a>
               </li>
               <li class="sidemenu__item-mypage">
-                <a class="sidemenu__link-mypage" href="#">
+                <a class="sidemenu__link-mypage" href="good.html">
                   <span class="ico-common ico-good"></span>
                   <span class="sidemenu__txt-mypage">좋아요</span>
                 </a>
               </li>
             </ul>
             <ul class="sidemenu__list-nav">
-              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">홈</a></li>
-              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">신규</a></li>
-              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">인기</a></li>
-              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="#">스타일</a></li>
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="index.html">홈</a></li>
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="new.html">신규</a></li>
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="hot.html">인기</a></li>
+              <li class="sidemenu__item-nav"><a class="sidemenu__link-nav" href="style.html">스타일</a></li>
             </ul>
             <ul class="sidemenu__list-aside">
-              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">새소식</a></li>
-              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">자주묻는 질문</a></li>
-              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">이모티콘 일련번호 입력하기</a></li>
+              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="notice.html">새소식</a></li>
+              <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="faq.html">자주묻는 질문</a></li>
+              <li class="sidemenu__item-aside"><a id="js-open-popup" class="sidemenu__link-aside" href="#">이모티콘 일련번호 입력하기</a></li>
               <li class="sidemenu__item-aside"><a class="sidemenu__link-aside" href="#">로그아웃</a></li>
             </ul>
           </div>
           <div class="sidemenu__corp">
-            <a class="sidemenu__link-shop" href="#" aria-label="카카오 이모티콘샵">
+            <a class="sidemenu__link-shop" href="index.html" aria-label="카카오 이모티콘샵">
               <span class="ico-common ico-sidelogo"></span>
             </a>
-            <a class="sidemenu__link-corp" href="#">@ kakao Corp</a>
+            <a class="sidemenu__link-corp" href="https://www.kakaocorp.com/page/">@ kakao Corp</a>
           </div>
         </div>
         <div id="js-sidemenu-overlay" class="sidemenu-overlay sidemenu-overlay--hide"></div>
@@ -113,10 +113,10 @@
         <nav id="js-nav" class="nav">
           <h2 class="screen-out">카카오 이모티콘샵 메인메뉴</h2>
           <ul class="nav__list">
-            <li class="nav__item nav__item--on"><a href="#" class="nav__link">홈</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">신규</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">인기</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">스타일</a></li>
+            <li class="nav__item nav__item--on"><a href="index.html" class="nav__link">홈</a></li>
+            <li class="nav__item"><a href="new.html" class="nav__link">신규</a></li>
+            <li class="nav__item"><a href="hot.html" class="nav__link">인기</a></li>
+            <li class="nav__item"><a href="style.html" class="nav__link">스타일</a></li>
           </ul>
         </nav>
         <!-- SEARCH -->
@@ -134,15 +134,53 @@
             </div>
             <button id="js-cancel-search" class="btn-cancel">취소</button>
           </div>
-        </divj>
+        </div>
         <div id="js-search-overlay" class="search-overlay search-overlay--hide"></div>
       </header>
       <!-- KAKAO MAIN -->
       <main id="js-main" class="main">
-
+        <div class="test"></div>
       </main>
       <!-- KAKAO FOOTER -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__inner">
+          <h2 class="screen-out">서비스 이용정보</h2>
+          <div class="footer__service">
+            <a class="footer__link-service" href="policy.html" target="_blank" rel="noopener noreferrer">이용약관</a>
+            <a class="footer__link-service" href="https://billing-web.kakao.com/kbill/terms/service" target="_blank" rel="noopener noreferrer">유료이용약관</a>
+            <a class="footer__link-service" href="https://www.kakao.com/policy/privacy" target="_blank" rel="noopener noreferrer"><strong>개인정보처리방침</strong></a>
+            <a class="footer__link-service" href="https://bizemoticon.kakao.com/" target="_blank" rel="noopener noreferrer">기업고객</a>
+            <a class="footer__link-service" href="https://cs.kakao.com/requests?category=278&locale=ko&node=30555&service=94" target="_blank" rel="noopener noreferrer">문의하기</a>
+            <p class="footer__desc-service">카카오 이모티콘샵에서 판매되는 콘텐츠의 저작권은 콘텐츠 제공자에게 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 처벌될 수 있습니다.</p>
+          </div>
+          <div class="footer__copy">
+            <input id="footer__check" class="footer__check" type="checkbox" hidden checked />
+            <label class="footer__link-copy" for="footer__check" aria-label="기업정보 보기">
+              <span class="ico-common ico-copy"></span><span class="footer__txt-copy">kakao Corp.</span><span class="ico-common ico-arr"></span>
+            </label>
+            <ul class="footer__list-copy">
+              <li class="footer__item-copy">
+                <span class="footer__title-copy">주식회사 카카오</span><br />
+                대표자 여민수, 조수용<br />
+                사업자등록번호 120-81-47521 [사업자정보 확인]<br />
+                통신판매업 신고번호 제2015-제주아라-0032호<br />
+                제주특별자치도 제주시 첨단로 242(영평동)<br />
+                호스팅제공자 (주)카카오
+              </li>
+              <li class="footer__item-copy">
+                <span class="footer__title-copy">고객센터</span><br />
+                1577-3754 (평일10시~19시)<br />
+                help.notice@kakaocorp.com
+              </li>
+            </ul>
+          </div>
+          <div class="footer__movetop">
+            <button id="js-movetop" class="btn-movetop" aria-label="위로 이동">
+              <span class="ico-common ico-movetop"></span>
+            </button>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./dist/app.bundle.js"></script>
   </body>

@@ -361,7 +361,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_sidemenu_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(21);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_nav_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(20);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_search_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(23);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(30);
 // Imports
+
 
 
 
@@ -383,8 +385,9 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_header
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_sidemenu_css__WEBPACK_IMPORTED_MODULE_8__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_nav_css__WEBPACK_IMPORTED_MODULE_9__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_search_css__WEBPACK_IMPORTED_MODULE_10__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_11__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Base */\n/* Component */\n/* Screen */\n.kakao-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%; }\n\n.kakao-wrap--sidemenu-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.kakao-wrap--search-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.screen-out {\n  position: absolute;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  text-indent: -9999px; }\n\n.main {\n  height: 200vh;\n  background-color: bisque; }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Base */\n/* Component */\n/* Screen */\n.kakao-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  overflow: overlay;\n  z-index: var(--z-wrap); }\n\n.kakao-wrap::-webkit-scrollbar {\n  width: 14px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb:hover {\n  width: 20px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.4);\n  background-clip: padding-box;\n  border: 3px solid transparent;\n  border-radius: 10px;\n  transition: all 5s ease; }\n\n.kakao-wrap--sidemenu-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.kakao-wrap--search-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.screen-out {\n  position: absolute;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  text-indent: -9999px; }\n\n.main {\n  background-color: bisque;\n  width: 100%;\n  height: 1000px; }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -527,7 +530,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  color: inherit;\n  font-family: 'Noto Sans KR', sans-serif;\n}\n\nhtml {\n  height: 100%;\n  font-size: 62.5%;\n}\n\nbody {\n  height: 100%;\n  color: var(--fc-title);\n  font-size: 1.2rem;\n  line-height: 1.5rem;\n}\n\na {\n  text-decoration: none;\n}\n\nul {\n  list-style: none;\n}\n\nbutton {\n  background: transparent;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  color: inherit;\n  font-family: 'Noto Sans KR', sans-serif;\n}\n\nhtml {\n  height: 100%;\n  font-size: 62.5%;\n  overflow-y: overlay;\n}\n\nbody {\n  height: 100%;\n  color: var(--fc-title);\n  font-size: 1.2rem;\n  line-height: 1.5rem;\n}\n\na {\n  text-decoration: none;\n}\n\nul {\n  list-style: none;\n}\n\nbutton {\n  background: transparent;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n}\n\nlabel {\n  cursor: pointer;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -555,7 +558,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Common */\n.ico-common {\n  display: inline-block;\n  color: transparent;\n  font-size: 1px;\n  overflow: hidden;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n  background-size: 830px 230px;\n}\n\n/* Topbnr */\n.ico-closew {\n  width: 12px;\n  height: 12px;\n  background-position: -700px -40px;\n}\n\n/* Sidemenu */\n.ico-mymenu-new {\n  position: absolute;\n  top: -3px;\n  left: 50%;\n  width: 15px;\n  height: 15px;\n  margin-left: 0.6rem;\n  background-position: -330px -30px;\n}\n\n.ico-buy {\n  width: 30px;\n  height: 30px;\n  background-position: -210px -60px;\n}\n\n.ico-gift {\n  width: 30px;\n  height: 30px;\n  background-position: -240px -60px;\n}\n\n.ico-coupon {\n  width: 30px;\n  height: 30px;\n  background-position: -270px -60px;\n}\n\n.ico-good {\n  width: 30px;\n  height: 30px;\n  background-position: -300px -60px;\n}\n\n.ico-sidelogo {\n  width: 136px;\n  height: 20px;\n  background-position: -210px -90px;\n}\n\n/* Header */\n.ico-menu {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -210px -30px;\n}\n\n.ico-new {\n  position: absolute;\n  top: 13px;\n  right: 4px;\n  width: 4px;\n  height: 4px;\n  background-color: #fa4637;\n  border-radius: 50%;\n}\n\n.ico-logo {\n  position: absolute;\n  left: calc(50% - 81px);\n  top: calc(50% - 12px);\n  width: 163px;\n  height: 24px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -210px 0;\n}\n\n.ico-search {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -260px -30px;\n}\n\n/* Search */\n.ico-remove {\n  width: 15px;\n  height: 15px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -350px -90px;\n}\n\n@media screen and (min-width: 768px) {\n  .ico-menu {\n    background-position: -210px -30px;\n  }\n\n  .ico-logo {\n    left: calc(50% - 95px);\n    top: calc(50% - 14px);\n    width: 190px;\n    height: 28px;\n    background-position: -210px 0;\n  }\n\n  .ico-new {\n    top: 18px;\n    right: 6px;\n    background-color: #fa4637;\n  }\n\n  .ico-search {\n    background-position: -260px -30px;\n  }\n\n  /* Search */\n  .ico-remove {\n    width: 20px;\n    height: 20px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: -350px -90px;\n  }\n\n  .btn-remove:hover .ico-remove {\n    background-position: -390px -90px;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Common */\n.ico-common {\n  display: inline-block;\n  color: transparent;\n  font-size: 1px;\n  overflow: hidden;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n  background-size: 830px 230px;\n}\n\n/* Topbnr */\n.ico-closew {\n  width: 12px;\n  height: 12px;\n  background-position: -700px -40px;\n}\n\n/* Sidemenu */\n.ico-mymenu-new {\n  position: absolute;\n  top: -3px;\n  left: 50%;\n  width: 15px;\n  height: 15px;\n  margin-left: 0.6rem;\n  background-position: -330px -30px;\n}\n\n.ico-buy {\n  width: 30px;\n  height: 30px;\n  background-position: -210px -60px;\n}\n\n.ico-gift {\n  width: 30px;\n  height: 30px;\n  background-position: -240px -60px;\n}\n\n.ico-coupon {\n  width: 30px;\n  height: 30px;\n  background-position: -270px -60px;\n}\n\n.ico-good {\n  width: 30px;\n  height: 30px;\n  background-position: -300px -60px;\n}\n\n.ico-sidelogo {\n  width: 136px;\n  height: 20px;\n  background-position: -210px -90px;\n}\n\n/* Header */\n.ico-menu {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -210px -30px;\n}\n\n.ico-new {\n  position: absolute;\n  top: 13px;\n  right: 4px;\n  width: 4px;\n  height: 4px;\n  background-color: #fa4637;\n  border-radius: 50%;\n}\n\n.ico-logo {\n  position: absolute;\n  left: calc(50% - 81px);\n  top: calc(50% - 12px);\n  width: 163px;\n  height: 24px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -210px 0;\n}\n\n.ico-search {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -260px -30px;\n}\n\n.ico-remove {\n  width: 15px;\n  height: 15px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -350px -90px;\n}\n\n.ico-copy {\n  width: 9px;\n  height: 9px;\n  background-position: -310px -30px;\n}\n\n.ico-arr {\n  width: 7px;\n  height: 6px;\n  background-position: -300px -30px;\n}\n\n.footer__check:checked + .footer__link-copy .ico-arr {\n  transform: rotateX(180deg);\n}\n\n.ico-movetop {\n  width: 44px;\n  height: 44px;\n  background-position: -350px -30px;\n}\n\n@media screen and (min-width: 768px) {\n  .ico-menu {\n    background-position: -210px -30px;\n  }\n\n  .ico-logo {\n    left: calc(50% - 95px);\n    top: calc(50% - 14px);\n    width: 190px;\n    height: 28px;\n    background-position: -210px 0;\n  }\n\n  .ico-new {\n    top: 18px;\n    right: 6px;\n    background-color: #fa4637;\n  }\n\n  .ico-search {\n    background-position: -260px -30px;\n  }\n\n  .ico-remove {\n    width: 20px;\n    height: 20px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: -350px -90px;\n  }\n\n  .btn-remove:hover .ico-remove {\n    background-position: -390px -90px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -601,7 +604,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-search {\n  display: none;\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-search {\n  display: none;\n}\n\n.btn-movetop {\n  margin: 2rem 0;\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -624,7 +627,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  /* Mobile 768 Tablet 1024 Desktop */\n\n  /* Color Palette*/\n  /* Common Color */\n  --c-white: #fff;\n  --c-black: #000;\n\n  /* Font Color */\n  --fc-title: #191919;\n  --fc-text: #808080;\n  --fc-nav: #999999;\n  --fc-new: #fa4637;\n  --fc-illust: #b1e08b;\n  --fc-message: #c0c2f9;\n  --fc-animal: #fcbc8b;\n\n  /* Background Colors */\n  --bgc-kakao: #ffeb2d;\n  --bgc-topbnr: #af88bd;\n  --bgc-homebnr-1: #91b6d0;\n  --bgc-homebnr-2: #f2abb9;\n  --bgc-newbnr: #ffe56a;\n  --bgc-hotbnr: #6cccff;\n  --bgc-stylebnr: #ff8252;\n  --bgc-mypagebnr: #6195ef;\n  --bgc-side-hover: #fafafa;\n  --bgc-new: #fa4637;\n  --bgc-search: #fafafa;\n  --bgc-section: #fafafa;\n  /* (+opacity: .3) rgba와 달리 상속됨 */\n  --bgc-overlay: #191919;\n\n  /* z-index */\n  --z-topbnr: 999;\n  --z-header: 100;\n  --z-sidemenu: 590;\n  --z-sidemenu-overlay: 580;\n  --z-nav: -1;\n  --z-search: 490;\n  --z-search-overlay: 480;\n  --z-profile: 390;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  /* Mobile 768 Tablet 1024 Desktop */\n\n  /* Color Palette*/\n  /* Common Color */\n  --c-white: #fff;\n  --c-black: #000;\n\n  /* Font Color */\n  --fc-title: #191919;\n  --fc-text: #808080;\n  --fc-nav: #999999;\n  --fc-new: #fa4637;\n  --fc-illust: #b1e08b;\n  --fc-message: #c0c2f9;\n  --fc-animal: #fcbc8b;\n\n  /* Background Colors */\n  --bgc-kakao: #ffeb2d;\n  --bgc-topbnr: #af88bd;\n  --bgc-homebnr-1: #91b6d0;\n  --bgc-homebnr-2: #f2abb9;\n  --bgc-newbnr: #ffe56a;\n  --bgc-hotbnr: #6cccff;\n  --bgc-stylebnr: #ff8252;\n  --bgc-mypagebnr: #6195ef;\n  --bgc-side-hover: #fafafa;\n  --bgc-new: #fa4637;\n  --bgc-search: #fafafa;\n  --bgc-section: #fafafa;\n  /* (+opacity: .3) rgba와 달리 상속됨 */\n  --bgc-overlay: #191919;\n\n  /* z-index */\n  --z-wrap: 1000;\n  --z-topbnr: 999;\n  --z-header: 100;\n  --z-sidemenu: 590;\n  --z-sidemenu-overlay: 580;\n  --z-nav: -1;\n  --z-search: 490;\n  --z-search-overlay: 480;\n  --z-profile: 390;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -735,7 +738,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  height: 50px;\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease-in-out;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  height: 50px;\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav--hide {\n    height: 50px;\n  }\n\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -771,10 +774,12 @@ const kakaoWrap = document.querySelector('#js-kakao-wrap');
 const sidemenu = document.querySelector('#js-sidemenu');
 const sidemenuOverlay = document.querySelector('#js-sidemenu-overlay');
 const btnOpenSidemenu = document.querySelector('#js-open-sidemenu');
+const nav = document.querySelector('#js-nav');
 
 const handleOpenSidemenu = () => {
   // 최상단으로 이동
-  window.scrollTo(0, 0);
+  kakaoWrap.scrollTo(0, 0);
+  nav.classList.remove('nav--hide');
 
   kakaoWrap.classList.add('kakao-wrap--sidemenu-overlay');
   sidemenu.classList.remove('sidemenu--hide');
@@ -790,6 +795,15 @@ const handleCloseSidemenu = () => {
 };
 
 btnOpenSidemenu.addEventListener('click', handleOpenSidemenu);
+
+// 사이드메뉴 버튼
+const btnOpenNumberPopup = document.querySelector('#js-open-popup');
+
+const handleOpenPopup = () => {
+  window.open('https://www.naver.com/', '카카오 이모티콘샵', 'width=600, height=300');
+};
+
+btnOpenNumberPopup.addEventListener('click', handleOpenPopup);
 
 
 /***/ }),
@@ -838,9 +852,15 @@ module.exports = __webpack_require__.p + "efe081abc7cb5e357870.png";
 
 /***/ }),
 /* 26 */
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_throttle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
+
 
 const kakaoWrap = document.querySelector('#js-kakao-wrap');
+const nav = document.querySelector('#js-nav');
 const search = document.querySelector('#js-search');
 const searchOverlay = document.querySelector('#js-search-overlay');
 const inputSearch = document.querySelector('#js-input-search');
@@ -848,27 +868,16 @@ const btnOpenSearch = document.querySelector('#js-open-search');
 const btnRemoveInput = document.querySelector('#js-remove-input');
 const btnCancelSearch = document.querySelector('#js-cancel-search');
 
-const inputThrottle = (callback, delay) => {
-  let timerId = null;
-
-  return (e) => {
-    if (timerId) return;
-    timerId = setTimeout(() => {
-      callback(e);
-      timerId = null;
-    }, delay);
-  };
-};
-
 const handleOpenSearch = () => {
   // 최상단으로 이동
-  window.scrollTo(0, 0);
+  kakaoWrap.scrollTo(0, 0);
+  nav.classList.remove('nav--hide');
 
   kakaoWrap.classList.add('kakao-wrap--search-overlay');
   search.classList.remove('search--hide');
   searchOverlay.classList.remove('search-overlay--hide');
   searchOverlay.addEventListener('click', handleCloseSearch);
-  inputSearch.addEventListener('input', inputThrottle(onChangeSearch, 300));
+  inputSearch.addEventListener('input', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(onChangeSearch, 300));
   btnRemoveInput.addEventListener('click', handleRemoveInput);
   btnCancelSearch.addEventListener('click', handleCloseSearch);
 };
@@ -878,7 +887,7 @@ const handleCloseSearch = () => {
   search.classList.add('search--hide');
   searchOverlay.classList.add('search-overlay--hide');
   searchOverlay.removeEventListener('click', handleCloseSearch);
-  inputSearch.removeEventListener('input', inputThrottle(onChangeSearch, 300));
+  inputSearch.removeEventListener('input', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(onChangeSearch, 300));
   btnRemoveInput.removeEventListener('click', handleRemoveInput);
   btnCancelSearch.removeEventListener('click', handleCloseSearch);
   handleRemoveInput();
@@ -899,18 +908,98 @@ btnOpenSearch.addEventListener('click', handleOpenSearch);
 
 /***/ }),
 /* 27 */
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_throttle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
+
 
 const nav = document.querySelector('#js-nav');
-const main = document.querySelector('#js-main');
+const wrap = document.querySelector('#js-kakao-wrap');
 
-document.body.addEventListener('wheel', (e) => {
-  console.log(document.body.scrollTop);
+let tempY = 0;
+
+const handleToggleNav = () => {
+  if (window.innerWidth >= 1024) {
+    nav.classList.remove('nav--hide');
+  } else {
+    if (tempY > wrap.scrollTop) {
+      nav.classList.remove('nav--hide');
+    } else if (tempY < wrap.scrollTop) {
+      nav.classList.add('nav--hide');
+    }
+    tempY = wrap.scrollTop;
+  }
+};
+
+const handleResize = () => {
+  if (window.innerWidth >= 1024) {
+    nav.classList.remove('nav--hide');
+  }
+};
+
+window.addEventListener('resize', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(handleResize), 300);
+wrap.addEventListener('wheel', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(handleToggleNav, 300));
+
+
+/***/ }),
+/* 28 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ throttle)
+/* harmony export */ });
+function throttle(callback, delay) {
+  let timer = null;
+
+  return (e) => {
+    if (timer) return;
+    timer = setTimeout(() => {
+      callback(e);
+      timer = null;
+    }, delay);
+  };
+}
+
+
+/***/ }),
+/* 29 */
+/***/ (() => {
+
+const kakaoWrap = document.querySelector('#js-kakao-wrap');
+const btnMovetop = document.querySelector('#js-movetop');
+const nav = document.querySelector('#js-nav');
+
+btnMovetop.addEventListener('click', () => {
+  kakaoWrap.scrollTo(0, 0);
+  nav.classList.remove('nav--hide');
 });
 
-// nav 높이만큼 휠 내리면 height 0됨 (모바일한정)
-// 조금이라도 휠을 올리거나
-// nav 높이 이내에 들어오면 다시 복구
+
+/***/ }),
+/* 30 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".footer__inner {\n  max-width: 1025px;\n  margin: 0 auto;\n  padding: 0 2.4rem;\n  color: var(--fc-text);\n  font-weight: 300;\n}\n\n.footer__service {\n  padding-top: 3rem;\n}\n\n.footer__link-service {\n  display: block;\n  margin-right: 2rem;\n  padding-bottom: 1rem;\n  font-size: 1.3rem;\n}\n\n.footer__desc-service {\n  padding-top: 1rem;\n  font-size: 1.2rem;\n}\n\n.footer__copy {\n  padding: 1rem 0;\n}\n\n.footer__txt-copy {\n  margin: 0 0.4rem;\n}\n\n.footer__check:checked ~ .footer__list-copy {\n  height: 0;\n}\n\n.footer__list-copy {\n  overflow: hidden;\n}\n\n.footer__item-copy {\n  padding-top: 1rem;\n  line-height: 2rem;\n}\n\n.footer__title-copy {\n  display: inline-block;\n  padding-bottom: 0.5rem;\n  color: var(--fc-title);\n  font-weight: 400;\n}\n\n.footer__movetop {\n  text-align: center;\n}\n\n@media screen and (min-width: 1024px) {\n  .footer__link-service {\n    float: left;\n  }\n\n  .footer__desc-service {\n    clear: both;\n  }\n\n  .footer__item-copy {\n    float: left;\n    width: 50%;\n  }\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ })
@@ -1054,13 +1143,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sidemenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(22);
 /* harmony import */ var _components_sidemenu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_sidemenu__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(27);
-/* harmony import */ var _components_nav__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_nav__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26);
-/* harmony import */ var _components_search__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_search__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(29);
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_footer__WEBPACK_IMPORTED_MODULE_5__);
 // Stylesheet
 
 
 // Components
+
 
 
 

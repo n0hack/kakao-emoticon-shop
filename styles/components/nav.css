@@ -2,7 +2,7 @@
   height: 50px;
   overflow: hidden;
   z-index: var(--z-nav);
-  transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease;
 }
 
 .nav--hide {
@@ -47,6 +47,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .nav--hide {
+    height: 50px;
+  }
+
   .nav__item:hover .nav__link {
     color: var(--fc-title);
     font-weight: bold;

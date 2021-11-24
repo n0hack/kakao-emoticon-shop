@@ -41,6 +41,10 @@
   display: none;
 }
 
+.btn-movetop {
+  margin: 2rem 0;
+}
+
 @media screen and (min-width: 768px) {
   .btn-close-topbnr,
   .btn-open-sidemenu,

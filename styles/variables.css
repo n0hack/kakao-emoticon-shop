@@ -32,6 +32,7 @@
   --bgc-overlay: #191919;
 
   /* z-index */
+  --z-wrap: 1000;
   --z-topbnr: 999;
   --z-header: 100;
   --z-sidemenu: 590;
