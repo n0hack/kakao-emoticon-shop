@@ -1,10 +1,17 @@
+import throttle from '../lib/throttle';
+
 const nav = document.querySelector('#js-nav');
-const main = document.querySelector('#js-main');
+const wrap = document.querySelector('#js-kakao-wrap');
 
-document.body.addEventListener('wheel', (e) => {
-  console.log(document.body.scrollTop);
-});
+let tempY = 0;
 
-// nav 높이만큼 휠 내리면 height 0됨 (모바일한정)
-// 조금이라도 휠을 올리거나
-// nav 높이 이내에 들어오면 다시 복구
+const handleToggleNav = () => {
+  if (tempY > wrap.scrollTop) {
+    nav.classList.remove('nav--hide');
+  } else if (tempY < wrap.scrollTop) {
+    nav.classList.add('nav--hide');
+  }
+  tempY = wrap.scrollTop;
+};
+
+wrap.addEventListener('wheel', throttle(handleToggleNav, 300));
