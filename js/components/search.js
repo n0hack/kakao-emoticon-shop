@@ -1,4 +1,7 @@
+import throttle from '../lib/throttle';
+
 const kakaoWrap = document.querySelector('#js-kakao-wrap');
+const nav = document.querySelector('#js-nav');
 const search = document.querySelector('#js-search');
 const searchOverlay = document.querySelector('#js-search-overlay');
 const inputSearch = document.querySelector('#js-input-search');
@@ -6,27 +9,16 @@ const btnOpenSearch = document.querySelector('#js-open-search');
 const btnRemoveInput = document.querySelector('#js-remove-input');
 const btnCancelSearch = document.querySelector('#js-cancel-search');
 
-const inputThrottle = (callback, delay) => {
-  let timerId = null;
-
-  return (e) => {
-    if (timerId) return;
-    timerId = setTimeout(() => {
-      callback(e);
-      timerId = null;
-    }, delay);
-  };
-};
-
 const handleOpenSearch = () => {
   // 최상단으로 이동
-  window.scrollTo(0, 0);
+  kakaoWrap.scrollTo(0, 0);
+  nav.classList.remove('nav--hide');
 
   kakaoWrap.classList.add('kakao-wrap--search-overlay');
   search.classList.remove('search--hide');
   searchOverlay.classList.remove('search-overlay--hide');
   searchOverlay.addEventListener('click', handleCloseSearch);
-  inputSearch.addEventListener('input', inputThrottle(onChangeSearch, 300));
+  inputSearch.addEventListener('input', throttle(onChangeSearch, 300));
   btnRemoveInput.addEventListener('click', handleRemoveInput);
   btnCancelSearch.addEventListener('click', handleCloseSearch);
 };
@@ -36,7 +28,7 @@ const handleCloseSearch = () => {
   search.classList.add('search--hide');
   searchOverlay.classList.add('search-overlay--hide');
   searchOverlay.removeEventListener('click', handleCloseSearch);
-  inputSearch.removeEventListener('input', inputThrottle(onChangeSearch, 300));
+  inputSearch.removeEventListener('input', throttle(onChangeSearch, 300));
   btnRemoveInput.removeEventListener('click', handleRemoveInput);
   btnCancelSearch.removeEventListener('click', handleCloseSearch);
   handleRemoveInput();
