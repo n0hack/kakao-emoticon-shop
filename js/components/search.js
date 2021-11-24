@@ -2,6 +2,7 @@ import throttle from '../lib/throttle';
 
 const kakaoWrap = document.querySelector('#js-kakao-wrap');
 const nav = document.querySelector('#js-nav');
+const profile = document.querySelector('#js-profile');
 const search = document.querySelector('#js-search');
 const searchOverlay = document.querySelector('#js-search-overlay');
 const inputSearch = document.querySelector('#js-input-search');
@@ -14,6 +15,8 @@ const handleOpenSearch = () => {
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
   window.tempY = 0;
+  profile.classList.remove('profile--show');
+  window.isProfileOpen = false;
 
   kakaoWrap.classList.add('kakao-wrap--search-overlay');
   search.classList.remove('search--hide');

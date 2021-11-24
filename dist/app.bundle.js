@@ -361,9 +361,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_sidemenu_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(21);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_nav_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(20);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_search_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(23);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(30);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(31);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_profile_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(33);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(30);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(31);
 // Imports
+
 
 
 
@@ -387,8 +389,9 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_header
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_sidemenu_css__WEBPACK_IMPORTED_MODULE_8__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_nav_css__WEBPACK_IMPORTED_MODULE_9__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_search_css__WEBPACK_IMPORTED_MODULE_10__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_11__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_12__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_profile_css__WEBPACK_IMPORTED_MODULE_11__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_12__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_13__["default"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "/* Base */\n/* Component */\n/* Screen */\n.kakao-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  overflow: overlay;\n  z-index: var(--z-wrap); }\n\n.kakao-wrap::-webkit-scrollbar {\n  width: 14px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb:hover {\n  width: 20px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.4);\n  background-clip: padding-box;\n  border: 3px solid transparent;\n  border-radius: 10px;\n  transition: all 5s ease; }\n\n.kakao-wrap--sidemenu-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.kakao-wrap--search-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.screen-out {\n  position: absolute;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  text-indent: -9999px; }\n\n.main {\n  position: relative;\n  width: 100%;\n  height: 200vh;\n  padding-top: calc(var(--h-topbnr) + var(--h-header) + var(--h-nav));\n  z-index: var(--z-main); }\n", ""]);
 // Exports
@@ -607,7 +610,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-search {\n  display: none;\n}\n\n.btn-movetop {\n  margin: 2rem 0;\n}\n\n.btn-next {\n  width: 100%;\n  height: 50px;\n  color: rgba(0, 0, 0, 0.2);\n  background-color: rgba(0, 0, 0, 0.08);\n  border-radius: 8px;\n}\n\n.btn-next--active {\n  color: var(--fc-title);\n  background-color: var(--bgc-kakao);\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-logout {\n  width: 100%;\n  padding: 1.4rem 0;\n  font-size: 1.2rem;\n  background-color: var(--c-white);\n  border-top: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.btn-search {\n  display: none;\n}\n\n.btn-movetop {\n  margin: 2rem 0;\n}\n\n.btn-next {\n  width: 100%;\n  height: 50px;\n  color: rgba(0, 0, 0, 0.2);\n  background-color: rgba(0, 0, 0, 0.08);\n  border-radius: 8px;\n}\n\n.btn-next--active {\n  color: var(--fc-title);\n  background-color: var(--bgc-kakao);\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n\n@media screen and (min-width: 1024px) {\n  .btn-logout:hover {\n    background-color: rgba(0, 0, 0, 0.02);\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -630,7 +633,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  /* Mobile 768 Tablet 1024 Desktop */\n  /* Height */\n  --h-nav: 50px;\n\n  /* Color Palette*/\n  /* Common Color */\n  --c-white: #fff;\n  --c-black: #000;\n\n  /* Font Color */\n  --fc-title: #191919;\n  --fc-text: #808080;\n  --fc-nav: #999999;\n  --fc-new: #fa4637;\n  --fc-illust: #b1e08b;\n  --fc-message: #c0c2f9;\n  --fc-animal: #fcbc8b;\n\n  /* Background Colors */\n  --bgc-kakao: #ffeb2d;\n  --bgc-topbnr: #af88bd;\n  --bgc-homebnr-1: #91b6d0;\n  --bgc-homebnr-2: #f2abb9;\n  --bgc-newbnr: #ffe56a;\n  --bgc-hotbnr: #6cccff;\n  --bgc-stylebnr: #ff8252;\n  --bgc-mypagebnr: #6195ef;\n  --bgc-side-hover: #fafafa;\n  --bgc-new: #fa4637;\n  --bgc-search: #fafafa;\n  --bgc-section: #fafafa;\n  /* (+opacity: .3) rgba와 달리 상속됨 */\n  --bgc-overlay: #191919;\n\n  /* z-index */\n  --z-wrap: 1000;\n  --z-topbnr: 999;\n  --z-header: 100;\n  --z-sidemenu: 590;\n  --z-sidemenu-overlay: 580;\n  --z-nav: -1;\n  --z-search: 490;\n  --z-search-overlay: 480;\n  --z-profile: 390;\n  --z-main: -1;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  /* Mobile 768 Tablet 1024 Desktop */\n  /* Height */\n  --h-nav: 50px;\n\n  /* Color Palette*/\n  /* Common Color */\n  --c-white: #fff;\n  --c-black: #000;\n\n  /* Font Color */\n  --fc-title: #191919;\n  --fc-text: #808080;\n  --fc-nav: #999999;\n  --fc-new: #fa4637;\n  --fc-illust: #b1e08b;\n  --fc-message: #c0c2f9;\n  --fc-animal: #fcbc8b;\n\n  /* Background Colors */\n  --bgc-kakao: #ffeb2d;\n  --bgc-topbnr: #af88bd;\n  --bgc-homebnr-1: #91b6d0;\n  --bgc-homebnr-2: #f2abb9;\n  --bgc-newbnr: #ffe56a;\n  --bgc-hotbnr: #6cccff;\n  --bgc-stylebnr: #ff8252;\n  --bgc-mypagebnr: #6195ef;\n  --bgc-side-hover: #fafafa;\n  --bgc-new: #fa4637;\n  --bgc-search: #fafafa;\n  --bgc-section: #fafafa;\n  /* (+opacity: .3) rgba와 달리 상속됨 */\n  --bgc-overlay: #191919;\n\n  /* z-index */\n  --z-wrap: 1000;\n  --z-topbnr: 999;\n  --z-header: 100;\n  --z-sidemenu: 610;\n  --z-sidemenu-overlay: 600;\n  --z-nav: 450;\n  --z-search: 510;\n  --z-search-overlay: 500;\n  --z-profile: 550;\n  --z-main: -1;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -653,7 +656,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --h-header: 50px;\n}\n\n.header {\n  position: fixed;\n  top: var(--h-topbnr);\n  width: 100%;\n  background-color: var(--c-white);\n}\n\n.header__inner {\n  width: 100%;\n  height: 50px;\n  padding: 0 0.8rem;\n  display: flex;\n}\n\n.header__title {\n  flex: 1;\n  height: 50px;\n  text-align: center;\n}\n\n.header__link-home {\n  position: relative;\n  display: inline-block;\n  width: 210px;\n  height: 100%;\n  margin: 0 auto;\n  padding: 0 1rem;\n}\n\n.header__user-thumb {\n  width: 28px;\n  border-radius: 12px;\n}\n\n@media screen and (min-width: 768px) {\n  :root {\n    --h-header: 60px;\n  }\n\n  .header__inner {\n    height: 60px;\n  }\n\n  .header__title {\n    padding-left: 4.4rem;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --h-header: 50px;\n}\n\n.header {\n  position: fixed;\n  top: var(--h-topbnr);\n  width: 100%;\n  height: 50px;\n  background-color: var(--c-white);\n}\n\n.header__inner {\n  width: 100%;\n  height: 50px;\n  padding: 0 0.8rem;\n  display: flex;\n}\n\n.header__title {\n  flex: 1;\n  height: 50px;\n  text-align: center;\n}\n\n.header__link-home {\n  position: relative;\n  display: inline-block;\n  width: 210px;\n  height: 100%;\n  margin: 0 auto;\n  padding: 0 1rem;\n}\n\n.header__user-thumb {\n  width: 28px;\n  border-radius: 12px;\n}\n\n@media screen and (min-width: 768px) {\n  :root {\n    --h-header: 60px;\n  }\n\n  .header {\n    height: 60px;\n  }\n\n  .header__inner {\n    height: 60px;\n  }\n\n  .header__title {\n    height: 60px;\n    padding-left: 4.4rem;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -743,7 +746,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  height: 50px;\n  background-color: var(--c-white);\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav--hide {\n    height: 50px;\n  }\n\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  position: relative;\n  top: 0;\n  height: 50px;\n  background-color: var(--c-white);\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav--hide {\n    height: 50px;\n  }\n\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -780,12 +783,15 @@ const sidemenu = document.querySelector('#js-sidemenu');
 const sidemenuOverlay = document.querySelector('#js-sidemenu-overlay');
 const btnOpenSidemenu = document.querySelector('#js-open-sidemenu');
 const nav = document.querySelector('#js-nav');
+const profile = document.querySelector('#js-profile');
 
 const handleOpenSidemenu = () => {
   // 최상단으로 이동
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
   window.tempY = 0;
+  profile.classList.remove('profile--show');
+  window.isProfileOpen = false;
 
   kakaoWrap.classList.add('kakao-wrap--sidemenu-overlay');
   sidemenu.classList.remove('sidemenu--hide');
@@ -837,7 +843,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".search {\n  position: fixed;\n  top: var(--h-topbnr);\n  left: 0;\n  width: 100%;\n  height: 54px;\n  background-color: var(--c-white);\n  z-index: var(--z-search);\n}\n\n.search--hide {\n  display: none;\n}\n\n.search__inner {\n  position: relative;\n  padding: 1rem 5.8rem 1rem 1.8rem;\n}\n\n.search__form {\n  position: relative;\n  height: 34px;\n  padding: 1rem 3.4rem 1rem 1.2rem;\n  background-color: rgba(0, 0, 0, 0.04);\n  border-radius: 8px;\n}\n\n.search__input {\n  width: 100%;\n  height: 100%;\n  background-color: transparent;\n  border: 0;\n  outline: 0;\n}\n\n.search__input::-webkit-search-cancel-button {\n  display: none;\n}\n\n.search-overlay {\n  position: absolute;\n  top: 50px;\n  width: 100%;\n  height: calc(100vh - var(--h-topbnr) - 54px);\n  background-color: var(--bgc-overlay);\n  opacity: 0.3;\n  z-index: var(--z-search-overlay);\n}\n\n.search-overlay--hide {\n  display: none;\n}\n\n@media screen and (min-width: 768px) {\n  .search {\n    position: absolute;\n    top: calc(var(--h-topbnr) + 60px);\n    left: 0;\n    height: 116px;\n    background-color: var(--bgc-section);\n  }\n\n  .search__inner {\n    position: relative;\n    width: 100%;\n    margin: 0 auto;\n    padding: 3rem 10rem;\n  }\n\n  .search__inner::before {\n    position: absolute;\n    top: 0;\n    left: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__inner::after {\n    position: absolute;\n    bottom: 0;\n    right: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__form {\n    position: relative;\n    width: 568px;\n    height: 54px;\n    margin: 0 auto;\n    padding: 0 9rem 0 1.4rem;\n    background-color: var(--c-white);\n    border: 1px solid rgba(0, 0, 0, 0.08);\n    border-radius: 8px;\n  }\n\n  .search__input {\n    width: 100%;\n    height: 100%;\n    font-size: 1.6rem;\n    background-color: transparent;\n    border: 0;\n    outline: 0;\n  }\n\n  .search__input::-webkit-search-cancel-button {\n    display: none;\n  }\n}\n\n@media screen and (min-width: 1024px) {\n  .search__inner {\n    width: 944px;\n    margin: 0 auto;\n    padding: 3rem 16.4rem;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".search {\n  position: fixed;\n  top: var(--h-topbnr);\n  left: 0;\n  width: 100%;\n  height: 54px;\n  background-color: var(--c-white);\n  z-index: var(--z-search);\n}\n\n.search--hide {\n  display: none;\n}\n\n.search__inner {\n  position: relative;\n  padding: 1rem 5.8rem 1rem 1.8rem;\n}\n\n.search__form {\n  position: relative;\n  height: 34px;\n  padding: 1rem 3.4rem 1rem 1.2rem;\n  background-color: rgba(0, 0, 0, 0.04);\n  border-radius: 8px;\n}\n\n.search__input {\n  width: 100%;\n  height: 100%;\n  background-color: transparent;\n  border: 0;\n  outline: 0;\n}\n\n.search__input::-webkit-search-cancel-button {\n  display: none;\n}\n\n.search-overlay {\n  position: absolute;\n  top: var(--h-header);\n  width: 100%;\n  height: calc(100vh - var(--h-topbnr) - var(--h-header));\n  background-color: var(--bgc-overlay);\n  opacity: 0.3;\n  z-index: var(--z-search-overlay);\n}\n\n.search-overlay--hide {\n  display: none;\n}\n\n@media screen and (min-width: 768px) {\n  .search {\n    position: absolute;\n    top: calc(var(--h-topbnr) + 60px);\n    left: 0;\n    height: 116px;\n    background-color: var(--bgc-section);\n  }\n\n  .search__inner {\n    position: relative;\n    width: 100%;\n    margin: 0 auto;\n    padding: 3rem 10rem;\n  }\n\n  .search__inner::before {\n    position: absolute;\n    top: 0;\n    left: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__inner::after {\n    position: absolute;\n    bottom: 0;\n    right: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__form {\n    position: relative;\n    width: 568px;\n    height: 54px;\n    margin: 0 auto;\n    padding: 0 9rem 0 1.4rem;\n    background-color: var(--c-white);\n    border: 1px solid rgba(0, 0, 0, 0.08);\n    border-radius: 8px;\n  }\n\n  .search__input {\n    width: 100%;\n    height: 100%;\n    font-size: 1.6rem;\n    background-color: transparent;\n    border: 0;\n    outline: 0;\n  }\n\n  .search__input::-webkit-search-cancel-button {\n    display: none;\n  }\n\n  .search-overlay {\n    top: calc(var(--h-header) + 50px);\n  }\n}\n\n@media screen and (min-width: 1024px) {\n  .search__inner {\n    width: 944px;\n    margin: 0 auto;\n    padding: 3rem 16.4rem;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -867,6 +873,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const kakaoWrap = document.querySelector('#js-kakao-wrap');
 const nav = document.querySelector('#js-nav');
+const profile = document.querySelector('#js-profile');
 const search = document.querySelector('#js-search');
 const searchOverlay = document.querySelector('#js-search-overlay');
 const inputSearch = document.querySelector('#js-input-search');
@@ -879,6 +886,8 @@ const handleOpenSearch = () => {
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
   window.tempY = 0;
+  profile.classList.remove('profile--show');
+  window.isProfileOpen = false;
 
   kakaoWrap.classList.add('kakao-wrap--search-overlay');
   search.classList.remove('search--hide');
@@ -1058,6 +1067,69 @@ const onChange = (e) => {
 if (inputNumber) inputNumber.addEventListener('input', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(onChange, 300));
 
 
+/***/ }),
+/* 33 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".profile {\n  position: absolute;\n  top: 55px;\n  right: 20px;\n  display: none;\n  flex-direction: column;\n  align-items: center;\n  width: 200px;\n  padding-top: 1rem;\n  background-color: var(--c-white);\n  border: 1px solid rgba(0, 0, 0, 0.08);\n  border-radius: 10px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);\n  overflow: hidden;\n  z-index: var(--z-profile);\n}\n\n.profile--show {\n  display: flex;\n}\n\n.profile__image {\n  width: 38px;\n  margin: 1rem 0;\n  border-radius: 17px;\n}\n\n.profile__name {\n  margin-bottom: 0.4rem;\n  font-size: 1.4rem;\n  font-weight: bold;\n}\n\n.profile__email {\n  margin-bottom: 2rem;\n  color: var(--fc-text);\n  font-size: 1.1rem;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 34 */
+/***/ (() => {
+
+const profile = document.querySelector('#js-profile');
+const btnOpenProfile = document.querySelector('#js-open-profile');
+
+window.isProfileOpen = false;
+
+const handleOpenProfile = (e) => {
+  if (window.isProfileOpen) {
+    profile.classList.remove('profile--show');
+    window.isProfileOpen = false;
+  } else {
+    profile.classList.add('profile--show');
+    window.isProfileOpen = true;
+  }
+  e.stopPropagation();
+};
+
+const handleCloseProfile = (e) => {
+  if (window.isProfileOpen && !e.target.closest('.profile')) {
+    profile.classList.remove('profile--show');
+    window.isProfileOpen = false;
+  }
+};
+
+const handleProfileResize = () => {
+  if (window.innerWidth > 767 && window.isProfileOpen) {
+    profile.classList.add('profile--show');
+  } else {
+    profile.classList.remove('profile--show');
+  }
+};
+
+if (btnOpenProfile) btnOpenProfile.addEventListener('click', handleOpenProfile);
+if (profile) document.addEventListener('click', handleCloseProfile);
+if (profile) window.addEventListener('resize', handleProfileResize);
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -1200,13 +1272,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sidemenu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_sidemenu__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(27);
 /* harmony import */ var _components_search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26);
-/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(29);
-/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_footer__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _screens_number__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(32);
+/* harmony import */ var _components_profile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(34);
+/* harmony import */ var _components_profile__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_profile__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(29);
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_footer__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _screens_number__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(32);
 // Stylesheet
 
 
 // Components
+
 
 
 

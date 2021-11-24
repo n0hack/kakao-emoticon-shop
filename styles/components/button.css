@@ -37,6 +37,14 @@
   line-height: 5.4rem;
 }
 
+.btn-logout {
+  width: 100%;
+  padding: 1.4rem 0;
+  font-size: 1.2rem;
+  background-color: var(--c-white);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .btn-search {
   display: none;
 }
@@ -87,5 +95,11 @@
     display: block;
     width: 44px;
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-logout:hover {
+    background-color: rgba(0, 0, 0, 0.02);
   }
 }

@@ -37,11 +37,11 @@
   --z-wrap: 1000;
   --z-topbnr: 999;
   --z-header: 100;
-  --z-sidemenu: 590;
-  --z-sidemenu-overlay: 580;
-  --z-nav: -1;
-  --z-search: 490;
-  --z-search-overlay: 480;
-  --z-profile: 390;
+  --z-sidemenu: 610;
+  --z-sidemenu-overlay: 600;
+  --z-nav: 450;
+  --z-search: 510;
+  --z-search-overlay: 500;
+  --z-profile: 550;
   --z-main: -1;
 }

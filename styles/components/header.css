@@ -6,6 +6,7 @@
   position: fixed;
   top: var(--h-topbnr);
   width: 100%;
+  height: 50px;
   background-color: var(--c-white);
 }
 
@@ -41,11 +42,16 @@
     --h-header: 60px;
   }
 
+  .header {
+    height: 60px;
+  }
+
   .header__inner {
     height: 60px;
   }
 
   .header__title {
+    height: 60px;
     padding-left: 4.4rem;
   }
 }

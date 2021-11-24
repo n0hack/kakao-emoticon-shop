@@ -3,12 +3,15 @@ const sidemenu = document.querySelector('#js-sidemenu');
 const sidemenuOverlay = document.querySelector('#js-sidemenu-overlay');
 const btnOpenSidemenu = document.querySelector('#js-open-sidemenu');
 const nav = document.querySelector('#js-nav');
+const profile = document.querySelector('#js-profile');
 
 const handleOpenSidemenu = () => {
   // 최상단으로 이동
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
   window.tempY = 0;
+  profile.classList.remove('profile--show');
+  window.isProfileOpen = false;
 
   kakaoWrap.classList.add('kakao-wrap--sidemenu-overlay');
   sidemenu.classList.remove('sidemenu--hide');
