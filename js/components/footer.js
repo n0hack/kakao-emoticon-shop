@@ -5,6 +5,7 @@ const nav = document.querySelector('#js-nav');
 if (btnMovetop) {
   btnMovetop.addEventListener('click', () => {
     kakaoWrap.scrollTo(0, 0);
+    window.tempY = 0;
     nav.classList.remove('nav--hide');
   });
 }
