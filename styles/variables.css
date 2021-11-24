@@ -1,5 +1,7 @@
 :root {
   /* Mobile 768 Tablet 1024 Desktop */
+  /* Height */
+  --h-nav: 50px;
 
   /* Color Palette*/
   /* Common Color */
@@ -41,4 +43,5 @@
   --z-search: 490;
   --z-search-overlay: 480;
   --z-profile: 390;
+  --z-main: -1;
 }

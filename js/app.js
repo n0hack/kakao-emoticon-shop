@@ -9,3 +9,4 @@ import './components/search';
 import './components/footer';
 
 // Screens
+import './screens/number';

@@ -13,6 +13,7 @@
 @import './components/footer.css';
 
 /* Screen */
+@import './screens/number.css';
 
 .kakao-wrap {
   position: relative;
@@ -57,7 +58,9 @@
 }
 
 .main {
-  background-color: bisque;
+  position: relative;
   width: 100%;
-  height: 1000px;
+  height: 200vh;
+  padding-top: calc(var(--h-topbnr) + var(--h-header) + var(--h-nav));
+  z-index: var(--z-main);
 }

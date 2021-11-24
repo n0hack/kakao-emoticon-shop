@@ -39,6 +39,7 @@
 
 .search-overlay {
   position: absolute;
+  top: 50px;
   width: 100%;
   height: calc(100vh - var(--h-topbnr) - 54px);
   background-color: var(--bgc-overlay);
@@ -112,15 +113,6 @@
 
   .search__input::-webkit-search-cancel-button {
     display: none;
-  }
-
-  .search-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--bgc-overlay);
-    opacity: 0.3;
-    z-index: var(--z-search-overlay);
   }
 }
 

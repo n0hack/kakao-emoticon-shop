@@ -3,7 +3,7 @@ import throttle from '../lib/throttle';
 const nav = document.querySelector('#js-nav');
 const wrap = document.querySelector('#js-kakao-wrap');
 
-let tempY = 0;
+window.tempY = 0;
 
 const handleToggleNav = () => {
   if (window.innerWidth >= 1024) {
@@ -11,7 +11,7 @@ const handleToggleNav = () => {
   } else {
     if (tempY > wrap.scrollTop) {
       nav.classList.remove('nav--hide');
-    } else if (tempY < wrap.scrollTop) {
+    } else if (tempY < wrap.scrollTop && wrap.scrollTop >= 50) {
       nav.classList.add('nav--hide');
     }
     tempY = wrap.scrollTop;
@@ -20,9 +20,9 @@ const handleToggleNav = () => {
 
 const handleResize = () => {
   if (window.innerWidth >= 1024) {
-    nav.classList.remove('nav--hide');
+    if (nav) nav.classList.remove('nav--hide');
   }
 };
 
-window.addEventListener('resize', throttle(handleResize), 300);
-wrap.addEventListener('wheel', throttle(handleToggleNav, 300));
+if (window) window.addEventListener('resize', throttle(handleResize), 300);
+if (wrap) wrap.addEventListener('wheel', throttle(handleToggleNav, 300));

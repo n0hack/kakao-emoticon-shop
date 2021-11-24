@@ -124,6 +124,16 @@
   background-position: -350px -30px;
 }
 
+.ico-card {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 75px;
+  height: 75px;
+  background-position: 0px 0px;
+  transform: translateX(-50%);
+}
+
 @media screen and (min-width: 768px) {
   .ico-menu {
     background-position: -210px -30px;

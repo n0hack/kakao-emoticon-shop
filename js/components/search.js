@@ -13,6 +13,7 @@ const handleOpenSearch = () => {
   // 최상단으로 이동
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
+  window.tempY = 0;
 
   kakaoWrap.classList.add('kakao-wrap--search-overlay');
   search.classList.remove('search--hide');
@@ -44,4 +45,4 @@ const onChangeSearch = (e) => {
   else btnRemoveInput.classList.remove('btn-remove--show');
 };
 
-btnOpenSearch.addEventListener('click', handleOpenSearch);
+if (btnOpenSearch) btnOpenSearch.addEventListener('click', handleOpenSearch);

@@ -8,6 +8,7 @@ const handleOpenSidemenu = () => {
   // 최상단으로 이동
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
+  window.tempY = 0;
 
   kakaoWrap.classList.add('kakao-wrap--sidemenu-overlay');
   sidemenu.classList.remove('sidemenu--hide');
@@ -22,13 +23,13 @@ const handleCloseSidemenu = () => {
   sidemenuOverlay.removeEventListener('click', handleCloseSidemenu);
 };
 
-btnOpenSidemenu.addEventListener('click', handleOpenSidemenu);
+if (btnOpenSidemenu) btnOpenSidemenu.addEventListener('click', handleOpenSidemenu);
 
 // 사이드메뉴 버튼
 const btnOpenNumberPopup = document.querySelector('#js-open-popup');
 
 const handleOpenPopup = () => {
-  window.open('https://www.naver.com/', '카카오 이모티콘샵', 'width=600, height=300');
+  window.open('number.html', '카카오 이모티콘샵', 'width=500, height=770');
 };
 
-btnOpenNumberPopup.addEventListener('click', handleOpenPopup);
+if (btnOpenNumberPopup) btnOpenNumberPopup.addEventListener('click', handleOpenPopup);

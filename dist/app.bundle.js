@@ -362,7 +362,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_nav_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(20);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_search_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(23);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(30);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(31);
 // Imports
+
 
 
 
@@ -386,8 +388,9 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_sideme
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_nav_css__WEBPACK_IMPORTED_MODULE_9__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_search_css__WEBPACK_IMPORTED_MODULE_10__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_11__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_12__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Base */\n/* Component */\n/* Screen */\n.kakao-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  overflow: overlay;\n  z-index: var(--z-wrap); }\n\n.kakao-wrap::-webkit-scrollbar {\n  width: 14px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb:hover {\n  width: 20px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.4);\n  background-clip: padding-box;\n  border: 3px solid transparent;\n  border-radius: 10px;\n  transition: all 5s ease; }\n\n.kakao-wrap--sidemenu-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.kakao-wrap--search-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.screen-out {\n  position: absolute;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  text-indent: -9999px; }\n\n.main {\n  background-color: bisque;\n  width: 100%;\n  height: 1000px; }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Base */\n/* Component */\n/* Screen */\n.kakao-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  overflow: overlay;\n  z-index: var(--z-wrap); }\n\n.kakao-wrap::-webkit-scrollbar {\n  width: 14px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb:hover {\n  width: 20px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.4);\n  background-clip: padding-box;\n  border: 3px solid transparent;\n  border-radius: 10px;\n  transition: all 5s ease; }\n\n.kakao-wrap--sidemenu-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.kakao-wrap--search-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.screen-out {\n  position: absolute;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  text-indent: -9999px; }\n\n.main {\n  position: relative;\n  width: 100%;\n  height: 200vh;\n  padding-top: calc(var(--h-topbnr) + var(--h-header) + var(--h-nav));\n  z-index: var(--z-main); }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -558,7 +561,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Common */\n.ico-common {\n  display: inline-block;\n  color: transparent;\n  font-size: 1px;\n  overflow: hidden;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n  background-size: 830px 230px;\n}\n\n/* Topbnr */\n.ico-closew {\n  width: 12px;\n  height: 12px;\n  background-position: -700px -40px;\n}\n\n/* Sidemenu */\n.ico-mymenu-new {\n  position: absolute;\n  top: -3px;\n  left: 50%;\n  width: 15px;\n  height: 15px;\n  margin-left: 0.6rem;\n  background-position: -330px -30px;\n}\n\n.ico-buy {\n  width: 30px;\n  height: 30px;\n  background-position: -210px -60px;\n}\n\n.ico-gift {\n  width: 30px;\n  height: 30px;\n  background-position: -240px -60px;\n}\n\n.ico-coupon {\n  width: 30px;\n  height: 30px;\n  background-position: -270px -60px;\n}\n\n.ico-good {\n  width: 30px;\n  height: 30px;\n  background-position: -300px -60px;\n}\n\n.ico-sidelogo {\n  width: 136px;\n  height: 20px;\n  background-position: -210px -90px;\n}\n\n/* Header */\n.ico-menu {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -210px -30px;\n}\n\n.ico-new {\n  position: absolute;\n  top: 13px;\n  right: 4px;\n  width: 4px;\n  height: 4px;\n  background-color: #fa4637;\n  border-radius: 50%;\n}\n\n.ico-logo {\n  position: absolute;\n  left: calc(50% - 81px);\n  top: calc(50% - 12px);\n  width: 163px;\n  height: 24px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -210px 0;\n}\n\n.ico-search {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -260px -30px;\n}\n\n.ico-remove {\n  width: 15px;\n  height: 15px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -350px -90px;\n}\n\n.ico-copy {\n  width: 9px;\n  height: 9px;\n  background-position: -310px -30px;\n}\n\n.ico-arr {\n  width: 7px;\n  height: 6px;\n  background-position: -300px -30px;\n}\n\n.footer__check:checked + .footer__link-copy .ico-arr {\n  transform: rotateX(180deg);\n}\n\n.ico-movetop {\n  width: 44px;\n  height: 44px;\n  background-position: -350px -30px;\n}\n\n@media screen and (min-width: 768px) {\n  .ico-menu {\n    background-position: -210px -30px;\n  }\n\n  .ico-logo {\n    left: calc(50% - 95px);\n    top: calc(50% - 14px);\n    width: 190px;\n    height: 28px;\n    background-position: -210px 0;\n  }\n\n  .ico-new {\n    top: 18px;\n    right: 6px;\n    background-color: #fa4637;\n  }\n\n  .ico-search {\n    background-position: -260px -30px;\n  }\n\n  .ico-remove {\n    width: 20px;\n    height: 20px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: -350px -90px;\n  }\n\n  .btn-remove:hover .ico-remove {\n    background-position: -390px -90px;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Common */\n.ico-common {\n  display: inline-block;\n  color: transparent;\n  font-size: 1px;\n  overflow: hidden;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n  background-size: 830px 230px;\n}\n\n/* Topbnr */\n.ico-closew {\n  width: 12px;\n  height: 12px;\n  background-position: -700px -40px;\n}\n\n/* Sidemenu */\n.ico-mymenu-new {\n  position: absolute;\n  top: -3px;\n  left: 50%;\n  width: 15px;\n  height: 15px;\n  margin-left: 0.6rem;\n  background-position: -330px -30px;\n}\n\n.ico-buy {\n  width: 30px;\n  height: 30px;\n  background-position: -210px -60px;\n}\n\n.ico-gift {\n  width: 30px;\n  height: 30px;\n  background-position: -240px -60px;\n}\n\n.ico-coupon {\n  width: 30px;\n  height: 30px;\n  background-position: -270px -60px;\n}\n\n.ico-good {\n  width: 30px;\n  height: 30px;\n  background-position: -300px -60px;\n}\n\n.ico-sidelogo {\n  width: 136px;\n  height: 20px;\n  background-position: -210px -90px;\n}\n\n/* Header */\n.ico-menu {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -210px -30px;\n}\n\n.ico-new {\n  position: absolute;\n  top: 13px;\n  right: 4px;\n  width: 4px;\n  height: 4px;\n  background-color: #fa4637;\n  border-radius: 50%;\n}\n\n.ico-logo {\n  position: absolute;\n  left: calc(50% - 81px);\n  top: calc(50% - 12px);\n  width: 163px;\n  height: 24px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -210px 0;\n}\n\n.ico-search {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -260px -30px;\n}\n\n.ico-remove {\n  width: 15px;\n  height: 15px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -350px -90px;\n}\n\n.ico-copy {\n  width: 9px;\n  height: 9px;\n  background-position: -310px -30px;\n}\n\n.ico-arr {\n  width: 7px;\n  height: 6px;\n  background-position: -300px -30px;\n}\n\n.footer__check:checked + .footer__link-copy .ico-arr {\n  transform: rotateX(180deg);\n}\n\n.ico-movetop {\n  width: 44px;\n  height: 44px;\n  background-position: -350px -30px;\n}\n\n.ico-card {\n  position: absolute;\n  top: 60px;\n  left: 50%;\n  width: 75px;\n  height: 75px;\n  background-position: 0px 0px;\n  transform: translateX(-50%);\n}\n\n@media screen and (min-width: 768px) {\n  .ico-menu {\n    background-position: -210px -30px;\n  }\n\n  .ico-logo {\n    left: calc(50% - 95px);\n    top: calc(50% - 14px);\n    width: 190px;\n    height: 28px;\n    background-position: -210px 0;\n  }\n\n  .ico-new {\n    top: 18px;\n    right: 6px;\n    background-color: #fa4637;\n  }\n\n  .ico-search {\n    background-position: -260px -30px;\n  }\n\n  .ico-remove {\n    width: 20px;\n    height: 20px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: -350px -90px;\n  }\n\n  .btn-remove:hover .ico-remove {\n    background-position: -390px -90px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -604,7 +607,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-search {\n  display: none;\n}\n\n.btn-movetop {\n  margin: 2rem 0;\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-search {\n  display: none;\n}\n\n.btn-movetop {\n  margin: 2rem 0;\n}\n\n.btn-next {\n  width: 100%;\n  height: 50px;\n  color: rgba(0, 0, 0, 0.2);\n  background-color: rgba(0, 0, 0, 0.08);\n  border-radius: 8px;\n}\n\n.btn-next--active {\n  color: var(--fc-title);\n  background-color: var(--bgc-kakao);\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -627,7 +630,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  /* Mobile 768 Tablet 1024 Desktop */\n\n  /* Color Palette*/\n  /* Common Color */\n  --c-white: #fff;\n  --c-black: #000;\n\n  /* Font Color */\n  --fc-title: #191919;\n  --fc-text: #808080;\n  --fc-nav: #999999;\n  --fc-new: #fa4637;\n  --fc-illust: #b1e08b;\n  --fc-message: #c0c2f9;\n  --fc-animal: #fcbc8b;\n\n  /* Background Colors */\n  --bgc-kakao: #ffeb2d;\n  --bgc-topbnr: #af88bd;\n  --bgc-homebnr-1: #91b6d0;\n  --bgc-homebnr-2: #f2abb9;\n  --bgc-newbnr: #ffe56a;\n  --bgc-hotbnr: #6cccff;\n  --bgc-stylebnr: #ff8252;\n  --bgc-mypagebnr: #6195ef;\n  --bgc-side-hover: #fafafa;\n  --bgc-new: #fa4637;\n  --bgc-search: #fafafa;\n  --bgc-section: #fafafa;\n  /* (+opacity: .3) rgba와 달리 상속됨 */\n  --bgc-overlay: #191919;\n\n  /* z-index */\n  --z-wrap: 1000;\n  --z-topbnr: 999;\n  --z-header: 100;\n  --z-sidemenu: 590;\n  --z-sidemenu-overlay: 580;\n  --z-nav: -1;\n  --z-search: 490;\n  --z-search-overlay: 480;\n  --z-profile: 390;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  /* Mobile 768 Tablet 1024 Desktop */\n  /* Height */\n  --h-nav: 50px;\n\n  /* Color Palette*/\n  /* Common Color */\n  --c-white: #fff;\n  --c-black: #000;\n\n  /* Font Color */\n  --fc-title: #191919;\n  --fc-text: #808080;\n  --fc-nav: #999999;\n  --fc-new: #fa4637;\n  --fc-illust: #b1e08b;\n  --fc-message: #c0c2f9;\n  --fc-animal: #fcbc8b;\n\n  /* Background Colors */\n  --bgc-kakao: #ffeb2d;\n  --bgc-topbnr: #af88bd;\n  --bgc-homebnr-1: #91b6d0;\n  --bgc-homebnr-2: #f2abb9;\n  --bgc-newbnr: #ffe56a;\n  --bgc-hotbnr: #6cccff;\n  --bgc-stylebnr: #ff8252;\n  --bgc-mypagebnr: #6195ef;\n  --bgc-side-hover: #fafafa;\n  --bgc-new: #fa4637;\n  --bgc-search: #fafafa;\n  --bgc-section: #fafafa;\n  /* (+opacity: .3) rgba와 달리 상속됨 */\n  --bgc-overlay: #191919;\n\n  /* z-index */\n  --z-wrap: 1000;\n  --z-topbnr: 999;\n  --z-header: 100;\n  --z-sidemenu: 590;\n  --z-sidemenu-overlay: 580;\n  --z-nav: -1;\n  --z-search: 490;\n  --z-search-overlay: 480;\n  --z-profile: 390;\n  --z-main: -1;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -650,7 +653,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".header {\n  position: fixed;\n  top: var(--h-topbnr);\n  width: 100%;\n  background-color: var(--c-white);\n}\n\n.header__inner {\n  width: 100%;\n  height: 50px;\n  padding: 0 0.8rem;\n  display: flex;\n}\n\n.header__title {\n  flex: 1;\n  text-align: center;\n}\n\n.header__link-home {\n  position: relative;\n  display: inline-block;\n  width: 210px;\n  height: 100%;\n  margin: 0 auto;\n  padding: 0 1rem;\n}\n\n.header__user-thumb {\n  width: 28px;\n  border-radius: 12px;\n}\n\n@media screen and (min-width: 768px) {\n  .header__inner {\n    height: 60px;\n  }\n\n  .header__title {\n    padding-left: 4.4rem;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --h-header: 50px;\n}\n\n.header {\n  position: fixed;\n  top: var(--h-topbnr);\n  width: 100%;\n  background-color: var(--c-white);\n}\n\n.header__inner {\n  width: 100%;\n  height: 50px;\n  padding: 0 0.8rem;\n  display: flex;\n}\n\n.header__title {\n  flex: 1;\n  height: 50px;\n  text-align: center;\n}\n\n.header__link-home {\n  position: relative;\n  display: inline-block;\n  width: 210px;\n  height: 100%;\n  margin: 0 auto;\n  padding: 0 1rem;\n}\n\n.header__user-thumb {\n  width: 28px;\n  border-radius: 12px;\n}\n\n@media screen and (min-width: 768px) {\n  :root {\n    --h-header: 60px;\n  }\n\n  .header__inner {\n    height: 60px;\n  }\n\n  .header__title {\n    padding-left: 4.4rem;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -709,15 +712,17 @@ const handleCloseTopbnr = () => {
   topbnr.classList.add('topbnr--hide');
   document.documentElement.style.setProperty('--h-topbnr', '0px');
 };
-btnCloseTopbnr.addEventListener('click', handleCloseTopbnr);
+if (btnCloseTopbnr) btnCloseTopbnr.addEventListener('click', handleCloseTopbnr);
 
 if (localStorage.getItem('topbnr') === 'hidden') {
   document.documentElement.style.setProperty('--h-topbnr', '0px');
-  topbnr.classList.add('topbnr--hide');
+  if (topbnr) topbnr.classList.add('topbnr--hide');
 } else {
   document.documentElement.style.setProperty('--h-topbnr', '50px');
-  topbnr.classList.remove('topbnr--hide');
+  if (topbnr) topbnr.classList.remove('topbnr--hide');
 }
+
+if (!topbnr) document.documentElement.style.setProperty('--h-topbnr', '0px');
 
 
 /***/ }),
@@ -738,7 +743,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  height: 50px;\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav--hide {\n    height: 50px;\n  }\n\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  height: 50px;\n  background-color: var(--c-white);\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav--hide {\n    height: 50px;\n  }\n\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -780,6 +785,7 @@ const handleOpenSidemenu = () => {
   // 최상단으로 이동
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
+  window.tempY = 0;
 
   kakaoWrap.classList.add('kakao-wrap--sidemenu-overlay');
   sidemenu.classList.remove('sidemenu--hide');
@@ -794,16 +800,16 @@ const handleCloseSidemenu = () => {
   sidemenuOverlay.removeEventListener('click', handleCloseSidemenu);
 };
 
-btnOpenSidemenu.addEventListener('click', handleOpenSidemenu);
+if (btnOpenSidemenu) btnOpenSidemenu.addEventListener('click', handleOpenSidemenu);
 
 // 사이드메뉴 버튼
 const btnOpenNumberPopup = document.querySelector('#js-open-popup');
 
 const handleOpenPopup = () => {
-  window.open('https://www.naver.com/', '카카오 이모티콘샵', 'width=600, height=300');
+  window.open('number.html', '카카오 이모티콘샵', 'width=500, height=770');
 };
 
-btnOpenNumberPopup.addEventListener('click', handleOpenPopup);
+if (btnOpenNumberPopup) btnOpenNumberPopup.addEventListener('click', handleOpenPopup);
 
 
 /***/ }),
@@ -831,7 +837,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".search {\n  position: fixed;\n  top: var(--h-topbnr);\n  left: 0;\n  width: 100%;\n  height: 54px;\n  background-color: var(--c-white);\n  z-index: var(--z-search);\n}\n\n.search--hide {\n  display: none;\n}\n\n.search__inner {\n  position: relative;\n  padding: 1rem 5.8rem 1rem 1.8rem;\n}\n\n.search__form {\n  position: relative;\n  height: 34px;\n  padding: 1rem 3.4rem 1rem 1.2rem;\n  background-color: rgba(0, 0, 0, 0.04);\n  border-radius: 8px;\n}\n\n.search__input {\n  width: 100%;\n  height: 100%;\n  background-color: transparent;\n  border: 0;\n  outline: 0;\n}\n\n.search__input::-webkit-search-cancel-button {\n  display: none;\n}\n\n.search-overlay {\n  position: absolute;\n  width: 100%;\n  height: calc(100vh - var(--h-topbnr) - 54px);\n  background-color: var(--bgc-overlay);\n  opacity: 0.3;\n  z-index: var(--z-search-overlay);\n}\n\n.search-overlay--hide {\n  display: none;\n}\n\n@media screen and (min-width: 768px) {\n  .search {\n    position: absolute;\n    top: calc(var(--h-topbnr) + 60px);\n    left: 0;\n    height: 116px;\n    background-color: var(--bgc-section);\n  }\n\n  .search__inner {\n    position: relative;\n    width: 100%;\n    margin: 0 auto;\n    padding: 3rem 10rem;\n  }\n\n  .search__inner::before {\n    position: absolute;\n    top: 0;\n    left: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__inner::after {\n    position: absolute;\n    bottom: 0;\n    right: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__form {\n    position: relative;\n    width: 568px;\n    height: 54px;\n    margin: 0 auto;\n    padding: 0 9rem 0 1.4rem;\n    background-color: var(--c-white);\n    border: 1px solid rgba(0, 0, 0, 0.08);\n    border-radius: 8px;\n  }\n\n  .search__input {\n    width: 100%;\n    height: 100%;\n    font-size: 1.6rem;\n    background-color: transparent;\n    border: 0;\n    outline: 0;\n  }\n\n  .search__input::-webkit-search-cancel-button {\n    display: none;\n  }\n\n  .search-overlay {\n    position: absolute;\n    width: 100%;\n    height: 100vh;\n    background-color: var(--bgc-overlay);\n    opacity: 0.3;\n    z-index: var(--z-search-overlay);\n  }\n}\n\n@media screen and (min-width: 1024px) {\n  .search__inner {\n    width: 944px;\n    margin: 0 auto;\n    padding: 3rem 16.4rem;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".search {\n  position: fixed;\n  top: var(--h-topbnr);\n  left: 0;\n  width: 100%;\n  height: 54px;\n  background-color: var(--c-white);\n  z-index: var(--z-search);\n}\n\n.search--hide {\n  display: none;\n}\n\n.search__inner {\n  position: relative;\n  padding: 1rem 5.8rem 1rem 1.8rem;\n}\n\n.search__form {\n  position: relative;\n  height: 34px;\n  padding: 1rem 3.4rem 1rem 1.2rem;\n  background-color: rgba(0, 0, 0, 0.04);\n  border-radius: 8px;\n}\n\n.search__input {\n  width: 100%;\n  height: 100%;\n  background-color: transparent;\n  border: 0;\n  outline: 0;\n}\n\n.search__input::-webkit-search-cancel-button {\n  display: none;\n}\n\n.search-overlay {\n  position: absolute;\n  top: 50px;\n  width: 100%;\n  height: calc(100vh - var(--h-topbnr) - 54px);\n  background-color: var(--bgc-overlay);\n  opacity: 0.3;\n  z-index: var(--z-search-overlay);\n}\n\n.search-overlay--hide {\n  display: none;\n}\n\n@media screen and (min-width: 768px) {\n  .search {\n    position: absolute;\n    top: calc(var(--h-topbnr) + 60px);\n    left: 0;\n    height: 116px;\n    background-color: var(--bgc-section);\n  }\n\n  .search__inner {\n    position: relative;\n    width: 100%;\n    margin: 0 auto;\n    padding: 3rem 10rem;\n  }\n\n  .search__inner::before {\n    position: absolute;\n    top: 0;\n    left: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__inner::after {\n    position: absolute;\n    bottom: 0;\n    right: 30px;\n    content: '';\n    width: 130px;\n    height: 117px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat;\n    background-size: 130px 117px;\n    z-index: -1;\n  }\n\n  .search__form {\n    position: relative;\n    width: 568px;\n    height: 54px;\n    margin: 0 auto;\n    padding: 0 9rem 0 1.4rem;\n    background-color: var(--c-white);\n    border: 1px solid rgba(0, 0, 0, 0.08);\n    border-radius: 8px;\n  }\n\n  .search__input {\n    width: 100%;\n    height: 100%;\n    font-size: 1.6rem;\n    background-color: transparent;\n    border: 0;\n    outline: 0;\n  }\n\n  .search__input::-webkit-search-cancel-button {\n    display: none;\n  }\n}\n\n@media screen and (min-width: 1024px) {\n  .search__inner {\n    width: 944px;\n    margin: 0 auto;\n    padding: 3rem 16.4rem;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -872,6 +878,7 @@ const handleOpenSearch = () => {
   // 최상단으로 이동
   kakaoWrap.scrollTo(0, 0);
   nav.classList.remove('nav--hide');
+  window.tempY = 0;
 
   kakaoWrap.classList.add('kakao-wrap--search-overlay');
   search.classList.remove('search--hide');
@@ -903,7 +910,7 @@ const onChangeSearch = (e) => {
   else btnRemoveInput.classList.remove('btn-remove--show');
 };
 
-btnOpenSearch.addEventListener('click', handleOpenSearch);
+if (btnOpenSearch) btnOpenSearch.addEventListener('click', handleOpenSearch);
 
 
 /***/ }),
@@ -918,7 +925,7 @@ __webpack_require__.r(__webpack_exports__);
 const nav = document.querySelector('#js-nav');
 const wrap = document.querySelector('#js-kakao-wrap');
 
-let tempY = 0;
+window.tempY = 0;
 
 const handleToggleNav = () => {
   if (window.innerWidth >= 1024) {
@@ -926,7 +933,7 @@ const handleToggleNav = () => {
   } else {
     if (tempY > wrap.scrollTop) {
       nav.classList.remove('nav--hide');
-    } else if (tempY < wrap.scrollTop) {
+    } else if (tempY < wrap.scrollTop && wrap.scrollTop >= 50) {
       nav.classList.add('nav--hide');
     }
     tempY = wrap.scrollTop;
@@ -935,12 +942,12 @@ const handleToggleNav = () => {
 
 const handleResize = () => {
   if (window.innerWidth >= 1024) {
-    nav.classList.remove('nav--hide');
+    if (nav) nav.classList.remove('nav--hide');
   }
 };
 
-window.addEventListener('resize', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(handleResize), 300);
-wrap.addEventListener('wheel', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(handleToggleNav, 300));
+if (window) window.addEventListener('resize', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(handleResize), 300);
+if (wrap) wrap.addEventListener('wheel', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(handleToggleNav, 300));
 
 
 /***/ }),
@@ -973,10 +980,12 @@ const kakaoWrap = document.querySelector('#js-kakao-wrap');
 const btnMovetop = document.querySelector('#js-movetop');
 const nav = document.querySelector('#js-nav');
 
-btnMovetop.addEventListener('click', () => {
-  kakaoWrap.scrollTo(0, 0);
-  nav.classList.remove('nav--hide');
-});
+if (btnMovetop) {
+  btnMovetop.addEventListener('click', () => {
+    kakaoWrap.scrollTo(0, 0);
+    nav.classList.remove('nav--hide');
+  });
+}
 
 
 /***/ }),
@@ -1000,6 +1009,52 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, ".footer__inner {\n  max-width: 1025px;\n  margin: 0 auto;\n  padding: 0 2.4rem;\n  color: var(--fc-text);\n  font-weight: 300;\n}\n\n.footer__service {\n  padding-top: 3rem;\n}\n\n.footer__link-service {\n  display: block;\n  margin-right: 2rem;\n  padding-bottom: 1rem;\n  font-size: 1.3rem;\n}\n\n.footer__desc-service {\n  padding-top: 1rem;\n  font-size: 1.2rem;\n}\n\n.footer__copy {\n  padding: 1rem 0;\n}\n\n.footer__txt-copy {\n  margin: 0 0.4rem;\n}\n\n.footer__check:checked ~ .footer__list-copy {\n  height: 0;\n}\n\n.footer__list-copy {\n  overflow: hidden;\n}\n\n.footer__item-copy {\n  padding-top: 1rem;\n  line-height: 2rem;\n}\n\n.footer__title-copy {\n  display: inline-block;\n  padding-bottom: 0.5rem;\n  color: var(--fc-title);\n  font-weight: 400;\n}\n\n.footer__movetop {\n  text-align: center;\n}\n\n@media screen and (min-width: 1024px) {\n  .footer__link-service {\n    float: left;\n  }\n\n  .footer__desc-service {\n    clear: both;\n  }\n\n  .footer__item-copy {\n    float: left;\n    width: 50%;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 31 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".number-area {\n  width: 100%;\n  height: 100%;\n  padding-top: 50px;\n  background-color: var(--c-white);\n\n  /* Variables */\n  --h-header: 0px;\n  --h-nav: 0px;\n}\n\n.number__header {\n  position: relative;\n  width: 100%;\n  height: 116px;\n  padding-top: 2.4rem;\n  text-align: center;\n  background-color: var(--bgc-kakao);\n}\n\n.number__title {\n  font-size: 1.5rem;\n}\n\n.number__form {\n  padding: 4rem 3rem;\n}\n\n.number__input {\n  width: 100%;\n  padding: 1.2rem 1rem;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  outline: 0;\n}\n\n.number__input::placeholder {\n  color: var(--fc-text);\n}\n\n.number__tit-caution {\n  display: inline-block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n  font-size: 1.7rem;\n}\n\n.number__item-caution {\n  position: relative;\n  margin-top: 1rem;\n  padding-left: 1.5rem;\n  color: var(--fc-text);\n  line-height: 1.8rem;\n  text-align: justify;\n}\n\n.number__item-caution::before {\n  position: absolute;\n  content: '·';\n  left: 3px;\n  top: 0;\n}\n\n.number__button {\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  padding: 2rem 3rem;\n  background-color: var(--c-white);\n}\n\n@media screen and (min-width: 1024px) {\n  .number-area {\n    padding-top: 60px;\n  }\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 32 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_throttle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
+
+
+const inputNumber = document.querySelector('#js-number-input');
+const btnNext = document.querySelector('#js-next');
+
+const onChange = (e) => {
+  if (e.target.value.length >= 10) {
+    btnNext.classList.add('btn-next--active');
+  } else {
+    btnNext.classList.remove('btn-next--active');
+  }
+};
+
+if (inputNumber) inputNumber.addEventListener('input', (0,_lib_throttle__WEBPACK_IMPORTED_MODULE_0__["default"])(onChange, 300));
 
 
 /***/ })
@@ -1146,6 +1201,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26);
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(29);
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_footer__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _screens_number__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(32);
 // Stylesheet
 
 
@@ -1157,6 +1213,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Screens
+
 
 })();
 

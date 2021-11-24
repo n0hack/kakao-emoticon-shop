@@ -6,12 +6,14 @@ const handleCloseTopbnr = () => {
   topbnr.classList.add('topbnr--hide');
   document.documentElement.style.setProperty('--h-topbnr', '0px');
 };
-btnCloseTopbnr.addEventListener('click', handleCloseTopbnr);
+if (btnCloseTopbnr) btnCloseTopbnr.addEventListener('click', handleCloseTopbnr);
 
 if (localStorage.getItem('topbnr') === 'hidden') {
   document.documentElement.style.setProperty('--h-topbnr', '0px');
-  topbnr.classList.add('topbnr--hide');
+  if (topbnr) topbnr.classList.add('topbnr--hide');
 } else {
   document.documentElement.style.setProperty('--h-topbnr', '50px');
-  topbnr.classList.remove('topbnr--hide');
+  if (topbnr) topbnr.classList.remove('topbnr--hide');
 }
+
+if (!topbnr) document.documentElement.style.setProperty('--h-topbnr', '0px');
