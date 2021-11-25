@@ -109,7 +109,7 @@
           </button>
         </div>
         <!-- NAV : GNB -->
-        <nav id="js-nav" class="nav">
+        <nav id="js-nav" class="nav nav--fixed">
           <h2 class="screen-out">카카오 이모티콘샵 메인메뉴</h2>
           <ul class="nav__list">
             <li class="nav__item nav__item--on"><a href="index.html" class="nav__link">홈</a></li>
@@ -145,7 +145,133 @@
       </header>
       <!-- MAIN -->
       <main id="js-main" class="main">
-        <div class="test"></div>
+        <div class="faq">
+          <section class="faq-top">
+            <h2 class="faq__title">자주묻는 질문</h2>
+            <div class="faq__area-tab">
+              <ul id="js-faq-tab" class="faq__list-tab">
+                <li class="faq__item-tab faq__item-tab--on"><button class="btn-tab" data-category="info">서비스안내</button></li>
+                <li class="faq__item-tab"><button class="btn-tab" data-category="etc">기타</button></li>
+              </ul>
+            </div>
+            <img class="faq__image" src="https://t1.kakaocdn.net/estoreweb/images/20210517141516/img_faq.png" alt="자주묻는 질문" />
+          </section>
+          <section class="faq-main">
+            <strong class="screen-out">자주묻는 질문 메뉴별 본문</strong>
+            <ul class="faq__list-faq on">
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  '할인쿠폰'의 사용시 유의사항이 궁금합니다
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  '할인쿠폰'은 어떻게 받을 수 있나요?
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  '할인쿠폰'의 사용방법이 궁금합니다
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  '카카오 이모티콘샵'에서 판매하는 상품은 어떤 것들이 있나요?
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  카카오 이모티콘샵에서 제공하는 결제수단은 어떤 것들이 있나요?
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  카카오 이모티콘샵은 어느 나라에서 이용할 수 있나요?
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  '카카오 이모티콘샵'은 어떻게 이용하나요?
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul class="faq__list-faq">
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  결제취소/환불 요청시 이모티콘 할인쿠폰은 다시 돌려받을 수 있나요?
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+              <li class="faq__item-faq">
+                <button id="js-oepn-faq" class="btn-faq">
+                  이모티콘 할인쿠폰을 다른 사람에게 양도해도 되나요?
+                  <span class="ico-common ico-faq-open"></span>
+                </button>
+                <div class="faq__desc">
+                  <p class="faq__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi dolores laudantium culpa ducimus veniam debitis numquam minima, nostrum tempora nam non dolorum voluptatum.
+                    Molestiae vero nesciunt aliquid ipsa omnis.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
       </main>
       <!-- FOOTER -->
       <footer class="footer">

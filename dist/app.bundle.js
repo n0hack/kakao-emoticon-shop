@@ -364,7 +364,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_profile_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(33);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(30);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(31);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_screens_faq_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(35);
 // Imports
+
 
 
 
@@ -392,8 +394,9 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_search
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_profile_css__WEBPACK_IMPORTED_MODULE_11__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_footer_css__WEBPACK_IMPORTED_MODULE_12__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_screens_number_css__WEBPACK_IMPORTED_MODULE_13__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_screens_faq_css__WEBPACK_IMPORTED_MODULE_14__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Base */\n/* Component */\n/* Screen */\n.kakao-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  overflow: overlay;\n  z-index: var(--z-wrap); }\n\n.kakao-wrap::-webkit-scrollbar {\n  width: 14px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb:hover {\n  width: 20px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.4);\n  background-clip: padding-box;\n  border: 3px solid transparent;\n  border-radius: 10px;\n  transition: all 5s ease; }\n\n.kakao-wrap--sidemenu-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.kakao-wrap--search-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.screen-out {\n  position: absolute;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  text-indent: -9999px; }\n\n.main {\n  position: relative;\n  width: 100%;\n  height: 200vh;\n  padding-top: calc(var(--h-topbnr) + var(--h-header) + var(--h-nav));\n  z-index: var(--z-main); }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Base */\n/* Component */\n/* Screen */\n.kakao-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  overflow: overlay;\n  z-index: var(--z-wrap); }\n\n.kakao-wrap::-webkit-scrollbar {\n  width: 14px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb:hover {\n  width: 20px; }\n\n.kakao-wrap::-webkit-scrollbar-thumb {\n  background-color: rgba(0, 0, 0, 0.4);\n  background-clip: padding-box;\n  border: 3px solid transparent;\n  border-radius: 10px;\n  transition: all 5s ease; }\n\n.kakao-wrap--sidemenu-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.kakao-wrap--search-overlay {\n  max-height: 100vh;\n  overflow: hidden; }\n\n.screen-out {\n  position: absolute;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  text-indent: -9999px; }\n\n.main {\n  position: relative;\n  width: 100%;\n  padding-top: calc(var(--h-topbnr) + var(--h-header) + var(--h-nav));\n  z-index: var(--z-main);\n  background-color: var(--bgc-section);\n  overflow: hidden; }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -564,7 +567,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Common */\n.ico-common {\n  display: inline-block;\n  color: transparent;\n  font-size: 1px;\n  overflow: hidden;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n  background-size: 830px 230px;\n}\n\n/* Topbnr */\n.ico-closew {\n  width: 12px;\n  height: 12px;\n  background-position: -700px -40px;\n}\n\n/* Sidemenu */\n.ico-mymenu-new {\n  position: absolute;\n  top: -3px;\n  left: 50%;\n  width: 15px;\n  height: 15px;\n  margin-left: 0.6rem;\n  background-position: -330px -30px;\n}\n\n.ico-buy {\n  width: 30px;\n  height: 30px;\n  background-position: -210px -60px;\n}\n\n.ico-gift {\n  width: 30px;\n  height: 30px;\n  background-position: -240px -60px;\n}\n\n.ico-coupon {\n  width: 30px;\n  height: 30px;\n  background-position: -270px -60px;\n}\n\n.ico-good {\n  width: 30px;\n  height: 30px;\n  background-position: -300px -60px;\n}\n\n.ico-sidelogo {\n  width: 136px;\n  height: 20px;\n  background-position: -210px -90px;\n}\n\n/* Header */\n.ico-menu {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -210px -30px;\n}\n\n.ico-new {\n  position: absolute;\n  top: 13px;\n  right: 4px;\n  width: 4px;\n  height: 4px;\n  background-color: #fa4637;\n  border-radius: 50%;\n}\n\n.ico-logo {\n  position: absolute;\n  left: calc(50% - 81px);\n  top: calc(50% - 12px);\n  width: 163px;\n  height: 24px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -210px 0;\n}\n\n.ico-search {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -260px -30px;\n}\n\n.ico-remove {\n  width: 15px;\n  height: 15px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -350px -90px;\n}\n\n.ico-copy {\n  width: 9px;\n  height: 9px;\n  background-position: -310px -30px;\n}\n\n.ico-arr {\n  width: 7px;\n  height: 6px;\n  background-position: -300px -30px;\n}\n\n.footer__check:checked + .footer__link-copy .ico-arr {\n  transform: rotateX(180deg);\n}\n\n.ico-movetop {\n  width: 44px;\n  height: 44px;\n  background-position: -350px -30px;\n}\n\n.ico-card {\n  position: absolute;\n  top: 60px;\n  left: 50%;\n  width: 75px;\n  height: 75px;\n  background-position: 0px 0px;\n  transform: translateX(-50%);\n}\n\n@media screen and (min-width: 768px) {\n  .ico-menu {\n    background-position: -210px -30px;\n  }\n\n  .ico-logo {\n    left: calc(50% - 95px);\n    top: calc(50% - 14px);\n    width: 190px;\n    height: 28px;\n    background-position: -210px 0;\n  }\n\n  .ico-new {\n    top: 18px;\n    right: 6px;\n    background-color: #fa4637;\n  }\n\n  .ico-search {\n    background-position: -260px -30px;\n  }\n\n  .ico-remove {\n    width: 20px;\n    height: 20px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: -350px -90px;\n  }\n\n  .btn-remove:hover .ico-remove {\n    background-position: -390px -90px;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Common */\n.ico-common {\n  display: inline-block;\n  color: transparent;\n  font-size: 1px;\n  overflow: hidden;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n  background-size: 830px 230px;\n}\n\n/* Topbnr */\n.ico-closew {\n  width: 12px;\n  height: 12px;\n  background-position: -700px -40px;\n}\n\n/* Sidemenu */\n.ico-mymenu-new {\n  position: absolute;\n  top: -3px;\n  left: 50%;\n  width: 15px;\n  height: 15px;\n  margin-left: 0.6rem;\n  background-position: -330px -30px;\n}\n\n.ico-buy {\n  width: 30px;\n  height: 30px;\n  background-position: -210px -60px;\n}\n\n.ico-gift {\n  width: 30px;\n  height: 30px;\n  background-position: -240px -60px;\n}\n\n.ico-coupon {\n  width: 30px;\n  height: 30px;\n  background-position: -270px -60px;\n}\n\n.ico-good {\n  width: 30px;\n  height: 30px;\n  background-position: -300px -60px;\n}\n\n.ico-sidelogo {\n  width: 136px;\n  height: 20px;\n  background-position: -210px -90px;\n}\n\n/* Header */\n.ico-menu {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -210px -30px;\n}\n\n.ico-new {\n  position: absolute;\n  top: 13px;\n  right: 4px;\n  width: 4px;\n  height: 4px;\n  background-color: #fa4637;\n  border-radius: 50%;\n}\n\n.ico-logo {\n  position: absolute;\n  left: calc(50% - 81px);\n  top: calc(50% - 12px);\n  width: 163px;\n  height: 24px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -210px 0;\n}\n\n.ico-search {\n  position: absolute;\n  left: calc(50% - 12px);\n  top: calc(50% - 12px);\n  width: 24px;\n  height: 24px;\n  background-position: -260px -30px;\n}\n\n.ico-remove {\n  width: 15px;\n  height: 15px;\n  background-image: url(https://t1.kakaocdn.net/estoreweb/images/20210728172518/m/ico_comm_201125.png);\n  background-position: -350px -90px;\n}\n\n.ico-copy {\n  width: 9px;\n  height: 9px;\n  background-position: -310px -30px;\n}\n\n.ico-arr {\n  width: 7px;\n  height: 6px;\n  background-position: -300px -30px;\n}\n\n.footer__check:checked + .footer__link-copy .ico-arr {\n  transform: rotateX(180deg);\n}\n\n.ico-movetop {\n  width: 44px;\n  height: 44px;\n  background-position: -350px -30px;\n}\n\n.ico-card {\n  position: absolute;\n  top: 60px;\n  left: 50%;\n  width: 75px;\n  height: 75px;\n  background-position: 0px 0px;\n  transform: translateX(-50%);\n}\n\n.ico-faq-open {\n  position: absolute;\n  right: 25px;\n  top: 23px;\n  width: 14px;\n  height: 9px;\n  background-position: 0 -80px;\n  transform: rotateX(180deg);\n}\n\nli.on .ico-faq-open {\n  transform: rotateX(0deg);\n}\n\n@media screen and (min-width: 768px) {\n  .ico-menu {\n    background-position: -210px -30px;\n  }\n\n  .ico-logo {\n    left: calc(50% - 95px);\n    top: calc(50% - 14px);\n    width: 190px;\n    height: 28px;\n    background-position: -210px 0;\n  }\n\n  .ico-new {\n    top: 18px;\n    right: 6px;\n    background-color: #fa4637;\n  }\n\n  .ico-search {\n    background-position: -260px -30px;\n  }\n\n  .ico-remove {\n    width: 20px;\n    height: 20px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: -350px -90px;\n  }\n\n  .btn-remove:hover .ico-remove {\n    background-position: -390px -90px;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -610,7 +613,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-logout {\n  width: 100%;\n  padding: 1.4rem 0;\n  font-size: 1.2rem;\n  background-color: var(--c-white);\n  border-top: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.btn-search {\n  display: none;\n}\n\n.btn-movetop {\n  margin: 2rem 0;\n}\n\n.btn-next {\n  width: 100%;\n  height: 50px;\n  color: rgba(0, 0, 0, 0.2);\n  background-color: rgba(0, 0, 0, 0.08);\n  border-radius: 8px;\n}\n\n.btn-next--active {\n  color: var(--fc-title);\n  background-color: var(--bgc-kakao);\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n\n@media screen and (min-width: 1024px) {\n  .btn-logout:hover {\n    background-color: rgba(0, 0, 0, 0.02);\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".btn-close-topbnr {\n  position: absolute;\n  top: 0;\n  right: 5px;\n  width: 40px;\n  height: 100%;\n}\n\n.btn-open-sidemenu,\n.btn-open-search {\n  position: relative;\n  width: 40px;\n}\n\n.btn-open-profile {\n  width: 48px;\n  display: none;\n}\n\n.btn-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: none;\n  padding: 1rem 0.7rem;\n}\n\n.btn-remove--show {\n  display: block;\n}\n\n.btn-cancel {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 56px;\n  line-height: 5.4rem;\n}\n\n.btn-logout {\n  width: 100%;\n  padding: 1.4rem 0;\n  font-size: 1.2rem;\n  background-color: var(--c-white);\n  border-top: 1px solid rgba(0, 0, 0, 0.08);\n}\n\n.btn-search {\n  display: none;\n}\n\n.btn-movetop {\n  margin: 2rem 0;\n}\n\n.btn-next {\n  width: 100%;\n  height: 50px;\n  color: rgba(0, 0, 0, 0.2);\n  background-color: rgba(0, 0, 0, 0.08);\n  border-radius: 8px;\n}\n\n.btn-next--active {\n  color: var(--fc-title);\n  background-color: var(--bgc-kakao);\n}\n\n.btn-tab {\n  background-color: var(--c-white);\n  padding: 0.6rem 1.4rem;\n  border: 1px solid rgba(0, 0, 0, 0.08);\n  border-radius: 2rem;\n}\n\n.faq__item-tab--on .btn-tab {\n  color: #fff;\n  font-weight: 500;\n  background-color: #3b3b3b;\n}\n\n.btn-faq {\n  text-align: left;\n  padding: 0 4rem 0 2rem;\n  width: 100%;\n  height: 55px;\n  font-size: 1.5rem;\n  background-color: #fff;\n}\n\n.faq__item-faq.on .btn-faq {\n  font-weight: bold;\n}\n\n@media screen and (min-width: 768px) {\n  .btn-close-topbnr,\n  .btn-open-sidemenu,\n  .btn-open-search {\n    width: 44px;\n  }\n\n  .btn-open-profile {\n    display: block;\n  }\n\n  .btn-remove {\n    position: absolute;\n    top: 0;\n    right: 50px;\n    padding: 1.6rem 0.7rem;\n  }\n\n  .btn-cancel {\n    display: none;\n  }\n\n  .btn-search {\n    position: absolute;\n    top: 0;\n    right: 13px;\n    display: block;\n    width: 44px;\n    height: 100%;\n  }\n}\n\n@media screen and (min-width: 1024px) {\n  .btn-logout:hover {\n    background-color: rgba(0, 0, 0, 0.02);\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -746,7 +749,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  position: relative;\n  top: 0;\n  height: 50px;\n  background-color: var(--c-white);\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav--hide {\n    height: 50px;\n  }\n\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav {\n  position: relative;\n  top: 0;\n  height: 50px;\n  background-color: var(--c-white);\n  overflow: hidden;\n  z-index: var(--z-nav);\n  transition: height 0.3s ease;\n}\n\n.nav--hide {\n  height: 0;\n}\n\n.nav--fixed {\n  height: 50px;\n}\n\n.nav__list {\n  max-width: 616px;\n  margin: 0 auto;\n  clear: both;\n}\n\n.nav__item {\n  width: 25%;\n  float: left;\n}\n\n.nav__link {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  color: var(--fc-text);\n  font-size: 1.5rem;\n  text-align: center;\n  line-height: 5rem;\n}\n\n.nav__item--on .nav__link {\n  color: var(--fc-title);\n  font-weight: bold;\n}\n\n.nav__item--on .nav__link::after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background-color: #191919;\n}\n\n@media screen and (min-width: 1024px) {\n  .nav--hide {\n    height: 50px;\n  }\n\n  .nav__item:hover .nav__link {\n    color: var(--fc-title);\n    font-weight: bold;\n  }\n\n  .nav__item:hover .nav__link::after {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    content: '';\n    width: 100%;\n    height: 2px;\n    background-color: #191919;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1130,6 +1133,228 @@ if (profile) document.addEventListener('click', handleCloseProfile);
 if (profile) window.addEventListener('resize', handleProfileResize);
 
 
+/***/ }),
+/* 35 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".faq {\n  background-color: var(--bgc-section);\n}\n\n.faq-top {\n  position: relative;\n}\n\n.faq__title {\n  padding: 3rem 2rem 0;\n}\n\n.faq__area-tab {\n  padding: 1.5rem 0;\n}\n\n.faq__list-tab {\n  transform: translateX(0px);\n  white-space: nowrap;\n  -webkit-overflow-scrolling: touch;\n}\n\n.out-left {\n  transition: transform 0.3s ease;\n}\n\n.faq__item-tab {\n  display: inline-block;\n  padding-right: 0.8rem;\n}\n\n.faq__item-tab:first-child {\n  padding-left: 2rem;\n}\n\n.faq__image {\n  display: none;\n  position: absolute;\n  right: 40px;\n  bottom: 0;\n  width: 90px;\n}\n\n.faq__list-faq {\n  padding: 1rem;\n  padding-top: 0;\n  display: none;\n}\n\n.faq__item-faq {\n  position: relative;\n  width: 100%;\n  margin-bottom: 0.8rem;\n}\n\n.faq__desc {\n  background-color: #fff;\n  height: 0;\n  overflow: hidden;\n}\n\n.faq__text {\n  text-align: justify;\n  line-height: 1.8rem;\n  color: var(--fc-text);\n}\n\n.faq__item-faq.on .faq__desc {\n  padding: 1rem;\n  padding-top: 0;\n  height: 100%;\n}\n\n.faq__list-faq.on {\n  display: block;\n}\n\n@media screen and (min-width: 768px) {\n  .faq {\n    padding: 4rem;\n    max-width: 1024px;\n    margin: 0 auto;\n  }\n\n  .faq__list-tab {\n    margin-top: 1.7rem;\n  }\n\n  .faq__title {\n    font-size: 2.4rem;\n  }\n\n  .faq__image {\n    display: block;\n  }\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 36 */
+/***/ (() => {
+
+const tabFAQ = document.querySelector('#js-faq-tab');
+const tabFAQItems = [...tabFAQ.children];
+const allItemWidth = [...tabFAQ.children].reduce((cur, acc) => {
+  return cur + acc.clientWidth;
+}, 0);
+const listFAQ = document.querySelectorAll('.faq__list-faq');
+const itemFAQ = document.querySelectorAll('#js-oepn-faq');
+
+let startX;
+let now;
+let wrapperWidth = tabFAQ.clientWidth;
+let evented;
+
+// function addDragScroll(element, selector, padding) {
+//   console.log(2131);
+//   const allItemsWidth = [...element.children].reduce((cur, acc) => cur + acc.ClientWidth, 0);
+//   let wrapperWidth = element.clientWidth;
+//   let startX;
+//   let elementX;
+
+//   const dargStart = (e) => {
+//     elementX = Number(element.style.transform.replace(/[^-\d]/g, ''));
+//     if (e.target.closest(selector)) {
+//       startX = e.x;
+//     }
+//     window.addEventListener('mousemove', dragMove);
+//     window.addEventListener('mouseup', dragFinish);
+//   };
+
+//   const dragMove = (e) => {
+//     if (e.x > startX) {
+//       element.style.transform = `translateX(${elementX + Math.abs(startX - e.x)}px)`;
+//     } else if (e.x < startX) {
+//       element.style.transform = `translateX(${elementX - Math.abs(startX - e.x)}px)`;
+//     }
+//   };
+
+//   const dragFinish = () => {
+//     const movable = wrapperWidth - allItemsWidth;
+//     elementX = Number(element.style.transform.replace(/[^-\d]/g, ''));
+
+//     if (elementX !== 0 && allItemsWidth <= wrapperWidth) {
+//       element.classList.add('out-left');
+//       element.style.transform = `translateX(0px)`;
+//       setTimeout(() => {
+//         element.classList.remove('out-left');
+//       }, 300);
+//     } else if (allItemsWidth > wrapperWidth) {
+//       if (elementX > 0) {
+//         element.classList.add('out-left');
+//         element.style.transform = `translateX(0px)`;
+//         setTimeout(() => {
+//           element.classList.remove('out-left');
+//         }, 300);
+//       } else if (elementX < movable - padding) {
+//         element.classList.add('out-left');
+//         element.style.transform = `translateX(${movable - padding}px)`;
+//         setTimeout(() => {
+//           element.classList.remove('out-left');
+//         }, 300);
+//       }
+//     }
+//     window.removeEventListener('mousemove', dragMove);
+//     window.removeEventListener('mouseup', dragFinish);
+//   };
+// }
+
+// addDragScroll(tabFAQ, '#js-faq-tab', 28);
+
+// function removeDragScroll(element) {}
+
+const handleDragStart = (e) => {
+  now = Number(tabFAQ.style.transform.replace(/[^-\d]/g, ''));
+  if (e.target.closest('#js-faq-tab')) {
+    startX = e.x;
+    window.addEventListener('mousemove', handleDragSlide);
+    window.addEventListener('mouseup', handleDragFinish);
+  }
+};
+
+const handleDragSlide = (e) => {
+  if (e.x > startX) {
+    tabFAQ.style.transform = `translateX(${now + Math.abs(startX - e.x)}px)`;
+  } else if (e.x < startX) {
+    tabFAQ.style.transform = `translateX(${now - Math.abs(startX - e.x)}px)`;
+  }
+};
+
+const handleDragFinish = (e) => {
+  window.removeEventListener('mousemove', handleDragSlide);
+  window.removeEventListener('mouseup', handleDragFinish);
+  now = Number(tabFAQ.style.transform.replace(/[^-\d]/g, ''));
+
+  // 조건 추가하긴 해야 함 (더 길 때)
+  if (now !== 0 && allItemWidth <= wrapperWidth) {
+    tabFAQ.classList.add('out-left');
+    tabFAQ.style.transform = `translateX(0px)`;
+    setTimeout(() => {
+      tabFAQ.classList.remove('out-left');
+    }, 300);
+  } else if (allItemWidth > wrapperWidth) {
+    if (now > 0) {
+      tabFAQ.classList.add('out-left');
+      tabFAQ.style.transform = `translateX(0px)`;
+      setTimeout(() => {
+        tabFAQ.classList.remove('out-left');
+      }, 300);
+      // 래퍼 - 요소 총 길이 - 좌우 끝 패딩
+    } else if (now < wrapperWidth - allItemWidth - 28) {
+      tabFAQ.classList.add('out-left');
+      tabFAQ.style.transform = `translateX(${wrapperWidth - allItemWidth - 28}px)`;
+      setTimeout(() => {
+        tabFAQ.classList.remove('out-left');
+      }, 300);
+    }
+  }
+};
+
+const handleResize = () => {
+  if (now !== 0 && allItemWidth <= wrapperWidth) {
+    tabFAQ.classList.add('out-left');
+    tabFAQ.style.transform = `translateX(0px)`;
+    setTimeout(() => {
+      tabFAQ.classList.remove('out-left');
+    }, 300);
+  } else if (allItemWidth > wrapperWidth) {
+    now = Number(tabFAQ.style.transform.replace(/[^-\d]/g, ''));
+    if (now > 0) {
+      tabFAQ.classList.add('out-left');
+      tabFAQ.style.transform = `translateX(0px)`;
+      setTimeout(() => {
+        tabFAQ.classList.remove('out-left');
+      }, 300);
+      // 래퍼 - 요소 총 길이 - 좌우 끝 패딩
+    } else if (now < wrapperWidth - allItemWidth - 28) {
+      tabFAQ.classList.add('out-left');
+      tabFAQ.style.transform = `translateX(${wrapperWidth - allItemWidth - 28}px)`;
+      setTimeout(() => {
+        tabFAQ.classList.remove('out-left');
+      }, 300);
+    }
+  }
+  wrapperWidth = tabFAQ.clientWidth;
+
+  if (window.innerWidth > 768) {
+    if (evented !== false) {
+      window.removeEventListener('mousedown', handleDragStart);
+      // window.removeEventListener('mousemove', handleDragSlide);
+      // window.removeEventListener('mouseup', handleDragFinish);
+      evented = false;
+    }
+  } else {
+    if (evented === false) {
+      window.addEventListener('mousedown', handleDragStart);
+      // window.addEventListener('mousemove', handleDragSlide);
+      // window.addEventListener('mouseup', handleDragFinish);
+      evented = true;
+    }
+  }
+};
+
+if (window.innerWidth < 768) {
+  window.addEventListener('mousedown', handleDragStart);
+  evented = true;
+} else {
+  evented = false;
+}
+window.addEventListener('resize', handleResize);
+
+tabFAQ.addEventListener('click', (e) => {
+  if (window.innerWidth > 767 || e.x === startX) {
+    switch (e.target.dataset.category) {
+      case 'info':
+        tabFAQItems.forEach((e) => e.classList.remove('faq__item-tab--on'));
+        tabFAQItems[0].classList.add('faq__item-tab--on');
+        listFAQ.forEach((e) => e.classList.remove('on'));
+        listFAQ[0].classList.add('on');
+        break;
+      case 'etc':
+        tabFAQItems.forEach((e) => e.classList.remove('faq__item-tab--on'));
+        tabFAQItems[1].classList.add('faq__item-tab--on');
+        listFAQ.forEach((e) => e.classList.remove('on'));
+        listFAQ[1].classList.add('on');
+        break;
+    }
+  }
+});
+
+itemFAQ.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.target.closest('li').classList.toggle('on');
+  });
+});
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -1277,6 +1502,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(29);
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_footer__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _screens_number__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(32);
+/* harmony import */ var _screens_faq__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(36);
+/* harmony import */ var _screens_faq__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_screens_faq__WEBPACK_IMPORTED_MODULE_8__);
 // Stylesheet
 
 
@@ -1289,6 +1516,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Screens
+
 
 
 })();

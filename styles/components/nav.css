@@ -12,6 +12,10 @@
   height: 0;
 }
 
+.nav--fixed {
+  height: 50px;
+}
+
 .nav__list {
   max-width: 616px;
   margin: 0 auto;

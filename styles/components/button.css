@@ -66,6 +66,32 @@
   background-color: var(--bgc-kakao);
 }
 
+.btn-tab {
+  background-color: var(--c-white);
+  padding: 0.6rem 1.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+}
+
+.faq__item-tab--on .btn-tab {
+  color: #fff;
+  font-weight: 500;
+  background-color: #3b3b3b;
+}
+
+.btn-faq {
+  text-align: left;
+  padding: 0 4rem 0 2rem;
+  width: 100%;
+  height: 55px;
+  font-size: 1.5rem;
+  background-color: #fff;
+}
+
+.faq__item-faq.on .btn-faq {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .btn-close-topbnr,
   .btn-open-sidemenu,

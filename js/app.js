@@ -11,3 +11,4 @@ import './components/footer';
 
 // Screens
 import './screens/number';
+import './screens/faq';
