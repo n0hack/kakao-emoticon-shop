@@ -1,2 +1,4 @@
-/node_modules
-/bak
+
+# Bakup Files
+**/0_bak
+**/0_bak2
