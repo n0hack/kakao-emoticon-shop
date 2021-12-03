@@ -2,3 +2,6 @@
 # Bakup Files
 **/0_bak
 **/0_bak2
+
+# Packages
+**/node_modules

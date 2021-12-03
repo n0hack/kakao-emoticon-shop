@@ -1,0 +1,8 @@
+{
+  "name": "kakao-emoticon-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/n0hack/kakao-emoticon-shop.git",
+  "author": "n0hack <nohack-@naver.com>",
+  "license": "MIT"
+}
