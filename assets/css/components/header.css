@@ -344,8 +344,10 @@
   top: calc(var(--h-topbnr) + var(--h-header));
   left: 0;
   width: 100%;
+  height: var(--h-nav);
   background: #fff;
   z-index: var(--z-nav);
+  transition: none;
 }
 
 .nav__inner {
@@ -359,7 +361,6 @@
 
 .nav__item {
   width: 25%;
-  height: var(--h-nav);
 }
 
 .nav__link {
@@ -405,6 +406,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  .nav {
+    transition: transform 0.3s ease;
+  }
+
+  .nav--hide {
+    transform: translateY(calc(0px - var(--h-nav)));
+  }
+
   .nav__link {
     font-size: 1.5rem;
   }

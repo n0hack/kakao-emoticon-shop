@@ -15,8 +15,11 @@
 
 .kakao-wrap {
   position: relative;
-  /* max-height: 100vh;
-  overflow: hidden; */
+}
+
+.kakao-wrap--overlaid {
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .screen-out {
