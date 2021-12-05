@@ -5,9 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카카오 이모티콘샵</title>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <div class="wrap">
+      <!-- Top Banner -->
+      <aside class="topbnr">
+        <div class="topbnr__inner">
+          <a class="topbnr__link" href="https://my.kakao.com/product/EMOTICON001?t_src=emoticon&t_ch=webstore&t_obj=web_gnb_banner" target="_blank" rel="noopener noreferrer">
+            <span class="topbnr__text">월 3,900원 이모티콘 무제한</span>
+            <img class="topbnr__image" src="../assets/images/ico-top-banner.png" alt="탑 배너 아이콘" />
+          </a>
+        </div>
+        <button class="btn-close-topbnr" aria-label="탑 배너 닫기">
+          <span class="ico-common ico-close-topbnr"></span>
+        </button>
+      </aside>
+      <!-- Header -->
+      <header class="header"></header>
+      <!-- Main -->
+      <main class="main">
+        <div class="home">
+          <div class="home__slick">
+            <div class="home__slide">
+              <a href="#">
+                <img class="home__banner" src="../assets/images/banner-1.gif" alt="첫 번째 메인 배너" />
+              </a>
+            </div>
+            <div class="home__slide">
+              <a href="#">
+                <img class="home__banner" src="../assets/images/banner-2.gif" alt="두 번째 메인 배너" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer"></footer>
+    </div>
     <!-- Scripts -->
-    <script src="../dist/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/top-banner.js"></script>
+    <script src="../assets/js/app.js"></script>
   </body>
 </html>

@@ -1,9 +1,13 @@
 /* Common */
-@import './reset.css';
-@import './variable.css';
+@import "./reset.css";
+@import "./variable.css";
 
 /* Fonts */
 
 /* Components */
+@import "./components/top-banner.css";
+@import "./components/button.css";
+@import "./components/icon.css";
 
 /* Pages */
+@import "./pages/home.css";

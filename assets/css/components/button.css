@@ -1,0 +1,14 @@
+/* Top Banner */
+.btn-close-topbnr {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  width: 56px;
+  height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-close-topbnr {
+    width: 28px;
+  }
+}

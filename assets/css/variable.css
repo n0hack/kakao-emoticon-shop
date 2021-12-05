@@ -1,0 +1,8 @@
+:root {
+  /* color */
+  --c-title: #191919;
+  --c-content: #808080;
+
+  /* z-index */
+  --z-top-banner: 1000;
+}

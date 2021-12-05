@@ -1,0 +1,45 @@
+/* Slick Slider */
+.home__slide[data-slick-index="0"] {
+  background-color: #ff997a;
+}
+
+.home__slide[data-slick-index="1"] {
+  background-color: #303030;
+}
+
+.home__slide[data-slick-index="2"] {
+  background-color: #ff997a;
+}
+
+.home__banner {
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+}
+
+.slick-dots {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.slick-dots button {
+  width: 8px;
+  height: 8px;
+  color: transparent;
+  background-color: rgba(0, 0, 0, 0.08);
+  border: 0;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  background-color: #3b3b3b;
+}
+
+@media screen and (max-width: 767px) {
+  .slick-dots button {
+    width: 6px;
+    height: 6px;
+  }
+}
