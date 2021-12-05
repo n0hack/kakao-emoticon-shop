@@ -1,13 +1,17 @@
+.home {
+  height: 300vh;
+}
+
 /* Slick Slider */
-.home__slide[data-slick-index="0"] {
+.home__slide[data-slick-index='0'] {
   background-color: #ff997a;
 }
 
-.home__slide[data-slick-index="1"] {
+.home__slide[data-slick-index='1'] {
   background-color: #303030;
 }
 
-.home__slide[data-slick-index="2"] {
+.home__slide[data-slick-index='2'] {
   background-color: #ff997a;
 }
 

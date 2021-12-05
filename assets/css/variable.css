@@ -3,6 +3,30 @@
   --c-title: #191919;
   --c-content: #808080;
 
+  /* height */
+  --h-header: 60px;
+  --h-nav: 50px;
+
   /* z-index */
   --z-top-banner: 1000;
+  --z-header: 1;
+  --z-header-inner: 300;
+  --z-sidemenu: 610;
+  --z-sidemenu-overlay: 600;
+  --z-search: 210;
+  --z-search-overlay: 200;
+  --z-profile: 500;
+  --z-nav: 400;
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    /* height */
+    --h-header: 50px;
+    --h-nav: 44px;
+
+    /* z-index */
+    --z-search: 510;
+    --z-search-overlay: 500;
+  }
 }

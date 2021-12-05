@@ -1,13 +1,29 @@
 /* Common */
-@import "./reset.css";
-@import "./variable.css";
+@import './reset.css';
+@import './variable.css';
 
 /* Fonts */
 
 /* Components */
-@import "./components/top-banner.css";
-@import "./components/button.css";
-@import "./components/icon.css";
+@import './components/top-banner.css';
+@import './components/header.css';
+@import './components/button.css';
+@import './components/icon.css';
 
 /* Pages */
-@import "./pages/home.css";
+@import './pages/home.css';
+
+.kakao-wrap {
+  position: relative;
+  /* max-height: 100vh;
+  overflow: hidden; */
+}
+
+.screen-out {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}

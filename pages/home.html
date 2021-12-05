@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <div class="wrap">
+    <div class="kakao-wrap">
       <!-- Top Banner -->
       <aside class="topbnr">
         <div class="topbnr__inner">
@@ -20,11 +20,122 @@
           </a>
         </div>
         <button class="btn-close-topbnr" aria-label="탑 배너 닫기">
-          <span class="ico-common ico-close-topbnr"></span>
+          <span class="ico-common ico-close"></span>
         </button>
       </aside>
       <!-- Header -->
-      <header class="header"></header>
+      <header class="header">
+        <div class="header__inner">
+          <button class="btn-open-sidemenu" aria-label="사이드메뉴 열기">
+            <span class="ico-common ico-menu"></span>
+            <span class="ico-menu-new"></span>
+          </button>
+          <h1 class="header__title">
+            <a class="header__link" href="#">
+              <span class="ico-common ico-logo">카카오 이모티콘샵</span>
+            </a>
+          </h1>
+          <button class="btn-open-search" aria-label="검색 열기">
+            <span class="ico-common ico-search"></span>
+          </button>
+          <button class="btn-open-profile" aria-label="사용자 프로필 열기">
+            <img src="../assets/images/profile.png" alt="사용자 프로필" />
+          </button>
+        </div>
+        <!-- Sidemenu -->
+        <div class="sidemenu sidemenu--hide">
+          <div class="sidemenu__inner">
+            <div class="sidemenu__profile">
+              <img class="sidemenu__profile__image" src="../assets/images/profile.png" alt="사용자 프로필" />
+              <div class="sidemenu__profile__info">
+                <span class="sidemenu__profile__name">전지지</span><br />
+                <span class="sidemenu__profile__email">nohack@kakao.com</span>
+              </div>
+            </div>
+            <ul class="sidemenu__mypage">
+              <li class="sidemenu__mypage__item">
+                <a class="sidemenu__mypage__link" href="#">
+                  <span class="ico-common ico-buy"></span>
+                  <span class="sidemenu__mypage__text">구매내역</span>
+                </a>
+              </li>
+              <li class="sidemenu__mypage__item">
+                <a class="sidemenu__mypage__link" href="#">
+                  <span class="ico-common ico-gift"></span>
+                  <span class="sidemenu__mypage__text">선물함</span>
+                </a>
+              </li>
+              <li class="sidemenu__mypage__item">
+                <a class="sidemenu__mypage__link" href="#">
+                  <span class="ico-common ico-new"></span>
+                  <span class="ico-common ico-coupon"></span>
+                  <span class="sidemenu__mypage__text">쿠폰함<span class="sidemenu__mypage__count">1</span></span>
+                </a>
+              </li>
+              <li class="sidemenu__mypage__item">
+                <a class="sidemenu__mypage__link" href="#">
+                  <span class="ico-common ico-like"></span>
+                  <span class="sidemenu__mypage__text">좋아요</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="sidemenu__nav">
+              <li class="sidemenu__nav__item"><a href="#" class="sidemenu__nav__link">홈</a></li>
+              <li class="sidemenu__nav__item"><a href="#" class="sidemenu__nav__link">신규</a></li>
+              <li class="sidemenu__nav__item"><a href="#" class="sidemenu__nav__link">인기</a></li>
+              <li class="sidemenu__nav__item"><a href="#" class="sidemenu__nav__link">스타일</a></li>
+            </ul>
+            <ul class="sidemenu__aside">
+              <li class="sidemenu__aside__item"><a href="#" class="sidemenu__aside__link">새소식</a></li>
+              <li class="sidemenu__aside__item"><a href="#" class="sidemenu__aside__link">자주묻는 질문</a></li>
+              <li class="sidemenu__aside__item"><button class="btn-open-number">이모티콘 일련번호 입력하기</button></li>
+              <li class="sidemenu__aside__item"><button class="btn-logout">로그아웃</button></li>
+            </ul>
+          </div>
+          <div class="sidemenu__corp">
+            <a class="sidemenu__corp__link-home" href="#">
+              <span class="ico-common ico-sidemenu-logo">카카오 이모티콘샵</span>
+            </a>
+            <a class="sidemenu__corp__link-kakao" href="#" rel="noopener noreferrer">@ kakao Corp</a>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="search-box search-box--hide">
+          <div class="search-box__inner">
+            <h3 class="screen-out">이모티콘 검색어 입력</h3>
+            <form class="search-box__form">
+              <div class="search-box__form__inner">
+                <input class="search-box__input" type="search" placeholder="이모티콘을 검색해 보세요!" autocomplete="off" />
+                <button class="btn-remove-input" aria-label="검색 입력값 지우기"><span class="ico-common ico-remove"></span></button>
+                <button class="btn-search" type="submit" aria-label="이모티콘 검색하기"><span class="ico-common ico-search"></span></button>
+              </div>
+            </form>
+            <button class="btn-cancel" aria-label="이모티콘 검색 취소">취소</button>
+          </div>
+        </div>
+        <!-- Profile -->
+        <div class="profile profile--hide">
+          <h3 class="screen-out">사용자 프로필 정보</h3>
+          <img class="profile__image" src="../assets/images/profile.png" alt="사용자 프로필" />
+          <div class="profile__name">전지지</div>
+          <div class="profile__email">nohack@kakao.com</div>
+          <button class="btn-logout" aria-label="로그아웃">로그아웃</button>
+        </div>
+        <!-- Nav -->
+        <nav class="nav">
+          <h3 class="screen-out">메인메뉴</h3>
+          <div class="nav__inner">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--active"><a class="nav__link" href="#">홈</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">신규</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">인기</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">스타일</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Overlay -->
+        <div class="overlay overlay--hide"></div>
+      </header>
       <!-- Main -->
       <main class="main">
         <div class="home">
