@@ -102,3 +102,8 @@
   color: var(--c-title);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
+
+/* Footer */
+.btn-movetop {
+  margin: 4rem 0;
+}

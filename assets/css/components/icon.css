@@ -113,3 +113,21 @@
     height: 15px;
   }
 }
+
+/* Footer */
+.ico-arrow {
+  width: 7px;
+  height: 6px;
+  background-position: -300px -30px;
+  transform: rotateX(180deg);
+}
+
+.footer__corp-checkbox:checked ~ label .ico-arrow {
+  transform: rotateX(0deg);
+}
+
+.ico-movetop {
+  width: 44px;
+  height: 44px;
+  background-position: -350px -30px;
+}

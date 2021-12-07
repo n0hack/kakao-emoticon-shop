@@ -1,0 +1,62 @@
+.footer {
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  background: #fff;
+  border-top: 1px solid red;
+}
+
+.footer__services {
+  padding-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__service-link {
+  font-size: 1.2rem;
+  color: var(--c-content);
+}
+
+.footer__service-info {
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  color: var(--c-content);
+}
+
+.footer__corp-label {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--c-content);
+  cursor: pointer;
+}
+
+.footer__corp-checkbox:checked ~ .footer__corp-wrapper {
+  display: flex;
+}
+
+.footer__corp-wrapper {
+  padding-top: 1rem;
+  display: none;
+}
+
+.footer__corp-info {
+  width: 50%;
+}
+
+.footer__corp-title,
+.footer__corp-text {
+  color: var(--c-content);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.footer__corp-title {
+  padding-bottom: 0.5rem;
+  color: var(--c-title);
+  font-weight: 500;
+}
+
+.footer__movetop {
+  text-align: center;
+}

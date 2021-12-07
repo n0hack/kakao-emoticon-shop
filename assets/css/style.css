@@ -7,6 +7,7 @@
 /* Components */
 @import './components/top-banner.css';
 @import './components/header.css';
+@import './components/footer.css';
 @import './components/button.css';
 @import './components/icon.css';
 
