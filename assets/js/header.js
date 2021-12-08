@@ -7,6 +7,7 @@ const overlay = document.querySelector('.overlay');
 const btnOpenSidemenu = document.querySelector('.btn-open-sidemenu');
 const btnOpenSearch = document.querySelector('.btn-open-search');
 const btnOpenProfile = document.querySelector('.btn-open-profile');
+const btnOpenNumber = document.querySelector('.btn-open-number');
 let overlayStack = 0;
 let beforeScrollY = window.scrollY;
 
@@ -107,8 +108,13 @@ const toggleNav = (delay) => {
   };
 };
 
+const handleOpenNumberPopup = () => {
+  window.open('number.html', '카카오 이모티콘샵', 'width=420, height=700');
+};
+
 btnOpenSidemenu.addEventListener('click', openSidemenu);
 btnOpenSearch.addEventListener('click', openSearch);
 btnOpenProfile.addEventListener('click', openProfile);
+btnOpenNumber.addEventListener('click', handleOpenNumberPopup);
 overlay.addEventListener('click', closeByOverlay);
 window.addEventListener('scroll', toggleNav(300));

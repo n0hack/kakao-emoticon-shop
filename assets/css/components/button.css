@@ -107,3 +107,18 @@
 .btn-movetop {
   margin: 4rem 0;
 }
+
+/* Number */
+.btn-regist-number {
+  width: 100%;
+  padding: 1.5rem;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+
+.btn-regist-number--active {
+  color: var(--c-title);
+  background-color: var(--c-kakao);
+}
