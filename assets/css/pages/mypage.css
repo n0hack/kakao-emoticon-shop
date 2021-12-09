@@ -1,0 +1,105 @@
+.mypage {
+  padding-top: calc(var(--h-topbnr) + var(--h-header));
+}
+
+.mypage__header {
+  width: 100%;
+  background-color: #6195ef;
+}
+
+.mypage__topbnr {
+  padding: 2.5rem 0 1.8rem;
+  overflow: hidden;
+}
+
+.mypage__title {
+  margin-bottom: 1rem;
+  padding: 0 2.5rem;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.mypage__list {
+  width: 100%;
+  white-space: nowrap;
+  transform: translateX(0px);
+}
+
+.mypage__item {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.mypage__item:first-child {
+  padding-left: 2.5rem;
+}
+
+.mypage__link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: #5786d7;
+  border-radius: 18px;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.mypage__count {
+  margin-left: 0.4rem;
+}
+
+.mypage__item--active .mypage__link {
+  color: #5786d7;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.mypage__content {
+  padding: 0 2.5rem;
+}
+
+.mypage__content__header {
+}
+
+.mypage__content__title {
+  padding-top: 2rem;
+  display: none;
+  font-size: 1.5rem;
+}
+
+.mypage__content__inner {
+  padding: 8rem 0;
+}
+
+.empty {
+}
+
+.empty__image {
+  width: 105px;
+  height: 105px;
+  margin: 0 auto;
+  display: block;
+}
+
+.empty__title {
+  margin: 1rem 0 0.8rem;
+  display: block;
+  color: var(--c-title);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.empty__desc {
+  color: var(--c-content);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* 구매내역 */
+
+/* 선물함 */
+
+/* 쿠폰함 */
+
+/* 좋아요 */
