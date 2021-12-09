@@ -9,30 +9,31 @@
 .footer__services {
   padding-top: 3rem;
   display: flex;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .footer__service-link {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--c-content);
 }
 
 .footer__service-info {
   padding-top: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--c-content);
 }
 
 .footer__corp-label {
   display: inline-block;
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--c-content);
   cursor: pointer;
 }
 
 .footer__corp-checkbox:checked ~ .footer__corp-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__corp-wrapper {
@@ -47,7 +48,7 @@
 .footer__corp-title,
 .footer__corp-text {
   color: var(--c-content);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
 }
 
@@ -59,4 +60,18 @@
 
 .footer__movetop {
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__services {
+    flex-direction: column;
+  }
+
+  .footer__corp-wrapper {
+    gap: 1.8rem;
+  }
+
+  .footer__corp-info {
+    width: 100%;
+  }
 }
