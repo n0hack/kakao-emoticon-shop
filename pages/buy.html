@@ -123,7 +123,7 @@
           <button class="btn-logout" aria-label="로그아웃">로그아웃</button>
         </div>
         <!-- Nav -->
-        <nav class="nav sidepage__nav">
+        <nav class="nav nav--sidepage">
           <h3 class="screen-out">메인메뉴</h3>
           <div class="nav__inner">
             <ul class="nav__list">
@@ -141,27 +141,27 @@
       <main class="main">
         <div class="mypage">
           <div class="mypage__header">
-            <div class="mypage__topbnr">
+            <div class="mypage__inner-header">
               <h2 class="mypage__title">마이페이지</h2>
               <strong class="screen-out">마이페이지 메뉴</strong>
-              <ul class="mypage__list">
-                <li class="mypage__item mypage__item--active"><a class="mypage__link" href="#">구매내역</a></li>
-                <li class="mypage__item"><a class="mypage__link" href="#">선물함</a></li>
-                <li class="mypage__item">
+              <ul class="mypage__menus">
+                <li class="mypage__menu mypage__menu--active"><a class="mypage__link" href="#">구매내역</a></li>
+                <li class="mypage__menu"><a class="mypage__link" href="#">선물함</a></li>
+                <li class="mypage__menu">
                   <a class="mypage__link" href="#">쿠폰함<span class="mypage__count">1</span></a>
                 </li>
-                <li class="mypage__item"><a class="mypage__link" href="#">좋아요</a></li>
-                <li class="mypage__item"><a class="mypage__link" href="#">좋아요</a></li>
-                <li class="mypage__item"><a class="mypage__link" href="#">좋아요</a></li>
+                <li class="mypage__menu"><a class="mypage__link" href="#">좋아요</a></li>
+                <li class="mypage__menu"><a class="mypage__link" href="#">좋아요</a></li>
+                <li class="mypage__menu"><a class="mypage__link" href="#">좋아요</a></li>
               </ul>
             </div>
           </div>
           <div class="mypage__content">
-            <h3 class="mypage__content__header">
-              <span class="mypage__content__title">구매내역</span>
-            </h3>
-            <h4 class="screen-out">구매내역 본문</h4>
-            <div class="mypage__content__inner">
+            <ul class="mypage__categories">
+              <li class="mypage__category">구매내역</li>
+            </ul>
+            <strong class="screen-out">구매내역 본문</strong>
+            <div class="mypage__inner-content">
               <div class="empty">
                 <img class="empty__image" src="../assets/images/empty-buy.png" alt="구매내역 없음" />
                 <strong class="empty__title">이모티콘샵 구매내역이 없습니다.</strong>
@@ -216,7 +216,7 @@
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     <script src="../assets/js/top-banner.js"></script>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/sidepage.mjs"></script>
     <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/app.js"></script>
   </body>
 </html>

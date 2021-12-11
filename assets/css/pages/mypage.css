@@ -7,31 +7,37 @@
   background-color: #6195ef;
 }
 
-.mypage__topbnr {
+.mypage__inner-header {
   padding: 2.5rem 0 1.8rem;
   overflow: hidden;
 }
 
 .mypage__title {
   margin-bottom: 1rem;
-  padding: 0 2.5rem;
+  padding: 0 2.4rem;
   color: #fff;
   font-size: 1.8rem;
 }
 
-.mypage__list {
+.mypage__menus {
   width: 100%;
   white-space: nowrap;
-  transform: translateX(0px);
+  transform: translateX(-1px);
+  user-select: none;
 }
 
-.mypage__item {
+.mypage__menu {
   display: inline-block;
-  padding-right: 1rem;
+  padding-right: 0.8rem;
+  user-select: none;
 }
 
-.mypage__item:first-child {
-  padding-left: 2.5rem;
+.mypage__menu:first-child {
+  padding-left: 2.4rem;
+}
+
+.mypage__menu:last-child {
+  padding-right: 2.4rem;
 }
 
 .mypage__link {
@@ -49,7 +55,7 @@
   margin-left: 0.4rem;
 }
 
-.mypage__item--active .mypage__link {
+.mypage__menu--active .mypage__link {
   color: #5786d7;
   font-weight: 700;
   background-color: #fff;
@@ -59,20 +65,18 @@
   padding: 0 2.5rem;
 }
 
-.mypage__content__header {
+.mypage__categories {
+  padding: 4rem 0 2rem;
 }
 
-.mypage__content__title {
-  padding-top: 2rem;
+.mypage__category {
   display: none;
-  font-size: 1.5rem;
-}
-
-.mypage__content__inner {
-  padding: 8rem 0;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .empty {
+  padding: 8rem 0;
 }
 
 .empty__image {

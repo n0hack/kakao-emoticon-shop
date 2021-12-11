@@ -418,7 +418,7 @@
     font-size: 1.5rem;
   }
 
-  .sidepage__nav {
+  .nav--sidepage {
     display: none;
   }
 }
