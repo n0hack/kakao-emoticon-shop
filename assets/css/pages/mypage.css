@@ -22,7 +22,7 @@
 .mypage__menus {
   width: 100%;
   white-space: nowrap;
-  transform: translateX(-1px);
+  transform: translateX(0px);
   user-select: none;
 }
 
