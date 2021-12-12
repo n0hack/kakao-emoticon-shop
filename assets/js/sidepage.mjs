@@ -1,7 +1,7 @@
 const elMenuList = document.querySelector('.mypage__menus');
 const elMenuItems = document.querySelectorAll('.mypage__menu');
-const menuListClientWidth = elMenuList.clientWidth;
-const menuListScrollWidth = elMenuList.scrollWidth;
+let menuListClientWidth = elMenuList.clientWidth;
+let menuListScrollWidth = elMenuList.scrollWidth;
 const menuItemsTotalWidth = [...elMenuItems].reduce((acc, item) => acc + item.clientWidth, 0);
 const lastMenuPaddingRight = parseInt(getComputedStyle(elMenuItems[elMenuItems.length - 1]).paddingRight);
 const lastMenu = elMenuItems[elMenuItems.length - 1];
@@ -12,7 +12,6 @@ console.log(menuListClientWidth);
 console.log(menuListScrollWidth);
 console.log(menuItemsTotalWidth);
 console.log(lastMenuPaddingRight);
-console.log(lastMenu.getBoundingClientRect());
 console.log(parseInt(getComputedStyle(elMenuList).transform.split(/[^\-0-9]+/g)[5]));
 console.log(menuListScrollWidth - menuListClientWidth);
 
@@ -75,10 +74,24 @@ const correctTranslate = () => {
 };
 
 elMenuList.addEventListener('mousedown', handleMouseDown);
+let beforeInnerWidth = window.innerWidth;
 window.addEventListener('resize', () => {
-  if (translateX <= -(menuListScrollWidth - menuListClientWidth)) {
-    console.log('dd');
+  console.log(translateX);
+  nowInnerWidth = window.innerWidth;
+  menuListClientWidth = elMenuList.clientWidth;
+  if (beforeInnerWidth !== nowInnerWidth) {
+    if (beforeInnerWidth < nowInnerWidth) {
+      if (menuListScrollWidth >= menuListClientWidth) {
+        if (translateX <= -(menuListScrollWidth - menuListClientWidth)) {
+          elMenuList.style.transform = `translateX(${-(menuListScrollWidth - menuListClientWidth)}px)`;
+          translateX = -(menuListScrollWidth - menuListClientWidth);
+        }
+      } else {
+        elMenuList.style.transform = `translateX(0px)`;
+        translateX = 0;
+      }
+    }
+    beforeInnerWidth = nowInnerWidth;
   }
-  // TODO: Resize 이벤트 (스크롤 사이즈가 클라이언트 사이즈랑 같으면 기본)
-  // TODO: Resize 이벤트 스크롤 사이즈가 더 크고, 맨 뒤인 경우 보정 처리
+  timer = null;
 });
