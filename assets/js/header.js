@@ -6,6 +6,8 @@ const nav = document.querySelector('.nav');
 const overlay = document.querySelector('.overlay');
 const btnOpenSidemenu = document.querySelector('.btn-open-sidemenu');
 const btnOpenSearch = document.querySelector('.btn-open-search');
+const inputSearch = document.querySelector('.search-box__input');
+const btnRemoveInput = document.querySelector('.btn-remove-input');
 const btnOpenProfile = document.querySelector('.btn-open-profile');
 const btnOpenNumber = document.querySelector('.btn-open-number');
 let overlayStack = 0;
@@ -112,6 +114,27 @@ const handleOpenNumberPopup = () => {
   window.open('number.html', '카카오 이모티콘샵', 'width=420, height=700');
 };
 
+// throttle
+// 스로틀
+inputSearch.addEventListener(
+  'input',
+  (function (delay) {
+    let timer = null;
+
+    return (e) => {
+      if (timer) return;
+      timer = setTimeout(() => {
+        console.log(e.target.value);
+        if (e.target.value.length !== 0) {
+          btnRemoveInput.classList.remove('btn-remove-input--hide');
+        } else {
+          btnRemoveInput.classList.add('btn-remove-input--hide');
+        }
+        timer = null;
+      }, delay);
+    };
+  })(300)
+);
 btnOpenSidemenu.addEventListener('click', openSidemenu);
 btnOpenSearch.addEventListener('click', openSearch);
 btnOpenProfile.addEventListener('click', openProfile);
