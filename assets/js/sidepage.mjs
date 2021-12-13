@@ -17,17 +17,22 @@ console.log(menuListScrollWidth - menuListClientWidth);
 
 class DragSlide {
   constructor() {}
+
+  handleMouseDown() {}
+
+  getTranslateX() {}
 }
 
 const handleMouseDown = (event) => {
-  console.log(lastMenu.getBoundingClientRect());
-  startX = event.x;
+  startX = event.clientX;
+  console.log(startX);
+  console.log(event.clientX);
   window.addEventListener('mousemove', handleMouseMove);
   window.addEventListener('mouseup', handleMouseUp);
 };
 
 const handleMouseMove = (event) => {
-  let distX = event.x - startX;
+  let distX = event.clientX - startX;
   updateElement(distX);
 };
 
@@ -76,7 +81,6 @@ const correctTranslate = () => {
 elMenuList.addEventListener('mousedown', handleMouseDown);
 let beforeInnerWidth = window.innerWidth;
 window.addEventListener('resize', () => {
-  console.log(translateX);
   nowInnerWidth = window.innerWidth;
   menuListClientWidth = elMenuList.clientWidth;
   if (beforeInnerWidth !== nowInnerWidth) {
@@ -93,5 +97,15 @@ window.addEventListener('resize', () => {
     }
     beforeInnerWidth = nowInnerWidth;
   }
-  timer = null;
+});
+
+let te;
+elMenuList.addEventListener('touchstart', (e) => {
+  te = e.touches[0].clientX;
+  console.log('힝쿠');
+  console.log(e.touches[0].clientX);
+});
+
+window.addEventListener('touchmove', (e) => {
+  console.log(te - e.touches[0].clientX);
 });
