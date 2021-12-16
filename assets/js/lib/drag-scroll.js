@@ -44,6 +44,7 @@ class DragScroll {
 
     let nowInnerWidth = window.innerWidth;
     this.listClientWidth = this.list.clientWidth;
+    this.listScrollWidth = this.list.scrollWidth;
     if (this.beforeInnerWidth !== nowInnerWidth) {
       if (this.beforeInnerWidth < nowInnerWidth) {
         if (this.listScrollWidth >= this.listClientWidth) {
@@ -105,7 +106,7 @@ class DragScroll {
   }
 
   onClick(e) {
-    if (this.startX - this.nowX !== 0) {
+    if (this.startX - this.nowX !== 0 && window.innerWidth < this.breakpoint) {
       e.preventDefault();
     }
   }
