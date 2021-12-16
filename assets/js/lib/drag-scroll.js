@@ -39,23 +39,21 @@ class DragScroll {
       window.removeEventListener('touchend', this.onDragEnd);
     }
 
-    if (window.innerWidth < this.breakpoint) {
-      let nowInnerWidth = window.innerWidth;
-      this.listClientWidth = this.list.clientWidth;
-      if (this.beforeInnerWidth !== nowInnerWidth) {
-        if (this.beforeInnerWidth < nowInnerWidth) {
-          if (this.listScrollWidth >= this.listClientWidth) {
-            if (this.translateX <= -(this.listScrollWidth - this.listClientWidth)) {
-              this.setTranslateX({ x: -(this.listScrollWidth - this.listClientWidth), reset: true });
-              this.translateX = -(this.listScrollWidth - this.listClientWidth);
-            }
-          } else {
-            this.setTranslateX({ x: 0, reset: true });
-            this.translateX = 0;
+    let nowInnerWidth = window.innerWidth;
+    this.listClientWidth = this.list.clientWidth;
+    if (this.beforeInnerWidth !== nowInnerWidth) {
+      if (this.beforeInnerWidth < nowInnerWidth) {
+        if (this.listScrollWidth >= this.listClientWidth) {
+          if (this.translateX <= -(this.listScrollWidth - this.listClientWidth)) {
+            this.setTranslateX({ x: -(this.listScrollWidth - this.listClientWidth), reset: true });
+            this.translateX = -(this.listScrollWidth - this.listClientWidth);
           }
+        } else {
+          this.setTranslateX({ x: 0, reset: true });
+          this.translateX = 0;
         }
-        this.beforeInnerWidth = nowInnerWidth;
       }
+      this.beforeInnerWidth = nowInnerWidth;
     }
   }
 
