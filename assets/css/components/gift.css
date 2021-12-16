@@ -1,9 +1,9 @@
-.gift-card {
+.gift {
   position: relative;
   padding: 2.4rem 0;
 }
 
-.gift-card::after {
+.gift::after {
   position: absolute;
   content: '';
   left: 0;
@@ -13,22 +13,22 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.gift-card__meta-datas {
+.gift__meta-datas {
   width: 100%;
   margin-bottom: 1.4rem;
   display: flex;
   justify-content: space-between;
 }
 
-.gift-card__date {
+.gift__date {
   font-size: 1.4rem;
 }
 
-.gift-card__presenter {
+.gift__presenter {
   font-size: 1.4rem;
 }
 
-.gift-card__emoticon-datas {
+.gift__emoticon-datas {
   padding: 1.2rem 1.2rem 1.2rem 1.8rem;
   display: flex;
   justify-content: space-between;
@@ -37,42 +37,42 @@
   border-radius: 0.6rem;
 }
 
-.gift-card__emoticon-name {
+.gift__emoticon-name {
   padding-bottom: 0.5rem;
   display: block;
   font-size: 1.6rem;
 }
 
-.gift-card__emoticon-author {
+.gift__emoticon-author {
   display: block;
   font-size: 1.4rem;
   color: var(--c-content);
 }
 
-.gift-card__emoticon-image {
+.gift__emoticon-image {
   display: block;
   width: 64px;
 }
 
 @media screen and (min-width: 768px) {
-  .gift-card {
+  .gift {
     width: 50%;
     padding: 2.8rem 0;
   }
 
-  .gift-card:nth-child(odd)::after {
+  .gift:nth-child(odd)::after {
     width: 200%;
   }
 
-  .gift-card:nth-child(even)::after {
+  .gift:nth-child(even)::after {
     width: 0;
   }
 
-  .gift-card:nth-child(odd) {
+  .gift:nth-child(odd) {
     padding-right: 1.8rem;
   }
 
-  .gift-card:nth-child(even) {
+  .gift:nth-child(even) {
     padding-left: 1.8rem;
   }
 }
