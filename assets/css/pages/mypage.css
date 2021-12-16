@@ -8,6 +8,7 @@
 }
 
 .mypage__inner-header {
+  position: relative;
   padding: 2.5rem 0 1.8rem;
   overflow: hidden;
 }
@@ -17,6 +18,10 @@
   padding: 0 2.4rem;
   color: #fff;
   font-size: 1.8rem;
+}
+
+.mypage__banner-image {
+  display: none;
 }
 
 .mypage__menus {
@@ -56,23 +61,66 @@
 }
 
 .mypage__menu--active .mypage__link {
+  font-weight: bold;
   color: #5786d7;
-  font-weight: 700;
   background-color: #fff;
 }
 
+.mypage__menu--active .mypage__count {
+  font-weight: bold;
+  color: #fa4637;
+}
+
+/* MYPAGE CONTENT */
 .mypage__content {
-  padding: 0 2.5rem;
+  padding: 0 2.4rem;
 }
 
 .mypage__categories {
-  padding: 4rem 0 2rem;
+  padding: 2.2rem 0 1.2rem;
+  display: flex;
+  gap: 1.4rem;
 }
 
 .mypage__category {
   display: none;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  color: var(--c-content);
+}
+
+.mypage__category--show {
+  display: block;
+}
+
+.mypage__category--active {
   font-weight: bold;
+  color: var(--c-title);
+}
+
+.mypage__category--active .mypage__count {
+  color: var(--c-highlight);
+}
+
+@media screen and (min-width: 768px) {
+  .mypage__content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 4rem 2rem;
+  }
+
+  .mypage__categories {
+    padding: 4rem 0 2rem;
+    gap: 1.8rem;
+  }
+
+  .mypage__categories--multiple {
+    border-bottom: 1px solid #191919;
+  }
+
+  .mypage__category {
+    display: block;
+    font-size: 1.8rem;
+  }
 }
 
 .empty {
@@ -100,10 +148,52 @@
   text-align: center;
 }
 
-/* 구매내역 */
+@media screen and (min-width: 768px) {
+  .mypage {
+    padding-top: calc(var(--h-topbnr) + var(--h-header) + var(--h-nav));
+  }
 
-/* 선물함 */
+  .mypage__inner-header {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 4rem 1.8rem;
+  }
 
-/* 쿠폰함 */
+  .mypage__title {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+  }
 
-/* 좋아요 */
+  .mypage__title-image {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    height: 100%;
+    display: block;
+  }
+
+  .mypage__inner-content {
+    max-width: 944px;
+    margin: 0 auto;
+  }
+
+  .mypage__gift-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .empty__image {
+    width: 125px;
+    height: 125px;
+  }
+
+  .empty__title {
+    font-size: 2rem;
+  }
+
+  .empty__desc {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}

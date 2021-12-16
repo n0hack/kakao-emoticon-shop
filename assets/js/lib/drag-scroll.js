@@ -22,6 +22,13 @@ class DragScroll {
   bindEvent() {
     this.list.addEventListener('mousedown', this.onDragStart);
     this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
+    // 클릭 이벤트 처리
+    // 가장 마지막에 호출됨
+    // 드래그를 하지 않은 경우에 대해 클릭 이벤트 처리하면 될 듯 (아주 미세한 움직임?)
+    // Todo: onClick
+    this.list.addEventListener('click', () => {
+      console.log('click');
+    });
     window.addEventListener('resize', this.onResize);
   }
 
@@ -58,6 +65,7 @@ class DragScroll {
   }
 
   onDragStart(e) {
+    console.log('down');
     const isTouches = e.touches ? true : false;
     this.startX = isTouches ? e.touches[0].clientX : e.clientX;
     this.translateX = this.getTranslateX();
@@ -68,18 +76,22 @@ class DragScroll {
     window.addEventListener('touchend', this.onDragEnd);
 
     e.preventDefault();
+    e.stopPropagation();
   }
 
   onDragging(e) {
+    console.log('drag');
     const isTouches = e.touches ? true : false;
     this.nowX = isTouches ? e.touches[0].clientX : e.clientX;
 
     this.setTranslateX({ x: this.nowX - this.startX, reset: false });
 
     e.preventDefault();
+    e.stopPropagation();
   }
 
   onDragEnd(e) {
+    console.log('up');
     this.checkValidate();
     this.translateX = this.getTranslateX();
 
@@ -97,6 +109,8 @@ class DragScroll {
       this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
     }, 300);
     e.preventDefault();
+    e.stopPropagation();
+    return false;
   }
 
   checkValidate() {

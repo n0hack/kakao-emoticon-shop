@@ -10,6 +10,7 @@
 @import './components/footer.css';
 @import './components/button.css';
 @import './components/icon.css';
+@import './components/gift-card.css';
 
 /* Pages */
 @import './pages/home.css';

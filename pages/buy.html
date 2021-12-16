@@ -55,26 +55,26 @@
             </div>
             <ul class="sidemenu__mypage">
               <li class="sidemenu__mypage__item">
-                <a class="sidemenu__mypage__link" href="#">
+                <a class="sidemenu__mypage__link" href="buy.html">
                   <span class="ico-common ico-buy"></span>
                   <span class="sidemenu__mypage__text">구매내역</span>
                 </a>
               </li>
               <li class="sidemenu__mypage__item">
-                <a class="sidemenu__mypage__link" href="#">
+                <a class="sidemenu__mypage__link" href="gift.html">
                   <span class="ico-common ico-gift"></span>
                   <span class="sidemenu__mypage__text">선물함</span>
                 </a>
               </li>
               <li class="sidemenu__mypage__item">
-                <a class="sidemenu__mypage__link" href="#">
+                <a class="sidemenu__mypage__link" href="coupon.html">
                   <span class="ico-common ico-new"></span>
                   <span class="ico-common ico-coupon"></span>
                   <span class="sidemenu__mypage__text">쿠폰함<span class="sidemenu__mypage__count">1</span></span>
                 </a>
               </li>
               <li class="sidemenu__mypage__item">
-                <a class="sidemenu__mypage__link" href="#">
+                <a class="sidemenu__mypage__link" href="like.html">
                   <span class="ico-common ico-like"></span>
                   <span class="sidemenu__mypage__text">좋아요</span>
                 </a>
@@ -82,13 +82,13 @@
             </ul>
             <ul class="sidemenu__nav">
               <li class="sidemenu__nav__item"><a href="home.html" class="sidemenu__nav__link">홈</a></li>
-              <li class="sidemenu__nav__item"><a href="#" class="sidemenu__nav__link">신규</a></li>
-              <li class="sidemenu__nav__item"><a href="#" class="sidemenu__nav__link">인기</a></li>
-              <li class="sidemenu__nav__item"><a href="#" class="sidemenu__nav__link">스타일</a></li>
+              <li class="sidemenu__nav__item"><a href="new.html" class="sidemenu__nav__link">신규</a></li>
+              <li class="sidemenu__nav__item"><a href="hot.html" class="sidemenu__nav__link">인기</a></li>
+              <li class="sidemenu__nav__item"><a href="style.html" class="sidemenu__nav__link">스타일</a></li>
             </ul>
             <ul class="sidemenu__aside">
-              <li class="sidemenu__aside__item"><a href="#" class="sidemenu__aside__link">새소식</a></li>
-              <li class="sidemenu__aside__item"><a href="#" class="sidemenu__aside__link">자주묻는 질문</a></li>
+              <li class="sidemenu__aside__item"><a href="notice.html" class="sidemenu__aside__link">새소식</a></li>
+              <li class="sidemenu__aside__item"><a href="faq.html" class="sidemenu__aside__link">자주묻는 질문</a></li>
               <li class="sidemenu__aside__item"><button class="btn-open-number">이모티콘 일련번호 입력하기</button></li>
               <li class="sidemenu__aside__item"><button class="btn-logout">로그아웃</button></li>
             </ul>
@@ -128,9 +128,9 @@
           <div class="nav__inner">
             <ul class="nav__list">
               <li class="nav__item"><a class="nav__link" href="home.html">홈</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">신규</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">인기</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">스타일</a></li>
+              <li class="nav__item"><a class="nav__link" href="new.html">신규</a></li>
+              <li class="nav__item"><a class="nav__link" href="hot.html">인기</a></li>
+              <li class="nav__item"><a class="nav__link" href="style.html">스타일</a></li>
             </ul>
           </div>
         </nav>
@@ -140,39 +140,96 @@
       <!-- Main -->
       <main class="main">
         <div class="mypage">
+          <!-- MYPAGE HEADER -->
           <div class="mypage__header">
             <div class="mypage__inner-header">
-              <h2 class="mypage__title">마이페이지</h2>
+              <h2 class="mypage__title">
+                마이페이지
+                <img class="mypage__banner-image" src="../assets/images/mypage-banner.png" alt="마이페이지 배너" />
+              </h2>
               <strong class="screen-out">마이페이지 메뉴</strong>
               <ul class="mypage__menus">
-                <li class="mypage__menu mypage__menu--active"><a class="mypage__link" href="#">구매내역</a></li>
-                <li class="mypage__menu"><a class="mypage__link" href="#">선물함</a></li>
-                <li class="mypage__menu">
-                  <a class="mypage__link" href="#">쿠폰함<span class="mypage__count">1</span></a>
+                <li class="mypage__menu mypage__menu--active">
+                  <a class="mypage__link" href="buy.html">구매내역</a>
                 </li>
-                <li class="mypage__menu"><a class="mypage__link" href="#">좋아요</a></li>
-                <li class="mypage__menu"><a class="mypage__link" href="#">좋아요</a></li>
-                <li class="mypage__menu"><a class="mypage__link" href="#">좋아요</a></li>
-                <li class="mypage__menu"><a class="mypage__link" href="#">좋아요</a></li>
+                <li class="mypage__menu">
+                  <a class="mypage__link" href="gift.html">선물함</a>
+                </li>
+                <li class="mypage__menu">
+                  <a class="mypage__link" href="coupon.html">쿠폰함<span class="mypage__count">1</span></a>
+                </li>
+                <li class="mypage__menu">
+                  <a class="mypage__link" href="like.html">좋아요</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="mypage__content">
-            <ul class="mypage__categories">
-              <li class="mypage__category">구매내역</li>
+          <!-- MYPAGE CONTENT -->
+          <article class="mypage__content">
+            <strong class="screen-out">마이페이지 콘텐츠 메뉴</strong>
+            <ul class="mypage__categories mypage__categories--multiple">
+              <li class="mypage__category mypage__category--show mypage__category--active">구매내역</li>
+              <li class="mypage__category mypage__category--show">받은 선물함</li>
+              <li class="mypage__category mypage__category--show">보낸 선물함</li>
+              <li class="mypage__category mypage__category--show">보유쿠폰<span class="mypage__count">1</span></li>
             </ul>
-            <strong class="screen-out">구매내역 본문</strong>
-            <div class="mypage__inner-content">
-              <div class="empty">
-                <img class="empty__image" src="../assets/images/empty-buy.png" alt="구매내역 없음" />
-                <strong class="empty__title">이모티콘샵 구매내역이 없습니다.</strong>
-                <p class="empty__desc">
-                  모바일앱에서 구매한 내역은<br />
-                  ‘카카오톡 > 이모티콘스토어 > 내 이모티콘’에서 확인할 수 있습니다.
-                </p>
-              </div>
+            <div class="mypage__content-inner">
+              <strong class="screen-out">구매내역 본문</strong>
+              <ul class="mypage__gift-cards">
+                <li class="gift-card">
+                  <div class="gift-card__meta-datas">
+                    <span class="gift-card__date">2020.10.10</span>
+                    <span class="gift-card__presenter">From. <strong>친구</strong></span>
+                  </div>
+                  <div class="gift-card__emoticon-datas">
+                    <div class="gift-card__emoticon-infos">
+                      <span class="gift-card__emoticon-name">군머티콘</span>
+                      <span class="gift-card__emoticon-author">이걸누가사</span>
+                    </div>
+                    <img class="gift-card__emoticon-image" src="../assets/images/gift-emoticon.png" alt="선물 받은 이모티콘" />
+                  </div>
+                </li>
+                <li class="gift-card">
+                  <div class="gift-card__meta-datas">
+                    <span class="gift-card__date">2020.10.10</span>
+                    <span class="gift-card__presenter">From. <strong>친구</strong></span>
+                  </div>
+                  <div class="gift-card__emoticon-datas">
+                    <div class="gift-card__emoticon-infos">
+                      <span class="gift-card__emoticon-name">군머티콘</span>
+                      <span class="gift-card__emoticon-author">이걸누가사</span>
+                    </div>
+                    <img class="gift-card__emoticon-image" src="../assets/images/gift-emoticon.png" alt="선물 받은 이모티콘" />
+                  </div>
+                </li>
+                <li class="gift-card">
+                  <div class="gift-card__meta-datas">
+                    <span class="gift-card__date">2020.09.09</span>
+                    <span class="gift-card__presenter">From. <strong>영목</strong></span>
+                  </div>
+                  <div class="gift-card__emoticon-datas">
+                    <div class="gift-card__emoticon-infos">
+                      <span class="gift-card__emoticon-name">망충햄스터 햄수</span>
+                      <span class="gift-card__emoticon-author">오삼</span>
+                    </div>
+                    <img class="gift-card__emoticon-image" src="../assets/images/gift-emoticon-2.png" alt="선물 받은 이모티콘" />
+                  </div>
+                </li>
+              </ul>
+              <div class="mypage__content-inner"></div>
+
+              <!-- <div class="mypage__inner-contents">
+                <div class="empty">
+                  <img class="empty__image" src="../assets/images/empty-buy.png" alt="구매내역 없음" />
+                  <strong class="empty__title">이모티콘샵 구매내역이 없습니다.</strong>
+                  <p class="empty__desc">
+                    모바일앱에서 구매한 내역은<br />
+                    ‘카카오톡 > 이모티콘스토어 > 내 이모티콘’에서 확인할 수 있습니다.
+                  </p>
+                </div>
+              </div> -->
             </div>
-          </div>
+          </article>
         </div>
       </main>
       <!-- Footer -->
@@ -212,12 +269,10 @@
       </footer>
     </div>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <script src="../assets/js/lib/drag-scroll.js"></script>
     <script src="../assets/js/top-banner.js"></script>
     <script src="../assets/js/header.js"></script>
-    <script src="../assets/js/sidepage.mjs"></script>
+    <script src="../assets/js/sidepage.js"></script>
     <script src="../assets/js/footer.js"></script>
   </body>
 </html>
