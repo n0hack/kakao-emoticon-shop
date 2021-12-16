@@ -9,12 +9,14 @@ class DragScroll {
     this.listScrollWidth = list.scrollWidth;
     this.itemsTotalWidth = [...this.items].reduce((acc, item) => acc + item.clientWidth, 0);
     this.startX;
+    this.nowX;
     this.translateX = 0;
 
     this.onResize = this.onResize.bind(this);
     this.onDragStart = this.onDragStart.bind(this);
     this.onDragging = this.onDragging.bind(this);
     this.onDragEnd = this.onDragEnd.bind(this);
+    this.onClick = this.onClick.bind(this);
 
     this.bindEvent();
   }
@@ -22,13 +24,7 @@ class DragScroll {
   bindEvent() {
     this.list.addEventListener('mousedown', this.onDragStart);
     this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
-    // 클릭 이벤트 처리
-    // 가장 마지막에 호출됨
-    // 드래그를 하지 않은 경우에 대해 클릭 이벤트 처리하면 될 듯 (아주 미세한 움직임?)
-    // Todo: onClick
-    this.list.addEventListener('click', () => {
-      console.log('click');
-    });
+    this.list.addEventListener('click', this.onClick);
     window.addEventListener('resize', this.onResize);
   }
 
@@ -65,9 +61,9 @@ class DragScroll {
   }
 
   onDragStart(e) {
-    console.log('down');
     const isTouches = e.touches ? true : false;
     this.startX = isTouches ? e.touches[0].clientX : e.clientX;
+    this.nowX = this.startX;
     this.translateX = this.getTranslateX();
 
     window.addEventListener('mousemove', this.onDragging);
@@ -76,22 +72,18 @@ class DragScroll {
     window.addEventListener('touchend', this.onDragEnd);
 
     e.preventDefault();
-    e.stopPropagation();
   }
 
   onDragging(e) {
-    console.log('drag');
     const isTouches = e.touches ? true : false;
     this.nowX = isTouches ? e.touches[0].clientX : e.clientX;
 
     this.setTranslateX({ x: this.nowX - this.startX, reset: false });
 
     e.preventDefault();
-    e.stopPropagation();
   }
 
   onDragEnd(e) {
-    console.log('up');
     this.checkValidate();
     this.translateX = this.getTranslateX();
 
@@ -108,9 +100,14 @@ class DragScroll {
       this.list.addEventListener('mousedown', this.onDragStart);
       this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
     }, 300);
+
     e.preventDefault();
-    e.stopPropagation();
-    return false;
+  }
+
+  onClick(e) {
+    if (this.startX - this.nowX !== 0) {
+      e.preventDefault();
+    }
   }
 
   checkValidate() {
