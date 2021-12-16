@@ -17,7 +17,7 @@
 }
 
 .number__inner {
-  padding: 4rem 2rem 0;
+  padding: 4rem 2rem 8rem;
 }
 
 .number__input {
@@ -26,6 +26,7 @@
   color: var(--c-title);
   font-size: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
 }
 
 .number__input::placeholder {
