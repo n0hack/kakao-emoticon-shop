@@ -6,7 +6,7 @@
 /* MYPAGE HEADER */
 .mypage__header {
   width: 100%;
-  background-color: #6195ef;
+  background-color: var(--bgc-mypage-header);
 }
 
 .mypage__inner-header {
@@ -18,8 +18,8 @@
 .mypage__title {
   margin-bottom: 1rem;
   padding: 0 2.4rem;
-  color: #fff;
   font-size: 1.8rem;
+  color: var(--c-white);
 }
 
 .mypage__banner-image {
@@ -95,6 +95,19 @@
     right: 40px;
     height: 100%;
     display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mypage__menu:hover .mypage__link {
+    font-weight: bold;
+    color: #5786d7;
+    background-color: #fff;
+  }
+
+  .mypage__menu:hover .mypage__count {
+    font-weight: bold;
+    color: var(--c-highlight);
   }
 }
 
