@@ -7,7 +7,18 @@
   --c-highlight: #fa4637;
 
   /* Background Color */
+  --bgc-highlight: #fa4637;
   --bgc-topbnr: #c66563;
+  --bgc-header: #fff;
+  --bgc-sidemenu: #fff;
+  --bgc-search: #fff;
+  --bgc-search-box-inner: #fafafa;
+  --bgc-search-form-inner: #fff;
+  --bgc-profile: #fff;
+  --bgc-nav: #fff;
+  --bgc-footer: #fff;
+  --bgc-number-header: #ffeb2d;
+  --bgc-number-button: #fff;
 
   /* Element Height */
   --h-header: 60px;

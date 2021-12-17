@@ -2,15 +2,15 @@
 @import './reset.css';
 @import './variable.css';
 
-/* Fonts */
-
 /* Components */
-@import './components/top-banner.css';
+@import './components/topbnr.css';
 @import './components/header.css';
 @import './components/footer.css';
 @import './components/button.css';
 @import './components/icon.css';
-@import './components/gift-card.css';
+@import './components/empty.css';
+@import './components/gift.css';
+@import './components/coupon.css';
 
 /* Pages */
 @import './pages/home.css';
