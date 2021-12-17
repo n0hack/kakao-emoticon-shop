@@ -1,15 +1,19 @@
 :root {
-  /* color */
+  /* Color */
+  --c-white: #fff;
   --c-kakao: #fee500;
-  --c-highlight: #fa4637;
   --c-title: #191919;
   --c-content: #808080;
+  --c-highlight: #fa4637;
 
-  /* height */
+  /* Background Color */
+  --bgc-topbnr: #c66563;
+
+  /* Element Height */
   --h-header: 60px;
   --h-nav: 50px;
 
-  /* z-index */
+  /* Z-Index */
   --z-top-banner: 1000;
   --z-header: 1;
   --z-header-inner: 300;
@@ -23,11 +27,11 @@
 
 @media screen and (max-width: 767px) {
   :root {
-    /* height */
+    /* Element Height */
     --h-header: 50px;
     --h-nav: 44px;
 
-    /* z-index */
+    /* Z-Index */
     --z-search: 510;
     --z-search-overlay: 500;
   }

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 50px;
-  background: #c66563;
+  background: var(--bgc-topbnr);
   z-index: var(--z-top-banner);
 }
 
@@ -29,7 +29,7 @@
 
 .topbnr__text {
   font-size: 1.4rem;
-  color: #fff;
+  color: var(--c-white);
 }
 
 .topbnr__image {
