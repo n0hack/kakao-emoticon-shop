@@ -6,6 +6,7 @@ const nav = document.querySelector('.nav');
 const overlay = document.querySelector('.overlay');
 const btnOpenSidemenu = document.querySelector('.btn-open-sidemenu');
 const btnOpenSearch = document.querySelector('.btn-open-search');
+const btnCloseSearch = document.querySelector('.btn-cancel');
 const inputSearch = document.querySelector('.search-box__input');
 const btnRemoveInput = document.querySelector('.btn-remove-input');
 const btnOpenProfile = document.querySelector('.btn-open-profile');
@@ -89,55 +90,44 @@ const closeByOverlay = () => {
   }
 };
 
-const toggleNav = (delay) => {
-  let timer = null;
-
-  return (e) => {
-    if (timer) return;
-    timer = setTimeout(() => {
-      if (beforeScrollY !== window.scrollY) {
-        if (window.innerWidth <= 767) {
-          if (window.scrollY >= 44 && beforeScrollY - window.scrollY < 0) {
-            nav.classList.add('nav--hide');
-          } else if (beforeScrollY - window.scrollY > 0) {
-            nav.classList.remove('nav--hide');
-          }
-        }
-        beforeScrollY = window.scrollY;
+const toggleNav = () => {
+  if (beforeScrollY !== window.scrollY) {
+    if (window.innerWidth <= 767) {
+      if (window.scrollY >= 44 && beforeScrollY - window.scrollY < 0) {
+        nav.classList.add('nav--hide');
+      } else if (beforeScrollY - window.scrollY > 0) {
+        nav.classList.remove('nav--hide');
       }
-      timer = null;
-    }, delay);
-  };
+    }
+    beforeScrollY = window.scrollY;
+  }
 };
 
-const handleOpenNumberPopup = () => {
+const openNumberPopup = () => {
   window.open('number.html', '카카오 이모티콘샵', 'width=420, height=700');
 };
 
-// throttle
-// 스로틀
-inputSearch.addEventListener(
-  'input',
-  (function (delay) {
-    let timer = null;
+const toggleRemoveButton = (e) => {
+  if (e.target.value.length !== 0) {
+    btnRemoveInput.classList.remove('btn-remove-input--hide');
+  } else {
+    btnRemoveInput.classList.add('btn-remove-input--hide');
+  }
+};
 
-    return (e) => {
-      if (timer) return;
-      timer = setTimeout(() => {
-        console.log(e.target.value);
-        if (e.target.value.length !== 0) {
-          btnRemoveInput.classList.remove('btn-remove-input--hide');
-        } else {
-          btnRemoveInput.classList.add('btn-remove-input--hide');
-        }
-        timer = null;
-      }, delay);
-    };
-  })(300)
-);
+const removeInputSearch = (e) => {
+  inputSearch.value = '';
+  btnRemoveInput.classList.add('btn-remove-input--hide');
+
+  e.preventDefault();
+};
+
+inputSearch.addEventListener('input', throttle(toggleRemoveButton, 300));
+btnRemoveInput.addEventListener('click', removeInputSearch);
 btnOpenSidemenu.addEventListener('click', openSidemenu);
 btnOpenSearch.addEventListener('click', openSearch);
+btnCloseSearch.addEventListener('click', closeByOverlay);
 btnOpenProfile.addEventListener('click', openProfile);
-btnOpenNumber.addEventListener('click', handleOpenNumberPopup);
+btnOpenNumber.addEventListener('click', openNumberPopup);
 overlay.addEventListener('click', closeByOverlay);
-window.addEventListener('scroll', toggleNav(300));
+window.addEventListener('scroll', throttle(toggleNav, 300));

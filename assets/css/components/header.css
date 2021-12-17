@@ -14,12 +14,12 @@
   height: 100%;
   padding: 0 1rem;
   display: flex;
-  background: #fff;
+  background: var(--bgc-header);
   z-index: var(--z-header-inner);
 }
 
 .header__title {
-  padding-left: 48px;
+  padding-left: 4.8rem;
   flex: 1;
   text-align: center;
 }
@@ -44,8 +44,8 @@
   left: 0;
   width: 290px;
   height: calc(100vh - var(--h-topbnr));
-  padding-bottom: 54px;
-  background: #fff;
+  padding-bottom: 5.4rem;
+  background: var(--bgc-sidemenu);
   z-index: var(--z-sidemenu);
 }
 
@@ -101,18 +101,18 @@
 }
 
 .sidemenu__mypage__text {
-  display: block;
   margin-top: 0.6rem;
+  display: block;
   font-size: 1.3rem;
   color: var(--c-title);
 }
 
 .sidemenu__mypage__count {
-  display: inline-block;
   margin-top: 0.1rem;
   padding-left: 0.2rem;
+  display: inline-block;
+  color: var(--c-highlight);
   vertical-align: top;
-  color: #fa4637;
 }
 
 .sidemenu__nav {
@@ -122,10 +122,10 @@
 }
 
 .sidemenu__nav__link {
-  display: block;
   width: 100%;
   height: 50px;
   padding: 0 2rem;
+  display: block;
   font-size: 1.6rem;
   color: var(--c-title);
   line-height: 50px;
@@ -138,10 +138,10 @@
 }
 
 .sidemenu__aside__link {
-  display: block;
   width: 100%;
   height: 40px;
   padding: 0 2rem;
+  display: block;
   font-size: 1.4rem;
   color: var(--c-content);
   line-height: 40px;
@@ -152,7 +152,7 @@
   width: 100%;
   height: 54px;
   padding: 0.9rem 1rem;
-  background: #fff;
+  background: var(--bgc-sidemenu);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -165,8 +165,8 @@
   position: absolute;
   top: 12px;
   right: 10px;
-  display: inline-block;
   padding: 0.7rem 1rem;
+  display: inline-block;
   font-size: 1.2rem;
   color: var(--c-content);
 }
@@ -177,7 +177,7 @@
   }
 }
 
-/* Search (Mobile-First) */
+/* Search */
 .search-box {
   position: fixed;
   top: var(--h-topbnr);
@@ -193,12 +193,12 @@
 .search-box__inner {
   position: relative;
   padding: 1rem 5.8rem 1rem 1.8rem;
-  background: #fff;
+  background: var(--bgc-search);
 }
 
 .search-box__form {
   background: rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 
 .search-box__form__inner {
@@ -231,7 +231,7 @@
   .search-box__inner {
     position: relative;
     padding: 3rem 0;
-    background: #fafafa;
+    background: var(--bgc-search-box-inner);
   }
 
   .search-box__form {
@@ -269,9 +269,9 @@
     height: 56px;
     margin: 0 auto;
     display: flex;
-    background: #fff;
+    background: var(--bgc-search-form-inner);
     border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
+    border-radius: 0.8rem;
     overflow: hidden;
     z-index: 1;
   }
@@ -303,8 +303,8 @@
   max-width: 240px;
   padding-top: 2rem;
   text-align: center;
-  background: #fff;
-  border-radius: 10px;
+  background: var(--bgc-profile);
+  border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: var(--z-profile);
 }
@@ -316,7 +316,7 @@
 .profile__image {
   width: 40px;
   height: 40px;
-  border-radius: 14px;
+  border-radius: 1.4rem;
 }
 
 .profile__name {
@@ -345,7 +345,7 @@
   left: 0;
   width: 100%;
   height: var(--h-nav);
-  background: #fff;
+  background: var(--bgc-nav);
   z-index: var(--z-nav);
   transition: none;
 }
@@ -365,8 +365,8 @@
 
 .nav__link {
   position: relative;
-  display: block;
   height: 100%;
+  display: block;
   font-size: 1.6rem;
   color: var(--c-content);
   text-align: center;
@@ -374,13 +374,13 @@
 }
 
 .nav__item--active .nav__link {
-  color: var(--c-title);
   font-weight: 600;
+  color: var(--c-title);
 }
 
 .nav__item--active .nav__link::after {
-  content: '';
   position: absolute;
+  content: '';
   left: 0;
   bottom: 0;
   width: 100%;
@@ -395,8 +395,8 @@
   }
 
   .nav__item:hover .nav__link::after {
-    content: '';
     position: absolute;
+    content: '';
     left: 0;
     bottom: 0;
     width: 100%;
