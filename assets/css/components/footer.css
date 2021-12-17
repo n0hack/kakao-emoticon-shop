@@ -2,7 +2,7 @@
   max-width: 1025px;
   margin: 0 auto;
   padding: 0 4rem;
-  background: #fff;
+  background: var(--bgc-footer);
 }
 
 .footer__services {
@@ -23,8 +23,8 @@
 }
 
 .footer__corp-label {
-  display: inline-block;
   margin-top: 1rem;
+  display: inline-block;
   font-size: 1.2rem;
   color: var(--c-content);
   cursor: pointer;
@@ -46,15 +46,15 @@
 
 .footer__corp-title,
 .footer__corp-text {
-  color: var(--c-content);
   font-size: 1.2rem;
+  color: var(--c-content);
   line-height: 1.8rem;
 }
 
 .footer__corp-title {
   padding-bottom: 0.5rem;
-  color: var(--c-title);
   font-weight: 500;
+  color: var(--c-title);
 }
 
 .footer__movetop {
@@ -62,6 +62,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    padding: 0 2.4rem;
+  }
+
   .footer__services {
     flex-direction: column;
   }
