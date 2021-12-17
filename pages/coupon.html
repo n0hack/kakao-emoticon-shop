@@ -155,10 +155,10 @@
                 <li class="mypage__menu">
                   <a class="mypage__link" href="buy.html">구매내역</a>
                 </li>
-                <li class="mypage__menu mypage__menu--active">
+                <li class="mypage__menu">
                   <a class="mypage__link" href="gift-received.html">선물함</a>
                 </li>
-                <li class="mypage__menu">
+                <li class="mypage__menu mypage__menu--active">
                   <a class="mypage__link" href="coupon.html">쿠폰함<span class="mypage__count">1</span></a>
                 </li>
                 <li class="mypage__menu">
@@ -170,17 +170,31 @@
           <!-- MYPAGE CONTENT -->
           <div class="mypage__main">
             <strong class="screen-out">마이페이지 콘텐츠 메뉴</strong>
-            <ul class="mypage__categories">
-              <li class="mypage__category mypage__category--show"><a class="mypage__category-link" href="gift-received.html">받은 선물함</a></li>
-              <li class="mypage__category mypage__category--show mypage__category--active"><a class="mypage__category-link" href="gift-sent.html">보낸 선물함</a></li>
+            <ul class="mypage__categories mypage__categories--multiple">
+              <li class="mypage__category mypage__category--show mypage__category--active">
+                <a class="mypage__category-link" href="coupon.html">보유쿠폰<span class="mypage__count">1</span></a>
+              </li>
+              <li class="mypage__category mypage__category--show"><a class="mypage__category-link" href="coupon-used.html">사용한 쿠폰</a></li>
             </ul>
             <div class="mypage__content">
-              <strong class="screen-out">보낸 선물함 본문</strong>
-              <div class="empty">
-                <img class="empty__image" src="../assets/images/empty-gift.png" alt="구매내역 없음" />
-                <strong class="empty__title">보낸 선물이 없습니다.</strong>
-                <p class="empty__desc">친구들에게 이모티콘을 선물로 보내보세요!</p>
-              </div>
+              <strong class="screen-out">보유쿠폰 본문</strong>
+              <ul class="mypage__coupons">
+                <li class="coupon">
+                  <div class="coupon__icon">
+                    <span class="ico-coupons ico-coupon-20">20% 쿠폰</span>
+                  </div>
+                  <div class="coupon__meta-datas">
+                    <span class="coupon__desc">12월, 전상품 20% 할인</span>
+                    <span class="coupon__date">2022.01.01까지</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="mypage__notices">
+                <li class="mypage__notice">쿠폰은 중복으로 사용할 수 없으며, 결제 횟수당 1개만 사용 가능합니다.</li>
+                <li class="mypage__notice">일부 카테고리 상품은 할인쿠폰 적용이 불가능합니다.</li>
+                <li class="mypage__notice">주문취소 및 환불시 이미 사용한 쿠폰은 재발급되지 않습니다.</li>
+                <li class="mypage__notice">발급된 쿠폰의 유효기간은 조기종료 및 변경될 수 있습니다.</li>
+              </ul>
             </div>
           </div>
         </div>

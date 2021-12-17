@@ -1,7 +1,9 @@
+/* MYPAGE */
 .mypage {
   padding-top: calc(var(--h-topbnr) + var(--h-header));
 }
 
+/* MYPAGE HEADER */
 .mypage__header {
   width: 100%;
   background-color: #6195ef;
@@ -48,8 +50,8 @@
 .mypage__link {
   display: inline-block;
   padding: 1rem 2rem;
-  color: #fff;
   font-size: 1.3rem;
+  color: #fff;
   background-color: #5786d7;
   border-radius: 18px;
   -webkit-user-drag: none;
@@ -68,84 +70,7 @@
 
 .mypage__menu--active .mypage__count {
   font-weight: bold;
-  color: #fa4637;
-}
-
-/* MYPAGE CONTENT */
-.mypage__content {
-  padding: 0 2.4rem;
-}
-
-.mypage__categories {
-  padding: 2.2rem 0 1.2rem;
-  display: flex;
-  gap: 1.4rem;
-}
-
-.mypage__category {
-  display: none;
-  font-size: 1.5rem;
-  color: var(--c-content);
-}
-
-.mypage__category--show {
-  display: block;
-}
-
-.mypage__category--active {
-  font-weight: bold;
-  color: var(--c-title);
-}
-
-.mypage__category--active .mypage__count {
   color: var(--c-highlight);
-}
-
-@media screen and (min-width: 768px) {
-  .mypage__content {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 4rem 2rem;
-  }
-
-  .mypage__categories {
-    padding: 4rem 0 2rem;
-    gap: 1.8rem;
-  }
-
-  .mypage__categories--multiple {
-    border-bottom: 1px solid #191919;
-  }
-
-  .mypage__category {
-    display: block;
-    font-size: 1.8rem;
-  }
-}
-
-.empty {
-  padding: 8rem 0;
-}
-
-.empty__image {
-  width: 105px;
-  height: 105px;
-  margin: 0 auto;
-  display: block;
-}
-
-.empty__title {
-  margin: 1rem 0 0.8rem;
-  display: block;
-  color: var(--c-title);
-  font-size: 1.6rem;
-  text-align: center;
-}
-
-.empty__desc {
-  color: var(--c-content);
-  font-size: 1.2rem;
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -164,36 +89,107 @@
     font-size: 2.8rem;
   }
 
-  .mypage__title-image {
+  .mypage__banner-image {
     position: absolute;
     top: 0;
     right: 40px;
     height: 100%;
     display: block;
   }
+}
 
-  .mypage__inner-content {
-    max-width: 944px;
+/* MYPAGE CONTENT */
+.mypage__main {
+  padding: 0 2.4rem;
+}
+
+.mypage__categories {
+  padding: 2.2rem 0 1.2rem;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.mypage__category {
+  visibility: hidden;
+  font-size: 1.5rem;
+  color: var(--c-content);
+}
+
+.mypage__category--show {
+  visibility: visible;
+}
+
+.mypage__category--active {
+  font-weight: bold;
+  color: var(--c-title);
+}
+
+.mypage__category-link {
+  color: var(--c-content);
+}
+
+.mypage__category--active .mypage__category-link {
+  font-weight: bold;
+  color: var(--c-title);
+}
+
+.mypage__category--active .mypage__count {
+  color: var(--c-highlight);
+}
+
+.mypage__notices {
+  padding: 2.4rem 0 1.8rem;
+}
+
+.mypage__notice {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  color: var(--c-content);
+}
+
+.mypage__notice::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .mypage__main {
+    max-width: 1024px;
     margin: 0 auto;
+    padding: 0 4rem 2rem;
   }
 
-  .mypage__gift-cards {
+  .mypage__categories {
+    padding: 4rem 0 2rem;
+    gap: 1.8rem;
+  }
+
+  .mypage__categories--multiple {
+    border-bottom: 1px solid #191919;
+  }
+
+  .mypage__category {
+    visibility: visible;
+    font-size: 1.8rem;
+  }
+
+  .mypage__gifts,
+  .mypage__coupons {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .empty__image {
-    width: 125px;
-    height: 125px;
-  }
-
-  .empty__title {
-    font-size: 2rem;
-  }
-
-  .empty__desc {
-    font-size: 1.4rem;
-    line-height: 2rem;
+  .mypage__notices {
+    padding-top: 2.8rem;
   }
 }

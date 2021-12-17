@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>카카오 이모티콘샵</title>
-    <!-- Icon -->
+
     <link rel="shortcut icon" href="../assets/icons/e_16x16.ico" />
-    <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
@@ -24,6 +24,7 @@
           <span class="ico-common ico-close"></span>
         </button>
       </aside>
+
       <!-- Header -->
       <header class="header">
         <div class="header__inner">
@@ -46,6 +47,7 @@
         <!-- Sidemenu -->
         <div class="sidemenu sidemenu--hide">
           <div class="sidemenu__inner">
+            <h3 class="screen-out">사이드메뉴</h3>
             <div class="sidemenu__profile">
               <img class="sidemenu__profile__image" src="../assets/images/profile.png" alt="사용자 프로필" />
               <div class="sidemenu__profile__info">
@@ -61,7 +63,7 @@
                 </a>
               </li>
               <li class="sidemenu__mypage__item">
-                <a class="sidemenu__mypage__link" href="gift.html">
+                <a class="sidemenu__mypage__link" href="gift-received.html">
                   <span class="ico-common ico-gift"></span>
                   <span class="sidemenu__mypage__text">선물함</span>
                 </a>
@@ -94,10 +96,10 @@
             </ul>
           </div>
           <div class="sidemenu__corp">
-            <a class="sidemenu__corp__link-home" href="#">
+            <a class="sidemenu__corp__link-home" href="home.html">
               <span class="ico-common ico-sidemenu-logo">카카오 이모티콘샵</span>
             </a>
-            <a class="sidemenu__corp__link-kakao" href="#" rel="noopener noreferrer">@ kakao Corp</a>
+            <a class="sidemenu__corp__link-kakao" href="https://www.kakaocorp.com/page/" rel="noopener noreferrer">@ kakao Corp</a>
           </div>
         </div>
         <!-- Search -->
@@ -137,6 +139,7 @@
         <!-- Overlay -->
         <div class="overlay overlay--hide"></div>
       </header>
+
       <!-- Main -->
       <main class="main">
         <div class="mypage">
@@ -177,20 +180,7 @@
                 <li class="gift">
                   <div class="gift__meta-datas">
                     <span class="gift__date">2020.10.10</span>
-                    <span class="gift__presenter">From. <strong>친구</strong></span>
-                  </div>
-                  <div class="gift__emoticon-datas">
-                    <div class="gift__emoticon-infos">
-                      <span class="gift__emoticon-name">군머티콘</span>
-                      <span class="gift__emoticon-author">이걸누가사</span>
-                    </div>
-                    <img class="gift__emoticon-image" src="../assets/images/gift-emoticon.png" alt="선물 받은 이모티콘" />
-                  </div>
-                </li>
-                <li class="gift">
-                  <div class="gift__meta-datas">
-                    <span class="gift__date">2020.10.10</span>
-                    <span class="gift__presenter">From. <strong>친구</strong></span>
+                    <span class="gift__presenter">From. <strong>친구 2</strong></span>
                   </div>
                   <div class="gift__emoticon-datas">
                     <div class="gift__emoticon-infos">
@@ -203,7 +193,7 @@
                 <li class="gift">
                   <div class="gift__meta-datas">
                     <span class="gift__date">2020.09.09</span>
-                    <span class="gift__presenter">From. <strong>영목</strong></span>
+                    <span class="gift__presenter">From. <strong>친구 1</strong></span>
                   </div>
                   <div class="gift__emoticon-datas">
                     <div class="gift__emoticon-infos">
@@ -218,6 +208,7 @@
           </div>
         </div>
       </main>
+
       <!-- Footer -->
       <footer class="footer">
         <ul class="footer__services">
@@ -254,11 +245,13 @@
         </div>
       </footer>
     </div>
+
     <!-- Scripts -->
+    <script src="../assets/js/lib/throttle.js"></script>
     <script src="../assets/js/lib/drag-scroll.js"></script>
-    <script src="../assets/js/top-banner.js"></script>
+    <script src="../assets/js/topbnr.js"></script>
     <script src="../assets/js/header.js"></script>
-    <script src="../assets/js/sidepage.js"></script>
+    <script src="../assets/js/mypage.js"></script>
     <script src="../assets/js/footer.js"></script>
   </body>
 </html>
