@@ -104,7 +104,7 @@ const toggleNav = () => {
 };
 
 const openNumberPopup = () => {
-  window.open('number.html', '카카오 이모티콘샵', 'width=420, height=700');
+  window.open('number.html', '카카오 이모티콘샵', 'width=430, height=700');
 };
 
 const toggleRemoveButton = (e) => {
