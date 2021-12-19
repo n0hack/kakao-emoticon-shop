@@ -131,3 +131,41 @@
   color: var(--c-title);
   background-color: var(--c-kakao);
 }
+
+/* FAQ */
+.btn-faq {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.3rem;
+  color: var(--c-title);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 1.5rem;
+}
+
+.faq__category--active .btn-faq {
+  font-weight: 500;
+  color: var(--c-white);
+  background-color: #3b3b3b;
+}
+
+.btn-faq-item {
+  width: 100%;
+  padding: 1.8rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.faq__item--on .btn-faq-item,
+.btn-faq-item:hover {
+  font-weight: bold;
+}
+
+.btn-faq-item:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .faq__item--on .btn-faq-item {
+    font-size: 1.8rem;
+  }
+}

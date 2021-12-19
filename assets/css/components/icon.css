@@ -167,3 +167,18 @@
   height: 44px;
   background-position: -140px 0;
 }
+
+/* FAQ */
+.ico-faq {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 14px;
+  height: 9px;
+  background-position: 0 -80px;
+  transform: rotateX(180deg);
+}
+
+.faq__item--on .ico-faq {
+  transform: rotateX(0deg);
+}
