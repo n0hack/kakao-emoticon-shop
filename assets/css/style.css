@@ -15,10 +15,13 @@
 /* Pages */
 @import './pages/home.css';
 @import './pages/mypage.css';
+@import './pages/notice.css';
+@import './pages/faq.css';
 @import './pages/number.css';
 
 .kakao-wrap {
   position: relative;
+  height: 100%;
 }
 
 .kakao-wrap--overlaid {

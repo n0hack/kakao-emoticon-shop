@@ -8,7 +8,6 @@
     <title>카카오 이모티콘샵</title>
 
     <link rel="shortcut icon" href="../assets/icons/e_16x16.ico" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
@@ -126,7 +125,7 @@
           <button class="btn-logout" aria-label="로그아웃">로그아웃</button>
         </div>
         <!-- Nav -->
-        <nav class="nav">
+        <nav class="nav nav--sidepage">
           <h3 class="screen-out">메인메뉴</h3>
           <div class="nav__inner">
             <ul class="nav__list">
@@ -143,21 +142,20 @@
 
       <!-- Main -->
       <main class="main">
-        <div class="home">
-          <div class="home__slick">
-            <div class="home__slide">
-              <a href="#">
-                <img class="home__banner" src="../assets/images/banner-1.gif" alt="첫 번째 메인 배너" />
-              </a>
-            </div>
-            <div class="home__slide">
-              <a href="#">
-                <img class="home__banner" src="../assets/images/banner-2.gif" alt="두 번째 메인 배너" />
-              </a>
+        <div class="notice">
+          <!-- NOTICE HEADER -->
+          <div class="notice__header">
+            <h2 class="notice__title">새소식</h2>
+            <img class="notice__banner" src="../assets/images/img-notice.png" alt="새소식" />
+          </div>
+          <!-- NOTICE CONTENT -->
+          <div class="notice__content">
+            <strong class="screen-out">새소식 본문</strong>
+            <div class="empty">
+              <strong class="empty__title">새소식을 준비중입니다.</strong>
+              <p class="empty__desc">다가올 이벤트와 소식을 기대해주세요!</p>
             </div>
           </div>
-
-          dddd dddd
         </div>
       </main>
 
@@ -199,11 +197,11 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../assets/js/lib/throttle.js"></script>
+    <script src="../assets/js/lib/drag-scroll.js"></script>
     <script src="../assets/js/topbnr.js"></script>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/notice.js"></script>
     <script src="../assets/js/footer.js"></script>
   </body>
 </html>
