@@ -150,7 +150,8 @@
 
 .btn-faq-item {
   width: 100%;
-  padding: 1.8rem;
+  padding: 2.4rem;
+  padding-right: 4rem;
   font-size: 1.5rem;
   text-align: left;
 }

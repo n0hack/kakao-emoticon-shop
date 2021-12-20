@@ -41,6 +41,14 @@
   display: none;
 }
 
+.faq__list {
+  display: none;
+}
+
+.faq__list--active {
+  display: block;
+}
+
 .faq__item {
   position: relative;
   margin-bottom: 0.6rem;
