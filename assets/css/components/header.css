@@ -350,6 +350,17 @@
   transition: none;
 }
 
+.nav::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+  z-index: 9999;
+}
+
 .nav__inner {
   max-width: 616px;
   margin: 0 auto;
@@ -420,7 +431,8 @@
   }
 
   .nav--sidepage {
-    display: none;
+    transition: none;
+    transform: translateY(calc(0px - var(--h-nav)));
   }
 }
 
