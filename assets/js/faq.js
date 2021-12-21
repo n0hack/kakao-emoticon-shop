@@ -5,6 +5,8 @@ const faqLists = document.querySelectorAll('.faq__list');
 new DragScroll({ list: faqCategoryList, items: faqCategoryItems, breakpoint: 768 });
 
 const clickFAQCategoryList = (e) => {
+  console.log('button click');
+  console.log(e);
   const categoryId = e.target.dataset.categoryId;
   if (categoryId) {
     // 카테고리 클래스 지정

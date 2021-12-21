@@ -62,6 +62,7 @@ class DragScroll {
   }
 
   onDragStart(e) {
+    console.log('mousedown');
     const isTouches = e.touches ? true : false;
     this.startX = isTouches ? e.touches[0].clientX : e.clientX;
     this.nowX = this.startX;
@@ -73,18 +74,22 @@ class DragScroll {
     window.addEventListener('touchend', this.onDragEnd);
 
     e.preventDefault();
+    e.stopPropagation();
   }
 
   onDragging(e) {
+    console.log('mousemove');
     const isTouches = e.touches ? true : false;
     this.nowX = isTouches ? e.touches[0].clientX : e.clientX;
 
     this.setTranslateX({ x: this.nowX - this.startX, reset: false });
 
     e.preventDefault();
+    e.stopPropagation();
   }
 
   onDragEnd(e) {
+    console.log('mouseup');
     this.checkValidate();
     this.translateX = this.getTranslateX();
 
@@ -103,11 +108,14 @@ class DragScroll {
     }, 300);
 
     e.preventDefault();
+    e.stopPropagation();
   }
 
   onClick(e) {
     if (this.startX - this.nowX !== 0 && window.innerWidth < this.breakpoint) {
+      console.log('click');
       e.preventDefault();
+      e.stopPropagation();
     }
   }
 
