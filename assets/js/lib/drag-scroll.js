@@ -113,7 +113,6 @@ class DragScroll {
 
   onClick(e) {
     if (this.startX - this.nowX !== 0 && window.innerWidth < this.breakpoint) {
-      console.log('click');
       e.preventDefault();
       e.stopPropagation();
     }
