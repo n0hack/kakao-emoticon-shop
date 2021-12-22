@@ -182,3 +182,10 @@
 .faq__item--on .ico-faq {
   transform: rotateX(0deg);
 }
+
+/* Main */
+.ico-arr-right {
+  width: 15px;
+  height: 15px;
+  background-position: -330px -60px;
+}
