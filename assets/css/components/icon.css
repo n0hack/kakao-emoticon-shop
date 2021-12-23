@@ -196,3 +196,19 @@
   height: 14px;
   background-position: -680px -40px;
 }
+
+/* Hot */
+.ico-newemo {
+  float: right;
+  width: 15px;
+  height: 15px;
+  margin-left: 0.8rem;
+  background-position: -710px -20px;
+  vertical-align: top;
+}
+
+.hot .ico-like {
+  width: 14px;
+  height: 14px;
+  background-position: -680px -40px;
+}
