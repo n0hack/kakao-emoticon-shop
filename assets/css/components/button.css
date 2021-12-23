@@ -176,3 +176,14 @@
     font-size: 1.8rem;
   }
 }
+
+.btn-like {
+  width: 36px;
+  height: 36px;
+  margin-top: 0.8rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
