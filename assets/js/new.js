@@ -137,10 +137,13 @@ const newInnerHTML = `
 `;
 const newList = document.querySelector('.new__list');
 let newListIndex;
+const newMaximunCnt = 20;
 
 const sessionNewListIndex = sessionStorage.getItem('newListIndex');
 if (sessionNewListIndex) {
-  newListIndex = sessionNewListIndex;
+  if (sessionNewListIndex >= newMaximunCnt) newListIndex = newMaximunCnt;
+  else newListIndex = sessionNewListIndex;
+
   for (let i = 1; i < newListIndex; i++) {
     newList.innerHTML += newInnerHTML;
   }
@@ -154,15 +157,15 @@ const ioNewCallback = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       ioNew.unobserve(entry.target);
-      sessionStorage.setItem('newListIndex', ++newListIndex);
-
-      newList.innerHTML += newInnerHTML;
-      const newLastItem = newList.lastElementChild;
-      ioNew.observe(newLastItem);
+      if (newListIndex < newMaximunCnt) {
+        sessionStorage.setItem('newListIndex', ++newListIndex);
+        newList.innerHTML += newInnerHTML;
+        const newLastItem = newList.lastElementChild;
+        ioNew.observe(newLastItem);
+      }
     }
   });
 };
 
 const ioNew = new IntersectionObserver(ioNewCallback);
 ioNew.observe(newLastItem);
-console.dir(newList.children.length);
