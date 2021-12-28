@@ -212,3 +212,12 @@
   height: 14px;
   background-position: -680px -40px;
 }
+
+/* Style */
+.ico-style-arr {
+  vertical-align: top;
+  margin-top: 0.3rem;
+  width: 10px;
+  height: 15px;
+  background-position: -160px -50px;
+}
