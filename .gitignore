@@ -1,9 +1,6 @@
 # Dependencies
 /node_modules
 
-# Backup Files
-/0_bak
-/0_bak2
-
 # Misc
 .DS_Store
+.vscode
