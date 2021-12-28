@@ -44,3 +44,45 @@
 .style__category:last-child {
   padding-right: 2.4rem;
 }
+
+@media screen and (min-width: 768px) {
+  .style__banner {
+    padding: 0;
+  }
+
+  .style__inner-banner {
+    position: relative;
+    max-width: 1024px;
+    padding: 6rem 4rem;
+    margin: 0 auto;
+  }
+
+  .style__inner-banner::after {
+    position: absolute;
+    content: '';
+    right: 40px;
+    bottom: 0;
+    width: 424px;
+    height: 100%;
+    background: url('../../images/banner-style.png') no-repeat;
+    background-size: 424px 210px;
+  }
+
+  .style__title {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+
+  .style__categories {
+    padding: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  .style__content {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+  }
+}
