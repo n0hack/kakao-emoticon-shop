@@ -35,7 +35,6 @@ class DragScroll {
       this.list.addEventListener('mousedown', this.onDragStart);
       this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
     } else {
-      console.log('호출');
       this.list.removeEventListener('mousedown', this.onDragStart);
       window.removeEventListener('mousemove', this.onDragging);
       window.removeEventListener('mouseup', this.onDragEnd);
@@ -65,6 +64,7 @@ class DragScroll {
   }
 
   onDragStart(e) {
+    console.log('down');
     const isTouches = e.touches ? true : false;
     this.startX = isTouches ? e.touches[0].clientX : e.clientX;
     this.nowX = this.startX;
@@ -75,21 +75,23 @@ class DragScroll {
     window.addEventListener('mouseup', this.onDragEnd);
     window.addEventListener('touchend', this.onDragEnd);
 
-    e.preventDefault();
-    e.stopPropagation();
+    // e.preventDefault();
+    // e.stopPropagation();
   }
 
   onDragging(e) {
+    console.log('ing');
     const isTouches = e.touches ? true : false;
     this.nowX = isTouches ? e.touches[0].clientX : e.clientX;
 
     this.setTranslateX({ x: this.nowX - this.startX, reset: false });
 
-    e.preventDefault();
-    e.stopPropagation();
+    // e.preventDefault();
+    // e.stopPropagation();
   }
 
   onDragEnd(e) {
+    console.log('up');
     this.checkValidate();
     this.translateX = this.getTranslateX();
 
@@ -107,11 +109,12 @@ class DragScroll {
       this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
     }, 300);
 
-    e.preventDefault();
-    e.stopPropagation();
+    // e.preventDefault();
+    // e.stopPropagation();
   }
 
   onClick(e) {
+    console.log('click');
     if (this.startX - this.nowX !== 0 && window.innerWidth < this.breakpoint) {
       e.preventDefault();
       e.stopPropagation();
