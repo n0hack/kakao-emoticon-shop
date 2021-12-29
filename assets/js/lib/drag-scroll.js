@@ -22,8 +22,10 @@ class DragScroll {
   }
 
   bindEvent() {
-    this.list.addEventListener('mousedown', this.onDragStart);
-    this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
+    if (window.innerWidth < this.breakpoint) {
+      this.list.addEventListener('mousedown', this.onDragStart);
+      this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
+    }
     this.list.addEventListener('click', this.onClick);
     window.addEventListener('resize', this.onResize);
   }
@@ -33,6 +35,7 @@ class DragScroll {
       this.list.addEventListener('mousedown', this.onDragStart);
       this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
     } else {
+      console.log('호출');
       this.list.removeEventListener('mousedown', this.onDragStart);
       window.removeEventListener('mousemove', this.onDragging);
       window.removeEventListener('mouseup', this.onDragEnd);
