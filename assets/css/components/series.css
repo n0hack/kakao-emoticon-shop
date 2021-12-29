@@ -42,6 +42,7 @@
   background-color: var(--c-series-link);
   border-radius: 1rem;
   cursor: pointer;
+  -webkit-user-drag: none;
 }
 
 .series__name {
@@ -64,6 +65,7 @@
 .series__emoticon {
   width: 64px;
   height: 64px;
+  -webkit-user-drag: none;
 }
 
 @media screen and (min-width: 768px) {
