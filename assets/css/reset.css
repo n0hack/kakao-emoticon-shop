@@ -26,3 +26,7 @@ button {
   border: 0;
   cursor: pointer;
 }
+
+img {
+  -webkit-user-drag: none;
+}

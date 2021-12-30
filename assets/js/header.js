@@ -86,7 +86,10 @@ const closeByOverlay = () => {
     wrapper.classList.remove('kakao-wrap--overlaid');
     overlay.classList.add('overlay--hide');
     if (overlay.classList.contains('overlay-sidemenu')) closeSidemenu();
-    else if (overlay.classList.contains('overlay-search')) closeSearch();
+    else if (overlay.classList.contains('overlay-search')) {
+      inputSearch.value = '';
+      closeSearch();
+    }
   }
 };
 

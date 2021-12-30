@@ -64,7 +64,6 @@ class DragScroll {
   }
 
   onDragStart(e) {
-    console.log('down');
     const isTouches = e.touches ? true : false;
     this.startX = isTouches ? e.touches[0].clientX : e.clientX;
     this.nowX = this.startX;
@@ -77,7 +76,6 @@ class DragScroll {
   }
 
   onDragging(e) {
-    console.log('ing');
     const isTouches = e.touches ? true : false;
     this.nowX = isTouches ? e.touches[0].clientX : e.clientX;
 
@@ -85,7 +83,6 @@ class DragScroll {
   }
 
   onDragEnd(e) {
-    console.log('up');
     this.checkValidate();
     this.translateX = this.getTranslateX();
 
