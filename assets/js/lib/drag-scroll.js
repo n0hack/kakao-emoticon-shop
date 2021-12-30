@@ -74,9 +74,6 @@ class DragScroll {
     window.addEventListener('touchmove', this.onDragging, { passive: false });
     window.addEventListener('mouseup', this.onDragEnd);
     window.addEventListener('touchend', this.onDragEnd);
-
-    // e.preventDefault();
-    // e.stopPropagation();
   }
 
   onDragging(e) {
@@ -85,9 +82,6 @@ class DragScroll {
     this.nowX = isTouches ? e.touches[0].clientX : e.clientX;
 
     this.setTranslateX({ x: this.nowX - this.startX, reset: false });
-
-    // e.preventDefault();
-    // e.stopPropagation();
   }
 
   onDragEnd(e) {
@@ -108,9 +102,6 @@ class DragScroll {
       this.list.addEventListener('mousedown', this.onDragStart);
       this.list.addEventListener('touchstart', this.onDragStart, { passive: false });
     }, 300);
-
-    // e.preventDefault();
-    // e.stopPropagation();
   }
 
   onClick(e) {
