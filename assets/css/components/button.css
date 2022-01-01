@@ -153,6 +153,7 @@
   padding: 2.4rem;
   padding-right: 4rem;
   font-size: 1.5rem;
+  color: var(--c-title);
   text-align: left;
 }
 
