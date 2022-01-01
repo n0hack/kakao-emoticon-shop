@@ -1,3 +1,8 @@
+/**
+ * @author Jihun Jeon <nohack@naver.com>
+ * @version 1.0.0
+ * @file 웹에서 모바일의 터치 스크롤을 이용하는 것 같은 효과 구현
+ */
 class DragScroll {
   constructor({ list, items, breakpoint }) {
     this.list = list;
