@@ -50,9 +50,11 @@
 
 ## 달성한 목표
 
-**무한 스크롤 구현**
+### 무한 스크롤 구현
 
-무한 스크롤을 구현할 때는 window 객체에 이벤트 리스너를 통해 scroll 이벤트를 등록하는 방법과 WebAPI 중 하나인 [IntersectionObserver](https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API)를 사용하는 방법이 있습니다. 저는 IntersectionObserver로 무한 스크롤을 구현했으며, 기존 scroll 이벤트를 등록하던 방식과 달리 이 API는 비동기로 처리하기 때문에 성능 이슈 없이 사용할 수 있다는 장점이 있습니다.
+<p align="justify">
+무한 스크롤을 구현할 때는 scroll 이벤트를 등록하는 방법과 WebAPI 중 하나인 <a href="https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API" target="_blank">IntersectionObserver</a>를 사용하는 방법이 있습니다. 저는 IntersectionObserver로 구현했으며, scroll 이벤트 방식과 달리 이 API는 작업을 비동기로 처리하기 때문에 성능 이슈 없이 사용할 수 있습니다.
+</p>
 
 **이미지 지연 로딩**
 
