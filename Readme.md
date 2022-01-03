@@ -1,11 +1,11 @@
 # 카카오 이모티콘 샵
 
-![카카오 이모티콘샵](./docs/intro-header.jpg)
+![카카오 이모티콘샵](./docs/intro-header.png)
 
 ## 프로젝트 소개
 
 <p align="justify">
-게임 데이터 분석가로의 길을 멈추고, 다시 개발 분야로 돌아와 자신감을 찾기 위해 진행한 첫 프론트엔드 프로젝트(클론 코딩)입니다. 개인적으로 카카오(Kakao)에서 운영 중인 서비스들의 웹사이트 구성이 마음에 들어 그 중 하나인 <a href="https://e.kakao.com/" target="_blank">카카오 이모티콘 샵</a>을 주제로 선택하게 되었고, 프론트엔드를 구성하는 기본 요소인 [HTML﹒CSS﹒JS] 세 가지만을 사용해 진행했습니다.
+게임 데이터 분석가로의 길을 멈추고, 다시 개발 분야로 돌아와 자신감을 찾기 위해 진행한 첫 프론트엔드 프로젝트(클론 코딩)입니다. 개인적으로 카카오(Kakao)에서 운영 b중인 서비스들의 웹사이트 구성이 마음에 들어 그 중 하나인 <a href="https://e.kakao.com/" target="_blank">카카오 이모티콘 샵</a>을 주제로 선택하게 되었고, 프론트엔드를 구성하는 기본 요소인 [HTML/CSS/JS] 세 가지만을 사용해 진행했습니다.
 </p>
 
 <br>
@@ -14,37 +14,41 @@
 
 > [프로젝트 계획(Notion)](https://n0hack.notion.site/78447910a05446b9bb9a0daa86c454d8)
 
+<br>
+
 ## 웹사이트 화면
 
 |  메인   |  스타일  |
 | :-----: | :------: |
 | ![main] | ![style] |
 
-| 인기 이모티콘 | 신규 이모티콘 |
-| :-----------: | :-----------: |
-|    ![hot]     |    ![new]     |
-
 | 마이페이지 | 서브페이지 |
 | :--------: | :--------: |
 | ![mypage]  | ![subpage] |
 
-> [프로젝트 사이트]()
+> [프로젝트 사이트](https://n0hack.github.io/kakao-emoticon-shop)
 
-> [시연 영상 (Youtube)]()
+> [프로젝트 시연 영상 (Youtube)]()
 
-## 기술 스택
+<br>
+
+## 사용한 기술
 
 |  HTML   |  CSS   | JavaScript | Deploy |
 | :-----: | :----: | :--------: | :----: |
 | ![HTML] | ![CSS] |   ![JS]    | ![GIT] |
 
-HTML
+1. HTML
 
-CSS
+2. CSS
 
-JavaScript
+3. JavaScript
 
-Deploy
+**Deploy**
+
+배포는
+
+<br>
 
 ## 달성한 목표
 
