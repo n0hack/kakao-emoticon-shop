@@ -9,9 +9,9 @@
 </p>
 
 [- 프로젝트 사이트 [깃허브]](https://n0hack.github.io/kakao-emoticon-shop)
-
+<br>
 [- 프로젝트 시리즈 [티스토리]]()
-
+<br>
 [- 프로젝트 계획 [노션]](https://n0hack.notion.site/78447910a05446b9bb9a0daa86c454d8)
 
 <br>
