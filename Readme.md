@@ -10,9 +10,13 @@
 
 <br>
 
-> [프로젝트 시리즈(Tistory)]()
+[- 프로젝트 시리즈 <티스토리>]()
 
-> [프로젝트 계획(Notion)](https://n0hack.notion.site/78447910a05446b9bb9a0daa86c454d8)
+[- 프로젝트 계획 <노션>](https://n0hack.notion.site/78447910a05446b9bb9a0daa86c454d8)
+
+[- 프로젝트 사이트 <깃허브>](https://n0hack.github.io/kakao-emoticon-shop)
+
+[- 프로젝트 시연 영상 <유튜브>]()
 
 <br>
 
@@ -26,10 +30,6 @@
 | :--------: | :--------: |
 | ![mypage]  | ![subpage] |
 
-> [프로젝트 사이트](https://n0hack.github.io/kakao-emoticon-shop)
-
-> [프로젝트 시연 영상 (Youtube)]()
-
 <br>
 
 ## 사용한 기술
@@ -40,11 +40,15 @@
 
 **HTML / CSS**
 
-BEM 방법론에 따라
+<p align="justify">
+프론트엔드 프로젝트인 만큼 빠질 수 없는 마크업 언어 HTML과 스타일 언어 CSS를 사용했습니다. 웹사이트를 만들 때 항상 클래스 이름을 짓는 부분에서 많은 시간을 소요하곤 했었는데, <a href="http://getbem.com/" target="_blank">BEM(Block Element Modifier)</a>이라 하는 네이밍 방법론을 알게 되어 이를 적용해 작성했습니다.
+</p>
 
 **JavaScript**
 
-배너 이미지에
+<p align="justify">
+실제 서비스 중인 카카오 이모티콘 샵을 살펴 보면 배너 이미지가 시간이 지남에 따라 다음 이미지로 전환되고, 무한 스크롤 및 터치 스크롤(마치 모바일에서 이용하는 것 같은) 등이 구현되어 있습니다. 배너 이미지가 자동으로 전환되는 것은 <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick Slider</a> 라이브러리를 사용했으며, 무한 스크롤과 터치 스크롤은 직접 구현했습니다.
+</p>
 
 **Deploy**
 
