@@ -88,7 +88,10 @@ BEM이 익숙하지 않은 상태에서, 처음하는 프로젝트의 규모가 
 
 ## 저작권
 
-프로젝트에 사용된 이미지는 [카카오 이모티콘샵](https://e.kakao.com/)에서 실제로 사용 중인 이미지입니다. 따라서 모든 저작권은 [카카오(Kakao)](https://www.kakaocorp.com/page/)에 있습니다.
+프로젝트에 사용된 이미지는 [카카오 이모티콘샵](https://e.kakao.com/)에서 실제로 사용 중인 이미지입니다.<br>
+따라서 모든 저작권은 [카카오(Kakao)](https://www.kakaocorp.com/page/)에 있습니다.
+<br><br>
+&copy; NoHack & Kakao All Rights Reserved.
 
 <!-- References -->
 
