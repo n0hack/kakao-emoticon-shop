@@ -36,7 +36,7 @@
 
 **HTML / CSS**
 
-프론트엔드 프로젝트인 만큼 빠질 수 없는 마크업 언어 HTML과 스타일 언어 CSS를 사용했습니다. 웹사이트를 만들 때 항상 클래스 이름을 짓는 부분에서 많은 시간을 소요하곤 했었는데, <a href="http://getbem.com/" target="_blank">BEM(Block Element Modifier)</a>이라 하는 네이밍 방법론을 알게 되어 이를 적용해 작성했습니다.
+프론트엔드 프로젝트인 만큼 빠질 수 없는 마크업 언어 HTML과 스타일 언어 CSS를 사용했습니다. 웹사이트를 만들 때 항상 클래스 이름을 짓는 부분에서 많은 시간을 소요하곤 했었는데, [BEM(Block Element Modifier)](http://getbem.com/)이라 하는 네이밍 방법론을 알게 되어 이를 적용해 작성했습니다.
 
 **JavaScript**
 
