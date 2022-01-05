@@ -8,9 +8,8 @@
 게임 데이터 분석가로의 길을 멈추고, 다시 개발 분야로 돌아와 자신감을 찾기 위해 진행한 첫 프론트엔드 프로젝트(클론 코딩)입니다. 개인적으로 카카오(Kakao)에서 운영 중인 서비스들의 웹사이트 구성이 마음에 들어 그 중 하나인 <a href="https://e.kakao.com/" target="_blank">카카오 이모티콘샵</a>을 주제로 선택하게 되었고, 프론트엔드를 구성하는 기본 요소인 [HTML/CSS/JS] 세 가지만을 사용해 진행했습니다.
 </p>
 
-- [프로젝트 계획 (Notion)](https://n0hack.notion.site/78447910a05446b9bb9a0daa86c454d8)
-- [프로젝트 후기 (Tistory)](https://nohack.tistory.com/121)
-- [프로젝트 배포 (GitHub)](https://n0hack.github.io/kakao-emoticon-shop)
+- [프로젝트 후기 (티스토리)](https://nohack.tistory.com/121)
+- [프로젝트 사이트 (GitHub)](https://n0hack.github.io/kakao-emoticon-shop)
 
 <br>
 
