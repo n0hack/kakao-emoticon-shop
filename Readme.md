@@ -10,7 +10,7 @@
 
 - [프로젝트 계획 (Notion)](https://n0hack.notion.site/78447910a05446b9bb9a0daa86c454d8)
 - [프로젝트 후기 (Tistory)](https://nohack.tistory.com/121)
-- [프로젝트 배포 (GitHub)](https://n0hack.github.io/kakao-emoticon-shop)
+- [프로젝트 배포 (GitHub Pages)](https://n0hack.github.io/kakao-emoticon-shop)
 
 <br>
 
